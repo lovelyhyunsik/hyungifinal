@@ -20,35 +20,37 @@
 </head>
 
 <body>
-    <?php include("./common.php/btn_gotop.php");?>
+    <div class="btn_gotop">
+        <img src="./img/up_arrow.png" alt="">
+    </div>
     <nav id="bottomGnb">
         <ul>
             <li>
-                <a href="./bottom_gnb_menu.php" class="icoMenu">
+                <a href="./bottom_gnb_menu.html" class="icoMenu">
                     <img src="./img/ic-menu.png" alt="하단메뉴아이콘">
                     <p>메뉴</p>
                 </a>
             </li>
             <li>
-                <a href="./index.php" class="icoHome">
+                <a href="./index.html" class="icoHome">
                     <img src="./img/ic-home.png" alt="하단홈아이콘">
                     <p>홈</p>
                 </a>
             </li>
             <li>
-                <a href="./bottom_gnb_recent.php" class="icoRecent">
+                <a href="./bottom_gnb_recent.html" class="icoRecent">
                     <img src="./img/ic-recent.png" alt="하단최근아이콘">
                     <p>최근 본</p>
                 </a>
             </li>
             <li>
-                <a href="./bottom_gnb_like.php" class="icoLike">
+                <a href="./bottom_gnb_like.html" class="icoLike">
                     <img src="./img/ic-blike.png" alt="하단'좋아요'아이콘">
                     <p>찜</p>
                 </a>
             </li>
             <li>
-                <a href="./bottom_gnb_mypage_non-member.php" class="icoMypage">
+                <a href="./bottom_gnb_mypage_non-member.html" class="icoMypage">
                     <img src="./img/ic-my-active.png" alt="하단마이페이지아이콘">
                     <p>마이</p>
                 </a>
@@ -70,7 +72,7 @@
             <p>아직 회원이 아니신가요?</p>
             <p>바우하우스 회원이 되어 <br> 다양한 서비스를 경험해보세요.</p>
         </div>
-        <a href="./login.php">로그인/회원가입</a>
+        <a href="./login.html">로그인/회원가입</a>
     </section>
     <section id="nonMemberMiddle">
         <ul>
@@ -96,7 +98,35 @@
             <li><a href="">매장안내</a></li>
         </ul>
     </section>
-    <?php include("./common.php/footer.php");?>
+    <section id="footer">
+        <ul class="footer_ask">
+            <li class="service_center"><a href="./service_center_page.html"><span>고객센터</span></a></li>
+            <li class="one_inquiry"><a href="./one_on_one_write.html"><span>1:1 문의</span></a></li>
+            <li class="find_IdPw"><a href="./id_find.html"><span>ID/PW 찾기</span></a></li>
+        </ul>
+        <div class="footer_info">
+            <div class="info_title">
+                <p>패션형지그룹(주) 사업자정보</p>
+                <div class="info_d_arrow">
+                    <a href=""><img src="./img/down_arrow.png" alt=""></a>
+                </div>
+            </div>
+            <div class="info_sub">
+                <li>개인정보처리방침</li>
+                <li>이용약관</li>
+                <li>사업자정보확인</li>
+            </div>
+            <div class="info_ico">
+                <ul>
+                    <li><a href=""><img src="./img/fb_ico.png" alt=""></a></li>
+                    <li><a href=""><img src="./img/yt_ico.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="info_copy">
+                <p>FASHION GROUP HYUNGJI. ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </section>
 </body>
 <script>
     $(window).scroll(function () {
