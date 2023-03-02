@@ -22,7 +22,7 @@
 
 <body>
     <div id="mainPage">
-        <?php include("./common.php/btn_gotop.php");?>
+        <?php include("./common.php/btn_gotop.html");?>
         <header id="header">
             <div class="headerTop">
                 <h1 class="logo"><a href="./index.php"><span class="hide">바우하우스</span></a></h1>
@@ -2106,7 +2106,7 @@
                 </section>
             </section>
         </div>
-        <?php include("./common.php/footer.php");?>
+        <?php include("./common.php/footer.html");?>
     </div>
 </body>
 <script>
