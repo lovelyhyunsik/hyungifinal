@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/search_no_result.css">
+    <link rel="stylesheet" href="css/response.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="searchPage">
+        <div class="searchPageHeader">
+            <div class="arrowLeftImg">
+                <a href="./index.html"><img src="./img/ic-arrow-left.png" alt=""></a>
+            </div>
+            <label>
+                <input type="text" class="searchArea textInput" placeholder="브랜드,상품명 등 입력해주세요">
+                <button class="inputTextDelete">
+                    <img src="./img/ic-close-fill-24px.png" alt="">
+                </button>
+            </label>
+        </div>
+        <div class="searchPageContent">
+            <div class="searchResult">
+                <p><span class="searchResultText">'ㅁㅇㄹㅁㄴㄹㅇㄹ'</span> 에 대한<br>검색 결과가 없습니다.</p>
+            </div>
+            <div class="itemWrap">
+                <h3>이 상품은 어때요?</h3>
+                <ul>
+                    <li class="item">
+                        <a href="./item_detail.html">
+                            <div class="itemImg">
+                                <div class="soldOut">SOLD OUT</div>
+                                <img src="./img/item_img/item_1.png" alt="">
+                            </div>
+                            <div class="tabItem">
+                                <P class="itemBrand">CHALI</P>
+                                <P class="itemName">Lorem ipsum dolor
+                                    sit,ametconsecteturddddddddddddddddddddddddddddddd</P>
+                            </div>
+                            <div class="itemPrice">
+                                <div class="noSalePrice">215,000</div>
+                                <div class="salePrice">
+                                    <div class="percent">20<span>%</span></div>
+                                    <div class="price">215,000</div>
+                                </div>
+                            </div>
+                            <div class="coupon">
+                                <p>쿠폰</p>
+                            </div>
+                            <div class="reviewWrap">
+                                <ul class="starReview">
+                                    <li><img src="./img/review_star.png" alt=""></li>
+                                    <li>4.9</li>
+                                </ul>
+                                <div class="reviewCount">
+                                    <span class="reviewText">리뷰</span>
+                                    <span class="reviewCount">30</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="itemLike">
+                            <button>
+                                <img src="./img/ic-like.png" alt="" class="img_change">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="./item_detail.html">
+                            <div class="itemImg">
+                                <img src="./img/item_img/item_1.png" alt="">
+                            </div>
+                            <div class="tabItem">
+                                <P class="itemBrand">CHALI</P>
+                                <P class="itemName">Lorem ipsum dolor
+                                    sit,ametconsecteturddddddddddddddddddddddddddddddd</P>
+                            </div>
+                            <div class="itemPrice">
+                                <div class="noSalePrice">215,000</div>
+                                <div class="salePrice">
+                                    <div class="percent">20<span>%</span></div>
+                                    <div class="price">215,000</div>
+                                </div>
+                            </div>
+                            <div class="coupon">
+                                <p>쿠폰</p>
+                            </div>
+                            <div class="reviewWrap">
+                                <ul class="starReview">
+                                    <li><img src="./img/review_star.png" alt=""></li>
+                                    <li>4.9</li>
+                                </ul>
+                                <div class="reviewCount">
+                                    <span class="reviewText">리뷰</span>
+                                    <span class="reviewCount">30</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="itemLike">
+                            <button>
+                                <img src="./img/ic-like.png" alt="" class="img_change">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="./item_detail.html">
+                            <div class="itemImg">
+                                <img src="./img/item_img/item_1.png" alt="">
+                            </div>
+                            <div class="tabItem">
+                                <P class="itemBrand">CHALI</P>
+                                <P class="itemName">Lorem ipsum dolor
+                                    sit,ametconsecteturddddddddddddddddddddddddddddddd</P>
+                            </div>
+                            <div class="itemPrice">
+                                <div class="noSalePrice">215,000</div>
+                                <div class="salePrice">
+                                    <div class="percent">20<span>%</span></div>
+                                    <div class="price">215,000</div>
+                                </div>
+                            </div>
+                            <div class="coupon">
+                                <p>쿠폰</p>
+                            </div>
+                            <div class="reviewWrap">
+                                <ul class="starReview">
+                                    <li><img src="./img/review_star.png" alt=""></li>
+                                    <li>4.9</li>
+                                </ul>
+                                <div class="reviewCount">
+                                    <span class="reviewText">리뷰</span>
+                                    <span class="reviewCount">30</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="itemLike">
+                            <button>
+                                <img src="./img/ic-like.png" alt="" class="img_change">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="./item_detail.html">
+                            <div class="itemImg">
+                                <img src="./img/item_img/item_1.png" alt="">
+                            </div>
+                            <div class="tabItem">
+                                <P class="itemBrand">CHALI</P>
+                                <P class="itemName">Lorem ipsum dolor
+                                    sit,ametconsecteturddddddddddddddddddddddddddddddd</P>
+                            </div>
+                            <div class="itemPrice">
+                                <div class="noSalePrice">215,000</div>
+                                <div class="salePrice">
+                                    <div class="percent">20<span>%</span></div>
+                                    <div class="price">215,000</div>
+                                </div>
+                            </div>
+                            <div class="coupon">
+                                <p>쿠폰</p>
+                            </div>
+                            <div class="reviewWrap">
+                                <ul class="starReview">
+                                    <li><img src="./img/review_star.png" alt=""></li>
+                                    <li>4.9</li>
+                                </ul>
+                                <div class="reviewCount">
+                                    <span class="reviewText">리뷰</span>
+                                    <span class="reviewCount">30</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="itemLike">
+                            <button>
+                                <img src="./img/ic-like.png" alt="" class="img_change">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="./item_detail.html">
+                            <div class="itemImg">
+                                <img src="./img/item_img/item_1.png" alt="">
+                            </div>
+                            <div class="tabItem">
+                                <P class="itemBrand">CHALI</P>
+                                <P class="itemName">Lorem ipsum dolor
+                                    sit,ametconsecteturddddddddddddddddddddddddddddddd</P>
+                            </div>
+                            <div class="itemPrice">
+                                <div class="noSalePrice">215,000</div>
+                                <div class="salePrice">
+                                    <div class="percent">20<span>%</span></div>
+                                    <div class="price">215,000</div>
+                                </div>
+                            </div>
+                            <div class="coupon">
+                                <p>쿠폰</p>
+                            </div>
+                            <div class="reviewWrap">
+                                <ul class="starReview">
+                                    <li><img src="./img/review_star.png" alt=""></li>
+                                    <li>4.9</li>
+                                </ul>
+                                <div class="reviewCount">
+                                    <span class="reviewText">리뷰</span>
+                                    <span class="reviewCount">30</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="itemLike">
+                            <button>
+                                <img src="./img/ic-like.png" alt="" class="img_change">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="./item_detail.html">
+                            <div class="itemImg">
+                                <img src="./img/item_img/item_1.png" alt="">
+                            </div>
+                            <div class="tabItem">
+                                <P class="itemBrand">CHALI</P>
+                                <P class="itemName">Lorem ipsum dolor
+                                    sit,ametconsecteturddddddddddddddddddddddddddddddd</P>
+                            </div>
+                            <div class="itemPrice">
+                                <div class="noSalePrice">215,000</div>
+                                <div class="salePrice">
+                                    <div class="percent">20<span>%</span></div>
+                                    <div class="price">215,000</div>
+                                </div>
+                            </div>
+                            <div class="coupon">
+                                <p>쿠폰</p>
+                            </div>
+                            <div class="reviewWrap">
+                                <ul class="starReview">
+                                    <li><img src="./img/review_star.png" alt=""></li>
+                                    <li>4.9</li>
+                                </ul>
+                                <div class="reviewCount">
+                                    <span class="reviewText">리뷰</span>
+                                    <span class="reviewCount">30</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="itemLike">
+                            <button>
+                                <img src="./img/ic-like.png" alt="" class="img_change">
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="searchAreaClickPop" style="display: none;">
+            <ul>
+                <li class="brand">
+                    <a href="">
+                        <div class="brandInfo">
+                            <div class="brandImg">
+                                <img src="./img/Frame 2642.png" alt="">
+                            </div>
+                            <div class="brandName">
+                                <span class="en">CROCODILE LADIES</span>
+                                <span class="ko">크로커다일 레이디</span>
+                            </div>
+                        </div>
+                        <p>브랜드</p>
+                    </a>
+                </li>
+                <li class="brand">
+                    <a href="">
+                        <div class="brandInfo">
+                            <div class="brandImg">
+                                <img src="./img/Frame 2642.png" alt="">
+                            </div>
+                            <div class="brandName">
+                                <span class="en">CROCODILE LADIES</span>
+                                <span class="ko">크로커다일 레이디</span>
+                            </div>
+                        </div>
+                        <p>브랜드</p>
+                    </a>
+                </li>
+                <li class="textList">
+                    <button>
+                        <img src="./img/search_grey.png" alt="">
+                    </button>
+                    <span class="relatedText">크롭니트</span><!-- 입력텍스트와 같은 텍스트 색깔은  color:#2e82ff-->
+                </li>
+                <li class="textList">
+                    <button>
+                        <img src="./img/search_grey.png" alt="">
+                    </button>
+                    <span class="relatedText">크롭티</span><!-- 입력텍스트와 같은 텍스트 색깔은  color:#2e82ff-->
+                </li>
+                <li class="textList">
+                    <button>
+                        <img src="./img/search_grey.png" alt="">
+                    </button>
+                    <span class="relatedText">크롭진</span><!-- 입력텍스트와 같은 텍스트 색깔은  color:#2e82ff-->
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    $('.searchArea').on('input', function () {
+        if ($(this).val() == '') {
+            $('.searchPageContent').css("display", "block")
+            $('.searchAreaClickPop').css("display", "none")
+        } else {
+            $('.searchPageContent').css("display", "none")
+            $('.searchAreaClickPop').css("display", "block") 
+        }
+    });//input태그에 텍스트 입력시 관련된 상품,브랜드 나오는 창
+
+    $('.inputTextDelete').click(function () {
+        $(this).siblings('input').val('');
+        $(this).css("display", "none");
+        $('.searchPageContent').css("display", "block")
+        $('.searchAreaClickPop').css("display", "none")
+    })//input안에 x버튼 common.js에 있는거랑 page변환시키는 코드가 달라 따로 뺴놨습니다.
+</script>
+
+</html>

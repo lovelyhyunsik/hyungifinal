@@ -51,12 +51,13 @@
                 </div>
             </div>
             <div class="selectBoxType">
-                <button class="label">직접입력</button>
+                <button class="label">메일선택</button>
                 <ul class="optionItemWrap" id="crops1">
                     <li class="optionItem">naver.com</li>
                     <li class="optionItem">daum.net</li>
                     <li class="optionItem">kakao.com</li>
                     <li class="optionItem">google.com</li>
+                    <li class="optionItem">직접입력</li>
                 </ul>
             </div>
         </div>
@@ -128,6 +129,10 @@
         $('.emailInputWrap>.selectBoxType>.optionItemWrap>.optionItem').css("background","none")
         $(this).css("background","#f5f5f5")
     })//이메일 드롭박스
+
+    $('.emailInputWrap>.selectBoxType>.optionItemWrap>.optionItem:last-child').click(function(){
+        $('.domain').val("")
+    })
 
     $('.accountInput>.selectBoxType>button').click(function(){
         $(this).toggleClass('on')

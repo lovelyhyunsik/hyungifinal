@@ -73,7 +73,7 @@
             </label>
             <button class="delete">삭제</button>
           </div>
-          <ul>
+          <ul class="brandItemGroup">
             <div class="brandName">CHATELAINE</div>
             <li>
                 <div class="itemCheckDelete">
@@ -123,7 +123,7 @@
                 </div>
             </li>
           </ul>
-          <ul>
+          <ul class="brandItemGroup">
             <div class="brandName">CROCODILE LADIES</div>
             <li>
                 <div class="itemCheckDelete">
@@ -241,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                </div><!-- 상품 2개시 넘쳐서 안보이는거 밍댈한테 확인 --> 
+                </div>
                 <div class="purchase_container_bottom">
                      <div class="purchase_container_bottom_button">
                         <div class="cancel"><button>취소</button></div>
@@ -255,9 +255,28 @@
 
 </body>
 <script>
+    var aaa = $('.brandItemGroup>li>.itemCheckDelete>.delete').length;
+    
     $('.itemCheckDelete>.delete').click(function(){
         $(this).parents('li').remove();
+        ulDelete();
+        noItem();
     })//아이템 x버튼 누르면 삭제
+    
+    function  noItem(){
+        if($('.brandItemGroup').length === 0){
+            $('#item').css("display","none")
+            $('#no_item').css("display","block")
+        }
+    }
+
+    function ulDelete(){ 
+        $('.brandItemGroup').each(function(){
+            if($(this).children('li').length === 0){
+                $(this).remove();
+            }
+        })
+    }//브랜드 아이템 전체삭제시 브랜드 네임도 삭제
 
     $(".optionChange").click(function () {
         $('body').addClass('hidden')
@@ -279,5 +298,7 @@
         $('#purchase_popup>.purchase_body').css({ "display": "none", "background": "none" })
         $('#purchase_popup>.purchase_container').removeClass('fixed')
     })//purchase_popup
+
+
 </script>
 </html>

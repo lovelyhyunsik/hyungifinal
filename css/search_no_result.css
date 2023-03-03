@@ -1,0 +1,61 @@
+li,p{word-break: keep-all;}
+
+#searchPage{width: 100%; height: 100%; background: #fff;}
+#searchPage>.searchPageHeader{gap: 1.6rem; display: flex;padding: 0.8rem 2.4rem; height: 5.6rem;  align-items: center;}
+#searchPage>.searchPageHeader>label{display: block; position: relative; width: 100%;}
+#searchPage>.searchPageHeader>label>input{width: 100%;  background: #f5f5f5; padding: 1rem 4.5rem 1rem 1.6rem; border-radius: 4px; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; box-sizing: border-box;}
+#searchPage>.searchPageHeader>label>input:focus{border-color: #bdbdbd;}
+#searchPage>.searchPageHeader>label>input::placeholder{color: #bdbdbd; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem;}
+#searchPage>.searchPageHeader>label>button{background: none; display: none; position: absolute; top: 50%; right: 1.6rem; transform: translateY(-50%);}
+
+.searchResult{width: 100%; padding: 5.6rem 0;}
+.searchResult>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #969696; text-align: center;}
+.searchResult>p>span{font-weight: 700; font-size: 1.4rem; line-height: 2rem; color: #969696;}
+
+.itemWrap{}
+.itemWrap>h3{padding: 2.4rem 2rem 2rem 2rem; font-family: 'Pretendard'; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; color: #222;}
+.itemWrap>ul{display: flex; flex-wrap: wrap; justify-content: space-between; padding-bottom: 6rem;}
+.itemWrap>ul>li{width: 49.5%; position: relative;}
+.itemWrap>ul>li>a>.itemImg{background: #e2e2e2; position: relative;}
+.itemWrap>ul>li>a>.itemImg>img{width: 100%; height: auto;}
+.itemWrap>ul>li>a>.tabItem{padding: 1.2rem 1.2rem 0.8rem 1.2rem; height: 5.9rem;}
+.itemWrap>ul>li>a>.tabItem>.itemBrand{overflow: hidden; text-overflow: ellipsis; margin-bottom: 0.4rem; font-family: 'Montserrat'; font-weight: 600; font-size: 1.2rem; line-height: 1.5rem;}
+.itemWrap>ul>li>a>.tabItem>.itemName{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; color: #222; line-height: 2rem;  overflow: hidden; text-overflow: ellipsis;}
+.itemWrap>ul>li>a>.itemPrice{padding-left: 1.2rem;}
+.itemWrap>ul>li>a>.itemPrice>.noSalePrice{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; color: #bdbdbd; text-decoration-line: line-through; height: 20px; line-height: 2rem;}
+.itemWrap>ul>li>a>.itemPrice>.salePrice{display: flex; height: 2.4rem;}
+.itemWrap>ul>li>a>.itemPrice>.salePrice>.percent{font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; color: #e31616; line-height: 2.4rem;}
+.itemWrap>ul>li>a>.itemPrice>.salePrice>.percent>span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem;}
+.itemWrap>ul>li>a>.itemPrice>.salePrice>.price{font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; color: #222; line-height: 2.4rem; margin-left: 0.4rem;}
+.itemWrap>ul>li>a>.coupon{padding-left: 1.2rem; padding-top: 0.8rem;}
+.itemWrap>ul>li>a>.coupon>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; padding: 0.4rem 0.8rem; background: #f5f5f5; display: inline-block; color: #222;}
+.itemWrap>ul>li>a>.reviewWrap{height: 2rem; display: flex; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #969696; padding-left: 1.2rem; padding-top: 1.6rem; padding-bottom: 3.8rem;}
+.itemWrap>ul>li>a>.reviewWrap>.starReview{display: flex; gap: 0.2rem;}
+.itemWrap>ul>li>a>.reviewWrap>.starReview>li{width: 2rem; position: relative;}
+.itemWrap>ul>li>a>.reviewWrap>.starReview>li>img{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.itemWrap>ul>li>a>.reviewWrap>.starReview>span{padding-left: 0.5rem;}
+.itemWrap>ul>li>a>.reviewWrap>.reviewCount{margin-left: 1rem;}
+.itemWrap>ul>li>a>.reviewWrap>.reviewCount>.reviewText{}
+.itemWrap>ul>li>a>.reviewWrap>.reviewCount>.reviewCount{}
+.itemWrap>ul>li>.itemNum{position: absolute; top: 0.8rem; left: 0.8rem; width: 32px; height: 32px; background: #222; text-align: center; }
+.itemWrap>ul>li>.itemNum>span{color: #fff; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; display: block; line-height: 3rem;}
+.itemWrap>ul>li>.itemLike{position: absolute; z-index: 112; top: 0.8rem; right: 0.8rem;}
+.itemWrap>ul>li>.itemLike>button{background: none;}
+.itemWrap>ul>li>.itemLike>button>img{display: block; padding: 1.2rem 1.1rem;}
+
+.searchAreaClickPop{}
+.searchAreaClickPop>ul{padding: 1.6rem 0;}
+.searchAreaClickPop>ul>.brand{padding: 0.8rem 2rem;}
+.searchAreaClickPop>ul>.brand>a{display: flex; align-items: center; justify-content: space-between;}
+.searchAreaClickPop>ul>.brand>a>.brandInfo{display: flex; align-items: center; gap: 1.2rem;}
+.searchAreaClickPop>ul>.brand>a>.brandInfo>.brandImg{ width: 3.6rem; height: 3.6rem; border-radius: 50%;}
+.searchAreaClickPop>ul>.brand>a>.brandInfo>.brandImg>img{width: 100%; border-radius: 50%;}
+.searchAreaClickPop>ul>.brand>a>.brandInfo>.brandName{display: flex; flex-direction: column;}
+.searchAreaClickPop>ul>.brand>a>.brandInfo>.brandName>.en{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
+.searchAreaClickPop>ul>.brand>a>.brandInfo>.brandName>.ko{font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #969696;}
+.searchAreaClickPop>ul>.brand>a>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #bdbdbd;}
+
+.searchAreaClickPop>ul>.textList{padding: 1.6rem 2.8rem; display: flex; align-items: center; gap: 2rem;}
+.searchAreaClickPop>ul>.textList>button{background: none; width: 2rem; height: 2rem;}
+.searchAreaClickPop>ul>.textList>button>img{width: 100%;}
+.searchAreaClickPop>ul>.textList>.relatedText{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}

@@ -25,8 +25,8 @@ legend,
 
 /* 1depth_tab */
 #oneDepthTab>h3{margin-top: 6rem; padding-left: 1.6rem; font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; line-height: 2.4rem; color: #222;}
-#oneDepthTab>.categoryTab>.categoryTabWrap{padding: 2.4rem 2rem;}
-#oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav{ overflow-x: scroll; padding: 1.2rem 0 1.2rem 0;}
+#oneDepthTab>.categoryTab>.categoryTabWrap{padding: 2.4rem 0;}
+#oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav{ overflow-x: scroll; padding: 1.2rem 2rem 1.2rem 2rem;}
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav::-webkit-scrollbar{display: none;}
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul{display: flex;}
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul>li:not(:first-child){margin-left: 1.2rem;}
@@ -34,6 +34,7 @@ legend,
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul>li>a.on{background: #222; color: #fff;}
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent{padding-top: 0.8rem;}
 #oneDepthTab>.categoryTab>.categoryTabcontent>.tab{}
+#oneDepthTab>.categoryTab>.categoryTabcontent>.tab>h3{padding: 2.4rem 2rem 2rem 2rem; font-family: 'Pretendard'; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; color: #222;}
 #oneDepthTab>.categoryTab>.categoryTabcontent>.tab>ul{display: flex; flex-wrap: wrap; justify-content: space-between; padding-bottom: 0.8rem;}
 #oneDepthTab>.categoryTab>.categoryTabcontent>.tab>ul>li{width: 49.5%; position: relative;}
 #oneDepthTab>.categoryTab>.categoryTabcontent>.tab>ul>li>a>.itemImg{background: #e2e2e2; position: relative;}

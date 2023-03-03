@@ -240,7 +240,20 @@
 <script>
     $('.yesSearch>ul>li>button').click(function () {
         $(this).parent('li').remove();
+        noSearchDate();
     })//검색기록 지우기
+
+    function noSearchDate(){
+        if($('.yesSearch>ul>li').length === 0){
+            $('.yesSearch').css("display","none")
+            $('.noSearch').css("display","block")
+        }
+    }//검색기록 다지우면 최근검색어가 없습니다.뜨게해놓은 코드
+
+    $('.recentSearchHeader').click(function(){
+        $('.yesSearch>ul>li').remove();
+        $('.noSearch').css("display","block")
+    })//검색기록 모두삭제 버튼기능
 
     $('.searchArea').on('input', function () {
         if ($(this).val() == '') {
@@ -248,7 +261,7 @@
             $('.searchAreaClickPop').css("display", "none")
         } else {
             $('.searchPageContent').css("display", "none")
-            $('.searchAreaClickPop').css("display", "block")
+            $('.searchAreaClickPop').css("display", "block") 
         }
     });//input태그에 텍스트 입력시 관련된 상품,브랜드 나오는 창
 

@@ -697,6 +697,17 @@
             type: "fraction",
         }
     });
+    //하트이미지 클릭변경
+    var ImgChange = 0;
+    $(".img_change").click(function () {
+      if (ImgChange == 0) {
+        $(this).attr("src", "./img/ic-like_pk.png");
+        ImgChange = 1;
+      } else {
+        $(this).attr("src", "./img/ic-like-gr.png");
+        ImgChange = 0;
+      }
+    });//하트 이미지가 달라 common.js에 있는 거 말고 개별적으로 쓰게했습니다.
 
     var good = 0;
     $(".good_img_change").click(function () {
