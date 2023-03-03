@@ -52,7 +52,7 @@ html,body{position: relative; height: 100%;}
 .tab>#reviewWrap>ul>li>.itemInfo>.itemInfoText{margin-left: 1.6rem;}
 .tab>#reviewWrap>ul>li>.itemInfo>.itemInfoText>.brandName{font-family: 'Pretendard'; font-weight: 700; font-size: 1.2rem; line-height: 1.6rem; color: #222;}
 .tab>#reviewWrap>ul>li>.itemInfo>.itemInfoText>.itemName{margin-top: 4px; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
-.tab>#reviewWrap>ul>li>.itemInfo>.itemInfoText>.date{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #e2e2e2; margin-top: 4px;}
+.tab>#reviewWrap>ul>li>.itemInfo>.itemInfoText>.date{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; margin-top: 4px;}
 .tab>#reviewWrap>ul>li>.itemInfo>button{position: absolute; top: 1.2rem; right: 2rem; background: none; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
 
 .review{padding: 0.8rem 2rem 2.4rem 2rem; border-bottom: 1px solid #f5f5f5;}
@@ -79,7 +79,7 @@ html,body{position: relative; height: 100%;}
 .review>.good_btn{margin-top: 1.6rem; display: flex; align-items: center;}
 .review>.good_btn>button{background: none;}
 .review>.good_btn>button>img{width: 2.4rem; height: 2.4rem;}
-.review>.good_btn>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2.4rem; color: #222; margin-left: 6px;}
+.review>.good_btn>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2.4rem; color: #696969; margin-left: 6px;}
 .review>.good_btn>p>span{margin-left: 4px;}
 
 .deletePop{position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);  box-sizing: border-box; display: none;}

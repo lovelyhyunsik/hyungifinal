@@ -8,7 +8,7 @@
 #header .headerTop div .icoShoppingbag>.numberTag{position: absolute; bottom: 11px; left: 10px; padding: 1px 5px; background: #e31616; border-radius: 1.4rem; font-family: 'Pretendard'; font-weight: 500; font-size: 1rem; color: #f5f5f5;}
 #header .headerTop>.logoBk>a {display: block; width: 12.5rem; height: 2.6rem; background: url(../img/logo_bk.png) no-repeat 0 0 / 100% auto;}
 
-.menuTabWrap{}
+.menuTabWrap{padding-bottom: 6rem;}
 .menuTabWrap>.menuTabNav{padding: 2.3rem 2rem 0 2rem; border-bottom: 1px solid #f5f5f5;}
 .menuTabWrap>.menuTabNav>ul{display: flex; gap: 2.4rem;}
 .menuTabWrap>.menuTabNav>ul>li{}

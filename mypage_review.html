@@ -266,9 +266,11 @@
     $(".good_img_change").click(function () {
         if (good == 0) {
             $(this).attr("src", "./img/ic-good-active.png");
+            $(this).parent('button').siblings("p").css("color","#222")
             good = 1;
         } else {
             $(this).attr("src", "./img/ic-good.png");
+            $(this).parent('button').siblings("p").css("color","#696969")
             good = 0;
         }
     });//따봉이미지 변경
