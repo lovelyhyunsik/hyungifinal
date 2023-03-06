@@ -33,7 +33,7 @@
 #shippingInfo>.shippingInfo_container>.requests>.requests_l{}
 #shippingInfo>.shippingInfo_container>.requests>.requests_r{width: 65.6%;} */
 
-.finalPrice{display: flex; margin-bottom: 8rem; padding: 2rem 2rem; justify-content: space-between; font-family: 'Pretendard'; font-weight: 600; font-size: 16px; line-height: 2.4rem; }
+.finalPrice{display: flex; margin-bottom: 8rem; padding: 2rem 2rem; justify-content: space-between; font-family: 'Pretendard'; font-weight: 600; font-size: 18px; line-height: 2.4rem; }
 .finalPrice>.finalPrice_l{color: #222;}
 .finalPrice>p{color: #e31616;}
 
