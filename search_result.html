@@ -13224,8 +13224,8 @@
     })//nav 빨간점생성
 
     $('#tab02 li').click(function () {
-        $('#tab02 li').removeClass('on')
-        $(this).addClass('on')
+        /* $('#tab02 li').removeClass('on') */
+        $(this).toggleClass('on')
         $('.category_tabnav>ul>li:nth-child(2)').addClass('on')
         $('.filter').addClass('on')
     })//nav 빨간점생성
