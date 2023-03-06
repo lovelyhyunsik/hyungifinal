@@ -20,6 +20,7 @@
 #menuExhibition{border-top: 1px solid #f5f5f5;}
 #menuExhibition>ul{padding: 2.4rem 2rem 2.4rem 2rem; display: flex; justify-content: space-between;}
 #menuExhibition>ul>li{line-height: 2rem;}
+#menuExhibition>ul>li>h3{font-weight: 600; font-size: 1.8rem;}
 #menuExhibition>ul>li>a{display: block; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem;  color: #696969; }
 
 .exhibitionContent{padding-bottom: 4rem; border-bottom: 1px solid #f5f5f5;}
@@ -40,6 +41,7 @@
 #menuMagazine{padding: 0 2rem 4rem 2rem;}
 #menuMagazine>ul{padding: 2.4rem 0; display: flex; justify-content: space-between;}
 #menuMagazine>ul>li{line-height: 2rem;}
+#menuMagazine>ul>li>h3{font-weight: 600; font-size: 1.8rem;}
 #menuMagazine>ul>li>a{display: block; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem;  color: #696969; }
 #menuMagazine>.magazineContent>a{display: block; background: none;}
 #menuMagazine>.magazineContent>a:not(:first-child){margin-top: 1.6rem;}

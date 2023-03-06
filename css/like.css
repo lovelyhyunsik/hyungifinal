@@ -36,7 +36,7 @@ html,body{position: relative; height: 100%;}
 .tab>#yesItem>.checkFilter>label>span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969;}
 .tab>#yesItem>.checkFilter>.popup{}
 .tab>#yesItem>.checkFilter>.popup>.sort{display: flex; background: none; align-items: center;}
-.tab>#yesItem>.checkFilter>.popup>.sort>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
+.tab>#yesItem>.checkFilter>.popup>.sort>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969;}
 
 .itemListWrap{}
 .itemListWrap>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #696969;}

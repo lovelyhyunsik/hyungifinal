@@ -156,7 +156,7 @@
 
 .checkBox_sort>.sort_wrap>.sort{position: relative; display: flex; padding-left: 1rem; background: none;}
 .checkBox_sort>.sort_wrap>.sort.on{}
-.checkBox_sort>.sort_wrap>.sort>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; margin-right: 4px;}
+.checkBox_sort>.sort_wrap>.sort>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-right: 4px;}
 .checkBox_sort>.sort_wrap>.sort.on>span{position: absolute; top: 0; right: 0; width: 8px; height: 8px; background: url(../img/filter_red_check.png) red no-repeat center; border-radius: 50%;}
 .checkBox_sort>.sort_wrap>.sort>img{}
 

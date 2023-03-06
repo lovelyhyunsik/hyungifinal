@@ -44,7 +44,7 @@ li{word-break: keep-all;}
 .btn_gotop>img{display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 
 /* home_section_quick_menu */
-#homeSectionQuickMenu{position: relative; padding: 2rem 0 8.5rem 0;}
+#homeSectionQuickMenu{position: relative; padding: 2rem 0 0 0;}
 #homeSectionQuickMenu>.quickMenuFive{display: flex; box-sizing: border-box; margin: 0 auto; padding: 0 2rem; flex-wrap: wrap; justify-content: left; gap: 1rem;}
 #homeSectionQuickMenu>.quickMenuFive>.quickMenuItem{width: 17.5%;}
 #homeSectionQuickMenu>.quickMenuFive>.quickMenuItem:nth-child(-n+5){margin-bottom: 1rem;}
@@ -54,15 +54,16 @@ li{word-break: keep-all;}
 #homeSectionQuickMenu>.quickMenuFive>.quickMenuItem>a>p{text-align: center; font-family: 'Pretendard'; font-weight: 500; color: #696969; font-size: 1.2rem; padding-bottom: 0.4rem;}
 
 /* home_section_best */
-#homeSectionBest>h3{padding-left: 2rem;}
-.bestItemMore{ padding: 0 2rem 6rem 2rem;}
+#homeSectionBest{padding-top: 4rem;}
+#homeSectionBest>h3{padding:1.6rem 2rem;}
+.bestItemMore{ padding: 0 2rem 4rem 2rem;}
 .bestItemMore>a{display: block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; color: #222; padding: 1.2rem 0; border: 1px solid #e2e2e2; border-radius: 4px; text-align: center;}
-.lineBanner{padding-bottom: 6rem;}
+.lineBanner{padding-bottom: 4rem;}
 .lineBanner>img{display: block; width: 100%; height: auto;}
 
 /* home_section_rec_brand */
-#homeSectionRecBrand{padding: 2.5rem 0 0 2rem;}
-#homeSectionRecBrand>h3{padding-bottom: 1.2rem;}
+#homeSectionRecBrand{padding: 0 0 0 2rem;}
+#homeSectionRecBrand>h3{padding: 1.6rem 0;}
 #homeSectionRecBrand>.recBrandItem{}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper{}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide{display: block;}
@@ -74,8 +75,8 @@ li{word-break: keep-all;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>a>.recBrandItemBanner>.bannerText>.bannerTextContainer>.bannerTitle{font-family: 'Montserrat'; font-weight: 700; font-size: 1.8rem; line-height: 2.2rem; color: #fff; padding-bottom: 0.8rem;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>a>.recBrandItemBanner>.bannerText>.bannerTextContainer>.bannerSub{width: 19.9rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #fff;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap{margin-top: 1.6rem; }
-#homeSectionRecBrand>button{width: 94.12%; background: #fff; border: 1px solid #e2e2e2; border-radius: 4px; position: relative; padding: 1.1rem 0; margin-top: 3.3rem;}
-#homeSectionRecBrand>button>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; display: inline;}
+#homeSectionRecBrand>button{width: 94.12%; background: #fff; border: 1px solid #e2e2e2; border-radius: 4px; position: relative; padding: 1.1rem 0; margin-top: 2rem;}
+#homeSectionRecBrand>button>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; display: inline; color: #222;}
 #homeSectionRecBrand>button>img{display: inline; width: 24px; height: auto; position: absolute; top: 50%; transform: translateY(-50%); margin-left: 0.6rem;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a:not(:first-child){display: block; margin-top: 1.2rem;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a:nth-child(n+3){display: none;}
@@ -85,22 +86,23 @@ li{word-break: keep-all;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText{padding: 0.8rem 2rem;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.itemName{font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #696969; margin-bottom: 0.4rem;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.itemName>p{}
-#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.noSalePrice{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; color: #bdbdbd; text-decoration-line: line-through; height: 20px; line-height: 2rem;}
-#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.salePrice{display: flex; margin-bottom: 1.2rem; align-items: center;}
-#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.salePrice>.percent>p{ font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; line-height: 2.4rem; color: #e31616;}
+#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.noSalePrice{font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; color: #bdbdbd; text-decoration-line: line-through; height: 20px; line-height: 2rem;}
+#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.salePrice{display: flex; margin-bottom: 0.8rem; align-items: center;}
+#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.salePrice>.percent>p{ font-family: 'Pretendard'; font-weight: 600; font-size: 1.4rem; line-height: 2.4rem; color: #e31616;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.salePrice>.percent>p>span{display: inline-block; font-weight: 400; font-size: 1.4rem; line-height: 2rem;}
-#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.salePrice>.price>p{font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; line-height: 2.4rem; color: #222; margin-left: 0.4rem;}
-#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.coupon>p{display: inline-block; font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.2rem; color: #222; padding: 0.4rem 0.8rem; background: #f5f5f5; border-radius: 2px;}
+#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.salePrice>.price>p{font-family: 'Pretendard'; font-weight: 600; font-size: 1.4rem; line-height: 2.4rem; color: #222; margin-left: 0.4rem;}
+#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.coupon>p{width: 1.8rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1rem; line-height: 1.2rem; color: #222; padding: 0.2rem 0.6rem 0.3rem 0.6rem; background: #f5f5f5; border-radius: 2px;}
 
 /* home_section_magazine */
-#homeSectionMagazine{padding-top: 8.5rem;}
+#homeSectionMagazine{padding-top: 4rem;}
 #homeSectionMagazine a{display: block; width: 100%;}
 #homeSectionMagazine img{width: 100%;}
-#homeSectionMagazine>h3{padding: 0 2rem 1.2rem 2rem;}
-#homeSectionMagazine>.magazineMore{padding: 4rem 2rem 8.5rem 2rem;}
+#homeSectionMagazine>h3{padding: 1.6rem 2rem 1.6rem 2rem;}
+#homeSectionMagazine>.magazineMore{padding: 2rem 2rem 4rem 2rem;}
 #homeSectionMagazine>.magazineMore>a{display: block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; color: #222; padding: 1.2rem 0; border: 1px solid #e2e2e2; border-radius: 4px; text-align: center;}
 
 #homeSectionBrand{padding: 0 2rem;}
+#homeSectionBrand>h3{padding: 1.6rem 0;}
 #homeSectionBrand>ul{display: flex; box-sizing: border-box;   flex-wrap: wrap;  justify-content: space-between; padding-top: 2.4rem; padding-bottom: 3.7rem; gap: 0.8rem;}
 #homeSectionBrand>ul>li{width: 31.6%}
 #homeSectionBrand>ul>li>a{display: block; width: 100%;}

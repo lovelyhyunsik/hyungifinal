@@ -30,11 +30,11 @@ li{word-break: keep-all;}
 .popup>button{background: none;}
 .popup>.sort{display: flex; padding-right: 1rem; position: relative; align-items: center;}
 .popup>.sort::after{content: ""; position: absolute; top: 50%; right: 0; transform: translateY(-50%); height: 1.2rem; width: 1px; background: #e2e2e2;}
-.popup>.sort>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; margin-right: 4px;}
+.popup>.sort>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-right: 4px;}
 .popup>.sort>img{}
 .popup>.filter{position: relative; display: flex; padding-left: 1rem;}
 .popup>.filter.on{}
-.popup>.filter>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; margin-right: 4px;}
+.popup>.filter>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-right: 4px;}
 .popup>.filter.on>span{position: absolute; top: 0; right: 0; width: 8px; height: 8px; background: url(../img/filter_red_check.png) red no-repeat center; border-radius: 50%;}
 .popup>.filter>img{}
 

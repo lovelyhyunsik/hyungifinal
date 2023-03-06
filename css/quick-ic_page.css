@@ -19,11 +19,11 @@ li{word-break: keep-all;}
 .popup>button{background: none;}
 .popup>.sort{display: flex; padding-right: 1rem; position: relative; align-items: center;}
 .popup>.sort::after{content: ""; position: absolute; top: 50%; right: 0; transform: translateY(-50%); height: 1.2rem; width: 1px; background: #e2e2e2;}
-.popup>.sort>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; margin-right: 4px;}
+.popup>.sort>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-right: 4px;}
 .popup>.sort>img{}
 .popup>.filter{position: relative; display: flex; padding-left: 1rem;}
 .popup>.filter.on{}
-.popup>.filter>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; margin-right: 4px;}
+.popup>.filter>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-right: 4px;}
 .popup>.filter.on>span{position: absolute; top: 0; right: 0; width: 8px; height: 8px; background: url(../img/filter_red_check.png) red no-repeat center; border-radius: 50%;}
 .popup>.filter>img{}
 
@@ -257,13 +257,13 @@ input#check_btn{
     .manyLook>ul>li>a>.tabItem>.itemBrand{overflow: hidden; text-overflow: ellipsis; margin-bottom: 0.4rem; font-family: 'Montserrat'; font-weight: 600; font-size: 1.2rem; line-height: 1.5rem;}
     .manyLook>ul>li>a>.tabItem>.itemName{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; color: #222; line-height: 2rem;  overflow: hidden; text-overflow: ellipsis;}
     .manyLook>ul>li>a>.itemPrice{padding-left: 1.2rem;}
-    .manyLook>ul>li>a>.itemPrice>.noSalePrice{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; color: #bdbdbd; text-decoration-line: line-through; height: 20px; line-height: 2rem}
+    .manyLook>ul>li>a>.itemPrice>.noSalePrice{font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; color: #bdbdbd; text-decoration-line: line-through; height: 20px; line-height: 2rem}
     .manyLook>ul>li>a>.itemPrice>.salePrice{display: flex; height: 2.4rem;}
-    .manyLook>ul>li>a>.itemPrice>.salePrice>.percent{font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; color: #e31616; line-height: 2.4rem;}
+    .manyLook>ul>li>a>.itemPrice>.salePrice>.percent{font-family: 'Pretendard'; font-weight: 600; font-size: 1.4rem; color: #e31616; line-height: 2rem;}
     .manyLook>ul>li>a>.itemPrice>.salePrice>.percent>span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem;}
-    .manyLook>ul>li>a>.itemPrice>.salePrice>.price{font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; color: #222; line-height: 2.4rem; margin-left: 0.4rem;}
+    .manyLook>ul>li>a>.itemPrice>.salePrice>.price{font-family: 'Pretendard'; font-weight: 600; font-size: 1.4rem; color: #222; line-height: 2rem; margin-left: 0.4rem;}
     .manyLook>ul>li>a>.coupon{padding-left: 1.2rem; padding-top: 0.8rem;}
-    .manyLook>ul>li>a>.coupon>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; padding: 0.4rem 0.8rem; background: #f5f5f5; display: inline-block; color: #222;}
+    .manyLook>ul>li>a>.coupon>p{font-family: 'Pretendard'; width: 1.8rem; font-weight: 400; font-size: 1rem; padding: 0.2rem 0.6rem 0.3rem 0.6rem; background: #f5f5f5; color: #222;}
     .manyLook>ul>li>.itemNum{position: absolute; top: 0.8rem; left: 0.8rem; width: 32px; height: 32px; background: #222; text-align: center; }
     .manyLook>ul>li>.itemNum>span{color: #fff; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; display: block; line-height: 3rem;}
     .manyLook>ul>li>.itemLike{position: absolute; z-index: 112; top: 0; right: 0;}
@@ -271,4 +271,4 @@ input#check_btn{
     .manyLook>ul>li>.itemLike>button>img{display: block; padding: 1.2rem 1.1rem;}
 
 
-    #oneDepthTab>.categoryTab>.categoryTabWrap{padding: 0;}
+    #oneDepthTab>.categoryTab>.categoryTabWrap{padding: 1.2rem 0;}
