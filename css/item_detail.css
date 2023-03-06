@@ -15,8 +15,8 @@
 #header_type2>div>.header_ico_wrap>a.ico_left_arrow{background: url(../img/ic-arrow-left.png) no-repeat center; margin-left: 2rem;}
 #header_type2>div>.header_ico_wrap>.header_ico{display: flex; float: right; margin-right: 2rem;}
 #header_type2>div>.header_ico_wrap>.header_ico>a{display: block; width: 2.4rem; height: 2.4rem;}
-#header_type2>div>.header_ico_wrap>.header_ico>a.ico_search{ background: url(../img/search_bk.png) no-repeat center;}
-#header_type2>div>.header_ico_wrap>.header_ico>a.ico_shoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center; margin-left: 1.2rem;}
+#header_type2>div>.header_ico_wrap>.header_ico>a.ico_search{ background: url(../img/search_bk.png) no-repeat center / 100%;}
+#header_type2>div>.header_ico_wrap>.header_ico>a.ico_shoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
 
 #bottom{z-index: 777; box-sizing: border-box; width: 100%; background: #fff; position: fixed; bottom: 0; padding: 1.2rem 2rem 1.6rem 2rem; display: flex; filter: drop-shadow(0px -1px 2px rgba(0,0,0,0.04));}
 #bottom>.item_like>button{background: #fff; border: 1px solid #e2e2e2; border-radius: 4px; padding: 1.3rem 1.3rem;} 

@@ -6,9 +6,9 @@
 #header_type2>div>.header_ico_wrap>a.ico_left_arrow{background: url(../img/ic-arrow-left.png) no-repeat center; margin-left: 2rem;}
 #header_type2>div>.header_ico_wrap>.header_ico{display: flex; float: right; margin-right: 2rem;}
 #header_type2>div>.header_ico_wrap>.header_ico>a{display: block; width: 2.4rem; height: 2.4rem;}
-#header_type2>div>.header_ico_wrap>.header_ico>a.ico_search{background: url(../img/search_bk.png) no-repeat center;}
-#header_type2>div>.header_ico_wrap>.header_ico>a.ico_alarm{ background: url(../img/alarm_bk.png) no-repeat center;}
-#header_type2>div>.header_ico_wrap>.header_ico>a.ico_shoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center; margin-left: 1.2rem;}
+#header_type2>div>.header_ico_wrap>.header_ico>a.ico_search{background: url(../img/search_bk.png) no-repeat center / 100%;}
+#header_type2>div>.header_ico_wrap>.header_ico>a.ico_alarm{ background: url(../img/alarm_bk.png) no-repeat center / 100%;}
+#header_type2>div>.header_ico_wrap>.header_ico>a.ico_shoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
 
 .plusReturn{padding: 2rem 2rem;}
 .plusReturn>.plusReturnContainer{width: 100%; border: 1px solid #E2E2E2; border-radius: 4px; background: #fff; padding: 1.1rem 0;}

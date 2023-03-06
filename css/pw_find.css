@@ -6,9 +6,9 @@
 #header_type2>div>.header_ico_wrap>a.ico_left_arrow{background: url(../img/ic-arrow-left.png) no-repeat center; margin-left: 2rem;}
 #header_type2>div>.header_ico_wrap>.header_ico{display: flex; float: right; margin-right: 2rem;}
 #header_type2>div>.header_ico_wrap>.header_ico>a{display: block; width: 2.4rem; height: 2.4rem;}
-#header_type2>div>.header_ico_wrap>.header_ico>a.ico_search{ background: url(../img/search_bk.png) no-repeat center;}
-#header_type2>div>.header_ico_wrap>.header_ico>a.ico_shoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center; margin-left: 1.2rem;}
-#header_type2>div>.header_ico_wrap>.header_ico>a.ico_close{background: url(../img/ic-close.png) no-repeat center; margin-left: 1.2rem;}
+#header_type2>div>.header_ico_wrap>.header_ico>a.ico_search{ background: url(../img/search_bk.png) no-repeat center / 100%;}
+#header_type2>div>.header_ico_wrap>.header_ico>a.ico_shoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
+#header_type2>div>.header_ico_wrap>.header_ico>a.ico_close{background: url(../img/ic-close.png) no-repeat center / 100%; margin-left: 1.2rem;}
 
 #pwFindInput{margin-top: 7.6rem; padding: 0 2rem;}
 .idInput{}
