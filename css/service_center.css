@@ -57,7 +57,7 @@
 .question_tab_wrap>.question_tab_content>.tab>#question_list_wrap>.question_list_container>.question_list>button>.unfold_content>.toggle_img.on{background: url(../img/ic-arrow-up-24.png);}
 .fold_content{background: #f5f5f5; padding: 2.4rem 2rem 3.2rem 2rem; display: none;}
 .fold_content.on{display: block;}
-.fold_content>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969; letter-spacing: 0.15px;}
+.fold_content>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969; letter-spacing: 0.15px; text-align: left;}
 
 #announ{}
 #announ>.announ_title{padding: 2rem 2rem 2.4rem 2rem; display: flex; justify-content: space-between;}
