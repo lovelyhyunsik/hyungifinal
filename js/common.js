@@ -85,6 +85,8 @@ $(function () {
       $('#bottomGnb').addClass('active')
     } else if (currentScrollTop < prevScrollTop) {
       $('#bottomGnb').removeClass('active')
+    } else if(currentScrollTop === FirstScroll){
+      $('#bottomGnb').removeClass('active')
     }
     prevScrollTop = currentScrollTop;
 
