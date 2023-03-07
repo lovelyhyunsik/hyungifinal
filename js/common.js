@@ -74,7 +74,6 @@ $(function () {
 
   //하단 gnb 스크롤에 따른 히든처리
 
-  var FirstScroll = $(window).scrollTop() <= 0;
   var prevScrollTop = $(window).scrollTop(),
     currentScrollTop = $(window).scrollTop();
 
@@ -82,11 +81,11 @@ $(function () {
     currentScrollTop = $(this).scrollTop();
 
     if (currentScrollTop > prevScrollTop) {
-      $('#bottomGnb').addClass('active')
+      $('#bottomGnb').addClass('hidden')
     } else if (currentScrollTop < prevScrollTop) {
-      $('#bottomGnb').removeClass('active')
-    } else if(currentScrollTop === FirstScroll){
-      $('#bottomGnb').removeClass('active')
+      $('#bottomGnb').removeClass('hidden')
+    } else if(currentScrollTop <= 0){
+      $('#bottomGnb').removeClass('hidden')
     }
     prevScrollTop = currentScrollTop;
 
