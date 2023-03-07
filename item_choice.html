@@ -50,7 +50,7 @@
             <li>
                 <div class="orderNum">
                     <div class="orderNum_l">
-                        <button></button>
+                        <button class="on"></button>
                         <div class="orderNumText">
                             주문번호 2226668880000
                         </div>
@@ -191,6 +191,7 @@
     })
     
     $('.itemList>ul>li').click(function(){
+        $('.itemList>ul>li').find('button').removeClass('on')
         $(this).find('button').toggleClass('on')
     })
 </script>
