@@ -77,19 +77,18 @@ $(function () {
   var prevScrollTop = $(window).scrollTop(),
     currentScrollTop = $(window).scrollTop();
 
-  $(window).scroll(function (e) {
-    currentScrollTop = $(this).scrollTop();
-
-    if (currentScrollTop > prevScrollTop) {
-      $('#bottomGnb').addClass('hidden')
-    } else if (currentScrollTop < prevScrollTop) {
-      $('#bottomGnb').removeClass('hidden')
-    } else if(currentScrollTop <= 0){
-      $('#bottomGnb').removeClass('hidden')
-    }
-    prevScrollTop = currentScrollTop;
-
-  });
+    $(window).scroll(function (e) {
+      currentScrollTop = $(this).scrollTop();
+    
+      if (currentScrollTop <= 0) {
+        $('#bottomGnb').removeClass('hidden');
+      } else if (currentScrollTop > prevScrollTop) {
+        $('#bottomGnb').addClass('hidden');
+      } else if (currentScrollTop < prevScrollTop) {
+        $('#bottomGnb').removeClass('hidden');
+      }
+      prevScrollTop = currentScrollTop;
+    });
 
   //스크롤탑버튼 기능
   $(window).scroll(function () {
