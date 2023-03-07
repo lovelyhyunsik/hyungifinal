@@ -74,7 +74,7 @@ $(function () {
 
   //하단 gnb 스크롤에 따른 히든처리
 
-  var FirstScroll = 0;
+  var FirstScroll = $(window).scrollTop() <= 0;
   var prevScrollTop = $(window).scrollTop(),
     currentScrollTop = $(window).scrollTop();
 
