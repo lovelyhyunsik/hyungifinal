@@ -21,3 +21,5 @@
 #nonMemberMiddle>ul>h3{font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; line-height: 2.4rem; color: #222; padding: 1rem 0 0.6rem 0;}
 #nonMemberMiddle>ul>li{}
 #nonMemberMiddle>ul>li>a{display: block; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 1rem 0;}
+
+#footer{padding-top: 4rem;}

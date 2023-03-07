@@ -31,7 +31,8 @@
 .accountNum>label>.error{display: none; font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #e31616; display: block; margin-top: 4px; margin-left: 8px;}
 .accountNum>label>input:focus{border-color: #bdbdbd;}
 .accountNum>label>input::placeholder{color: #bdbdbd;}
-.accountNum>label>button{display: none; position: absolute; top: 50%; right: 16px; transform: translateY(-50%); background: none;}
+.accountNum>label>.inputTextDelete{display: none; position: absolute; top: 50%; right: 16px; transform: translateY(-50%); background: none; height: 2.4rem; width: 2.4rem;}
+.accountNum>label>.inputTextDelete>img{width: 100%;}
 
 .accountUserName{padding: 2rem 2rem;}
 .accountUserName>span{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; display: inline-block; margin-bottom: 8px;}

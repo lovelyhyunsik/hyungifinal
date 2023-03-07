@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/response.css">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/common.js"></script>
 </head>
 <body>
     <header id="headerType2">
@@ -32,7 +33,7 @@
         <label>
             <input  type="number" placeholder="-없이 10-35자 일련번호 입력"><!-- 쿠폰 번호 오입력시 addClass:on -->
             <span class="error">확인되지 않은 쿠폰번호입니다. 시리얼 쿠폰번호를 확인해 주세요.</span><!-- 쿠폰번호 오입력시 나오는 input밑에 텍스트 -->
-            <button  type="reset">
+            <button class="inputTextDelete" type="button">
                 <img src="./img/ic-close-fill-24px.png" alt="">
             </button>
         </label>

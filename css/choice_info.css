@@ -19,10 +19,12 @@
 .emailInputWrap>.emailInput>span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #969696; margin: 0 6px;}
 .emailInputWrap>.emailInput>.firstInput>label{position: relative; display: block; width: 12.4rem;}
 .emailInputWrap>.emailInput>.firstInput>label>input{width: 100%; padding: 1.3rem 4.5rem 1.3rem 1.6rem; box-sizing: border-box; font-family: 'Pretendard'; font-size: 1.6rem; font-weight: 400; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px;}
-.emailInputWrap>.emailInput>.firstInput>label>.inputTextDelete{display: none; background: none; position: absolute; top: 50%; right: 1.6rem; transform: translateY(-50%);}
+.emailInputWrap>.emailInput>.firstInput>label>.inputTextDelete{display: none; background: none; position: absolute; top: 50%; right: 1.6rem; transform: translateY(-50%); width: 2.4rem; height: 2.4rem;}
+.emailInputWrap>.emailInput>.firstInput>label>.inputTextDelete>img{width: 100%;}
 .emailInputWrap>.emailInput>.secondInput>label{position: relative; display: block; width: 100%}
-.emailInputWrap>.emailInput>.secondInput>label>input.domain{width: 100%; padding: 1.3rem 1.6rem; box-sizing: border-box; font-family: 'Pretendard'; font-size: 1.6rem; font-weight: 400; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px;}
-.emailInputWrap>.emailInput>.secondInput>label>.inputTextDelete{display: none; background: none; position: absolute; top: 50%; right: 1.6rem; transform: translateY(-50%);}
+.emailInputWrap>.emailInput>.secondInput>label>input.domain{width: 100%; padding: 1.3rem 4.5rem 1.3rem 1.6rem; box-sizing: border-box; font-family: 'Pretendard'; font-size: 1.6rem; font-weight: 400; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px;}
+.emailInputWrap>.emailInput>.secondInput>label>.inputTextDelete{display: none; background: none; position: absolute; top: 50%; right: 1.6rem; transform: translateY(-50%); width: 2.4rem; height: 2.4rem;}
+.emailInputWrap>.emailInput>.secondInput>label>.inputTextDelete>img{width: 100%;}
 .emailInputWrap>.emailInput>div>label>input:focus{border-color: #bdbdbd;}
 
 .emailInputWrap>.selectBoxType>.optionItemWrap{width: 100%; padding: 8px 0; background: #fff; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); border-radius: 4px; display: none; margin-top: 4px;}
@@ -49,7 +51,8 @@
 .accountInputWrap>label{position: relative; float: right; display: inline-block; width: calc(100% - 14rem);}
 .accountInputWrap>label>input{ width: 100%; padding: 1.3rem 4.5rem 1.3rem 1.6rem; box-sizing: border-box; font-family: 'Pretendard'; font-size: 1.6rem; font-weight: 400; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px;}
 .accountInputWrap>label>input:focus{border-color: #bdbdbd;}
-.accountInputWrap>label>.inputTextDelete{display: none; background: none; position: absolute; top: 50%; right: 1.6rem; transform: translateY(-50%);}
+.accountInputWrap>label>.inputTextDelete{display: none; background: none; position: absolute; top: 50%; right: 1.6rem; transform: translateY(-50%); width: 2.4rem; height: 2.4rem;}
+.accountInputWrap>label>.inputTextDelete>img{width: 100%;}
 
 #reception{margin-top: 6.4rem; padding: 0 2rem;}
 #reception>h3{font-family: 'Pretendard'; font-weight: 600; font-size: 1.8rem; line-height: 2.4rem; color: #222;}
