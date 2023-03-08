@@ -17,11 +17,11 @@ html,body{position: relative; height: 100%;}
 #noItem>p{ font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; white-space: nowrap;}
 #noItem>a{display: inline-block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; text-align: center; color: #222; padding: 0.8rem 1.6rem; border: 1px solid #e2e2e2; border-radius: 4px; margin-top: 2.4rem;}
 #itemGroup{padding:0 2rem; margin-top: 1.6rem;}
-#item{}
+#item{padding-bottom: 4.9rem;}
 #item:not(:first-child){}
 #itemGroup>button{background: none; float: right;}
 #itemGroup>button>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
-.itemListWrap{padding-top: 3.2rem;}
+.itemListWrap{}
 .itemListWrap>ul{width: 100%;}
 .itemListWrap>ul>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #696969;}
 .itemListWrap>ul>li{position: relative; overflow: hidden;}
