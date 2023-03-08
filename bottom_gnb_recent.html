@@ -81,8 +81,8 @@
             </button>
             <section id="item">
                 <div class="itemListWrap">
-                    <p>2022.12.09</p>
                     <ul>
+                        <p>2022.12.09</p>
                         <li class="item">
                             <div class="itemList">
                                 <div class="itemImg">
@@ -250,8 +250,8 @@
             </section>
             <section id="item">
                 <div class="itemListWrap">
-                    <p>2022.12.09</p>
                     <ul>
+                        <p>2022.12.09</p>
                         <li class="item">
                             <div class="itemList">
                                 <div class="itemImg">
@@ -532,7 +532,24 @@
 
     $(".itemClose").click(function () {
         $(this).parents("li").remove();
+        itemDelete();
+        noItem();
     });
+
+    function  noItem(){
+        if($('#item').length === 0){
+            $('#itemGroup').css("display","none")
+            $('#noItem').css("display","block")
+        }
+    }
+
+    function itemDelete(){
+        $('.itemListWrap>ul').each(function(){
+            if($(this).children('li').length === 0){
+                $(this).parents('#item').remove();
+            }
+        })
+    }
 </script>
 
 </html>
