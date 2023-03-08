@@ -80,6 +80,7 @@
 #item_detail_tab_wrap{padding-top: 2rem;}
 .item_detail_tabnav.on{width: 100%; position: fixed;top: 5.6rem; left: 0; background: #fff; z-index: 996;}
 
+.item_detail_tabnav{position: sticky; top: 56px; left: 0; z-index: 800; background: #fff;}
 .item_detail_tabnav>.item_detail_tabnav_container>ul{display: flex; }
 .item_detail_tabnav>.item_detail_tabnav_container>ul>li{width: 33.3333%; text-align: center; }
 .item_detail_tabnav>.item_detail_tabnav_container>ul>li>a{display: block; font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; color: #969696;  border-bottom: 1px solid #f5f5f5; padding: 8px 0 13px 0;}

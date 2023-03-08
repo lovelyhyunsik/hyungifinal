@@ -733,14 +733,6 @@
         $(this).siblings('.item_detail_tab1_img').css({ "height": "100%", "oveflow": "visible" })
     })//상품정보 더보기 버튼
 
-    var offset = $('.item_detail_tabnav').offset();
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > offset.top) {
-            $('.item_detail_tabnav').addClass('on');
-        } else {
-            $('.item_detail_tabnav').removeClass('on');
-        }
-    });//headerGnb 특정스크롤에 도달하면 고정
 
     $('.selectBox_type>.label').click(function(){
         $(this).toggleClass('on')
