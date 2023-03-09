@@ -54,7 +54,8 @@ li,p{word-break: keep-all;}
 .searchAreaClickPop>ul>.brand>a>.brandInfo>.brandName>.ko{font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #969696;}
 .searchAreaClickPop>ul>.brand>a>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #bdbdbd;}
 
-.searchAreaClickPop>ul>.textList{padding: 1.6rem 2.8rem; display: flex; align-items: center; gap: 2rem;}
-.searchAreaClickPop>ul>.textList>button{background: none; width: 2rem; height: 2rem;}
-.searchAreaClickPop>ul>.textList>button>img{width: 100%;}
-.searchAreaClickPop>ul>.textList>.relatedText{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
+.searchAreaClickPop>ul>.textList{padding: 1.6rem 2.8rem;}
+.searchAreaClickPop>ul>.textList>a{ display: flex; align-items: center; gap: 2rem;}
+.searchAreaClickPop>ul>.textList>a>button{background: none; width: 2rem; height: 2rem;}
+.searchAreaClickPop>ul>.textList>a>button>img{width: 100%;}
+.searchAreaClickPop>ul>.textList>a>.relatedText{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
