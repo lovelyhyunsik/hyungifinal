@@ -20,7 +20,17 @@
 
 </head>
 
-<body>
+<body class="fix">
+    <div class="pw_change_popup_wrap"><!-- 비밀번호 팝업 노출시 body에 class:fix 추가 -->
+        <div class="pw_change_popup">
+            <h4>비밀번호 사용 기간이 만료되었어요!</h4>
+            <p>지금 비밀번호 변경을 하시겠어요?</p>
+            <div class="pw_change_popup_btn_wrap">
+                <button class="no_change">다음에 변경할게요.</button>
+                <a href="./pw_change.html" class="change">네, 변경할게요.</a>
+            </div>
+        </div>
+    </div>
     <div id="mainPage">
         <div class="btn_gotop">
             <img src="./img/up_arrow.png" alt="">
@@ -2177,6 +2187,11 @@
         slidesPerView: 1.12,
         spaceBetween: 20
     });//스와이퍼 슬라이드 index.html 개별적용된부분
+
+    $('.pw_change_popup_btn_wrap > button').click(function(){
+        $('body').removeClass('fix')
+        $('.pw_change_popup_wrap').remove()
+    })//비밀번호 변경 팝업 '다음에 변경할게요'클릭
 </script>
 
 </html>

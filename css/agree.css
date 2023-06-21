@@ -17,7 +17,7 @@
 #agree>.agreeContainer>.allAgreeBtn>label{display: inline-flex; align-items: center;}
 #agree>.agreeContainer>.allAgreeBtn>label>span{font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222;}
 #agree>.agreeContainer>.checkBtnList{display: flex; flex-direction: column; padding: 2.4rem 1.6rem 3.1rem 1.6rem;}
-#agree>.agreeContainer>.checkBtnList>label{display: inline-flex; align-items: center;}
+#agree>.agreeContainer>.checkBtnList>label{display: inline-flex; align-items: center; justify-content: space-between;}
 #agree>.agreeContainer>.checkBtnList>label:not(:first-child){margin-top: 1.6rem;}
 #agree>.agreeContainer>.checkBtnList>label>span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969;}
 
@@ -29,6 +29,11 @@
 .twoBtn{padding: 2.4rem 2rem 4.8rem 2rem; display: flex;}
 .twoBtn>.beforeBtn{display: block; width: 100%; box-sizing: border-box; background: #fff; border: 1px solid #e2e2e2; text-align: center; padding: 1.3rem 0; border-radius: 4px; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222;}
 .twoBtn>.certifiBtn{display: block; width: 100%; box-sizing: border-box; background: #222; text-align: center; padding: 1.4rem 0; border-radius: 4px; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #fff; margin-left: 1.6rem;}
+
+#agreeDetail{padding: 100px 25px;}
+#agreeDetail > div:not(:first-child){margin-top: 30px;}
+#agreeDetail > div > h2{font-family: 'Pretendard'; font-weight: 600; font-size: 1.8rem; margin-bottom: 15px;}
+#agreeDetail > div > p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 20px;}
 
 input#check_btn{
     display:none;
