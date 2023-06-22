@@ -136,6 +136,22 @@
                 </div>
                 </div>
             </section>
+            <div class="photo_detail_popup_wrap">
+                <div class="photo_detail_popup_body"></div>
+                <div class="photo_detail_popup_container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="./img/img1.png" alt=""></div>
+                          <div class="swiper-slide"><img src="./img/img2.png" alt=""></div>
+                          <div class="swiper-slide"><img src="./img/img3.png" alt=""></div>
+                          <div class="swiper-slide"><img src="./img/img4.png" alt=""></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </div>
             <section id="item_detail_info">
                 <div class="brand_name">CROCODILE LADIES</div>
                 <div class="item_name">라운드넥 아가일 니트 CLAWSW102</div>
@@ -797,6 +813,18 @@
             type: "fraction",
         }
     });
+
+    var swiper2 = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
     //하트이미지 클릭변경
     var ImgChange = 0;
     $(".img_change").click(function () {
@@ -934,8 +962,17 @@
 
     lalal();
 
-    // var qaCount = $('.qa_list_container>ul>li').length;
-    // $('.qa_count').text(qaCount)
+    $(".review_img_wrap > img").click(function () {
+        $('body').addClass('hidden')
+        $('.photo_detail_popup_wrap > .photo_detail_popup_body').css({ "display": "block", "background": "rgba(0,0,0,0.5)" })
+        $('.photo_detail_popup_wrap>.photo_detail_popup_container').css("display","block")
+    })
+    $(".photo_detail_popup_wrap > .photo_detail_popup_body").click(function () {
+        $('body').removeClass('hidden')
+        $('.photo_detail_popup_wrap > .photo_detail_popup_body').css({ "display": "none", "background": "none" })
+        $('.photo_detail_popup_wrap>.photo_detail_popup_container').css("display","none")
+    })//구매후기에 있는 리뷰 포토 클릭시 뜨는 팝업창
+
 </script>
 
 </html>

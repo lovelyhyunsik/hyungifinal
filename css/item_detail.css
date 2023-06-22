@@ -268,6 +268,14 @@
 #purchase_popup>.purchase_container>.purchase_container_bottom>.purchase_container_bottom_button>.basket_btn>button{margin-right: 1.6rem; width: 50%; background: #fff; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222; padding: 1.4rem 0; border-radius: 4px; border: 1px solid #E2E2E2; }
 #purchase_popup>.purchase_container>.purchase_container_bottom>.purchase_container_bottom_button>.buyNow_btn{display: contents;}
 #purchase_popup>.purchase_container>.purchase_container_bottom>.purchase_container_bottom_button>.buyNow_btn>a{text-align: center; width: 50%; background: #222; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #fff; padding: 1.4rem 0; border-radius: 4px;}
+
+.photo_detail_popup_wrap{}
+.photo_detail_popup_wrap > .photo_detail_popup_body{display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;  z-index: 998;}
+.photo_detail_popup_wrap > .photo_detail_popup_container{display: none; /* background: #fff; */ box-sizing: border-box; padding: 15px; position: fixed; left: 0; top: 50%; transform: translateY(-50%); width: 100%; z-index: 999;}
+.photo_detail_popup_wrap > .photo_detail_popup_container .swiper-slide{padding: 0 !important; background: none !important;}
+.photo_detail_popup_wrap > .photo_detail_popup_container .swiper-button-next{background: url(../img/ic-next-btn.png) no-repeat; background-position: center; width: calc(var(--swiper-navigation-size/ 60 * 60)); right: var(--swiper-navigation-sides-offset,10px);}
+.photo_detail_popup_wrap > .photo_detail_popup_container .swiper-button-prev{background: url(../img/ic-prev-btn.png) no-repeat; background-position: center; width: calc(var(--swiper-navigation-size/ 60 * 60)); left: var(--swiper-navigation-sides-offset,10px);}
+
 .select_box_wrap{height: 50.6rem; overflow-y: scroll;}
 .select_box_container{height: auto; }
 .selectBox_type{ box-sizing: border-box;width: 100%; padding: 0 2rem; margin-top: 3.2rem;}
@@ -308,7 +316,6 @@
 .quantity>.quantity_container>.plus{width: 3.6rem; height: 3.6rem; position: relative; border-left: 1px solid #e2e2e2;}
 .quantity>.quantity_container>.plus>img{width: 2.4rem; height: 2.4rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 .quantity>.item_price{font-family: 'Pretendard'; font-weight: 700; font-size: 1.6rem; color: #222;}
-
 
 input#check_btn{
     display:none;

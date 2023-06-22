@@ -122,9 +122,9 @@ legend,
 #footer>.footer_info>.info_title{display: flex; justify-content: space-between; padding-right: 0.9rem; padding-bottom: 1.2rem;}
 #footer>.footer_info>.info_title>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem;}
 #footer>.footer_info>.info_sub{display: flex; padding-bottom: 1.6rem;}
-#footer>.footer_info>.info_sub>li{position: relative; font-family: 'Pretendard'; font-weight: 500; font-size: 1.2rem; line-height: 1.6rem; color: #696969; padding-right: 1rem;}
-#footer>.footer_info>.info_sub>li:not(:first-child){padding-left: 1rem;}
-#footer>.footer_info>.info_sub>li:not(:last-child):after{content: ""; position: absolute; top: 50%; right: 0; transform: translateY(-50%); background: #bdbdbd; width: 1px; height: 8px;}
+#footer>.footer_info>.info_sub>a{position: relative; font-family: 'Pretendard'; font-weight: 500; font-size: 1.2rem; line-height: 1.6rem; color: #696969; padding-right: 1rem;}
+#footer>.footer_info>.info_sub>a:not(:first-child){padding-left: 1rem;}
+#footer>.footer_info>.info_sub>a:not(:last-child):after{content: ""; position: absolute; top: 50%; right: 0; transform: translateY(-50%); background: #bdbdbd; width: 1px; height: 8px;}
 #footer>.footer_info>.info_ico{padding-bottom: 3.6rem;}
 #footer>.footer_info>.info_ico>ul{display: flex;}
 #footer>.footer_info>.info_ico>ul>li:not(:first-child){margin-left: 1.2rem;}
