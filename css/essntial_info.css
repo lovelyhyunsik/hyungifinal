@@ -100,7 +100,8 @@
 input::placeholder{color: #bdbdbd;}
 
 .bottom{position: fixed; width: 100%; box-sizing: border-box; bottom: 0; padding: 1.2rem 2rem 2.4rem 2rem; background: #fff;}
-.bottom>a{display: block; width: 100%; background: #222; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #fff; padding: 1.4rem 0; border-radius: 4px;}
+.bottom>a{display: block; width: 100%; background: #f5f5f5; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #696969; padding: 1.4rem 0; border-radius: 4px;}
+.bottom>a.on{display: block; width: 100%; background: #222; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #fff; padding: 1.4rem 0; border-radius: 4px;}
 
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {

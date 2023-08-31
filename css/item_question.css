@@ -37,8 +37,9 @@
 .notice{padding: 0 2rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 2rem; color: #969696;}
 
 .bottom{position: fixed; bottom: 0; left: 0; width: 100%; padding: 1.2rem 2rem 1.6rem 2rem; background: #fff; filter: drop-shadow(0px -1px 2px rgba(0, 0, 0, 0.04)); box-sizing: border-box;}
-.bottom>.bottomContainer{box-sizing: border-box; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center;  background: #222; border-radius: 4px;}
-.bottom>.bottomContainer>a{display: block; color: #fff; padding: 1.4rem 0; }
+.bottom>.bottomContainer{box-sizing: border-box; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center;}
+.bottom>.bottomContainer>a{display: block; color: #696969; padding: 1.4rem 0; background: #f5f5f5; border-radius: 4px;}
+.bottom>.bottomContainer>a.on{display: block; color: #fff; padding: 1.4rem 0; background: #222; border-radius: 4px;}
 
 input#check_btn{
     display:none;

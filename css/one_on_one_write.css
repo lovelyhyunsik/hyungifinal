@@ -14,24 +14,24 @@ h4{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 
 
 .selectBox_type{ box-sizing: border-box;width: 100%;}
 .selectBox_type.on{}
-.selectBox_type>button{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.1rem 1.6rem; border-radius: 4px; border: 1px solid #bdbdbd; background: url(../img/ic-arrow-down-24.png) no-repeat 98% center; line-height: 2.4rem;}
-.selectBox_type>button.on{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.2rem 1.6rem; border-radius: 4px; border: 1px solid #bdbdbd; background: url(../img/ic-arrow-up-24.png) no-repeat 98% center;}
+.selectBox_type>button{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.1rem 1.6rem; border-radius: 4px; border: 1px solid #e2e2e2; background: url(../img/ic-arrow-down-24.png) no-repeat 98% center; line-height: 2.4rem;}
+.selectBox_type>button.on{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.2rem 1.6rem; border-radius: 4px; border: 1px solid #e2e2e2; background: url(../img/ic-arrow-up-24.png) no-repeat 98% center;}
 
 .selectBox_type>.optionItem_wrap{width: 100%; padding: 8px 0; background: #fff; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); border-radius: 4px; display: none; margin-top: 4px;}
 .selectBox_type>.optionItem_wrap.on{display: block;}
 .selectBox_type>.optionItem_wrap>li{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 1.4rem 1.6rem;}
 
 .selectBox_type_detail{margin-top: 1.6rem; box-sizing: border-box; width: 100%; display: none;}
-.selectBox_type_detail>button{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; line-height: 2.4rem; color: #bdbdbd; padding: 1.1rem 1.6rem; border-radius: 4px; border: 1px solid #bdbdbd; background: url(../img/ic-arrow-down-24.png) no-repeat 98% center;}
-.selectBox_type_detail>button.on{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.2rem 1.6rem; border-radius: 4px; border: 1px solid #bdbdbd; background: url(../img/ic-arrow-up-24.png) no-repeat 98% center;}
+.selectBox_type_detail>button{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; line-height: 2.4rem; color: #bdbdbd; padding: 1.1rem 1.6rem; border-radius: 4px; border: 1px solid #e2e2e2; background: url(../img/ic-arrow-down-24.png) no-repeat 98% center;}
+.selectBox_type_detail>button.on{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.2rem 1.6rem; border-radius: 4px; border: 1px solid #e2e2e2; background: url(../img/ic-arrow-up-24.png) no-repeat 98% center;}
 .selectBox_type_detail>.optionList{ width: 100%; padding: 8px 0; background: #fff; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); border-radius: 4px; display: none;}
 .selectBox_type_detail>.optionList.on{display: block;}
 .selectBox_type_detail>.optionList>li{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 1.4rem 1.6rem;}
 
-#itemSlect{padding: 2rem 2rem;}
-#itemSlect>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-bottom: 8px;}
-#itemSlect>p>span{color: #e31616;}
-#itemSlect>a{display: block; width: 100%; background: #fff; border: 1px solid #E2E2E2; border-radius: 4px; font-family: 'Pretendard'; padding: 1.1rem 0; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222; text-align: center;}
+#itemSelect{display: none; padding: 2rem 2rem;}
+#itemSelect>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-bottom: 8px;}
+#itemSelect>p>span{color: #e31616;}
+#itemSelect>a{display: block; width: 100%; background: #fff; border: 1px solid #E2E2E2; border-radius: 4px; font-family: 'Pretendard'; padding: 1.1rem 0; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222; text-align: center;}
 
 #one_on_one_write_title{padding: 0 2rem;}
 #one_on_one_write_title>h3{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-bottom: 8px;}
@@ -60,6 +60,27 @@ h4{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 
 #bottom>.enroll{width: 100%; height: 5.2rem;  box-sizing: border-box; border-radius: 4px;}
 #bottom>.enroll>a{display: block; font-family: 'Pretendard'; background: #F5F5F5; font-weight: 500; line-height: 5.2rem; font-size: 1.6rem; text-align: center; color: #696969; border-radius: 4px;}
 #bottom>.enroll>a.on{background: #222; font-weight: 700; color: #fff;}
+
+.emailInputWrap{display: none;}
+.emailInputWrap>.emailInput{margin-top: 20px; display: flex; align-items: center; margin-bottom: 2.4rem;}
+.emailInputWrap>.emailInput>span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #969696; margin: 0 6px;}
+.emailInputWrap>.emailInput>.firstInput>label{position: relative; display: block; width: 12.4rem;}
+.emailInputWrap>.emailInput>.firstInput>label>input{width: 100%; padding: 1.3rem 4.5rem 1.3rem 1.6rem; box-sizing: border-box; font-family: 'Pretendard'; font-size: 1.6rem; font-weight: 400; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px;}
+.emailInputWrap>.emailInput>.firstInput>label>.inputTextDelete{display: none; background: none; position: absolute; top: 50%; right: 1.6rem; transform: translateY(-50%); width: 2.4rem; height: 2.4rem;}
+.emailInputWrap>.emailInput>.firstInput>label>.inputTextDelete>img{width: 100%;}
+.emailInputWrap>.emailInput>.secondInput>label{position: relative; display: block; width: 100%}
+.emailInputWrap>.emailInput>.secondInput>label>input.domain{width: 100%; padding: 1.3rem 4.5rem 1.3rem 1.6rem; box-sizing: border-box; font-family: 'Pretendard'; font-size: 1.6rem; font-weight: 400; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px;}
+.emailInputWrap>.emailInput>.secondInput>label>.inputTextDelete{display: none; background: none; position: absolute; top: 50%; right: 1.6rem; transform: translateY(-50%); width: 2.4rem; height: 2.4rem;}
+.emailInputWrap>.emailInput>.secondInput>label>.inputTextDelete>img{width: 100%;}
+.emailInputWrap>.emailInput>div>label>input:focus{border-color: #bdbdbd;}
+
+.emailInputWrap>.selectBoxType>.optionItemWrap{width: 100%; padding: 8px 0; background: #fff; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); border-radius: 4px; display: none; margin-top: 4px;}
+.emailInputWrap>.selectBoxType>.optionItemWrap.on{display: block;}
+.emailInputWrap>.selectBoxType>.optionItemWrap>li{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 1.4rem 1.6rem;}
+.emailInputWrap>.selectBoxType{ box-sizing: border-box;width: 100%;}
+.emailInputWrap>.selectBoxType.on{}
+.emailInputWrap>.selectBoxType>button{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.3rem 1.6rem; border-radius: 4px; border: 1px solid #e2e2e2; background: url(../img/ic-arrow-down-24.png) no-repeat 98% center; line-height: 2.4rem;}
+.emailInputWrap>.selectBoxType>button.on{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.2rem 1.6rem; border-radius: 4px; border: 1px solid #bdbdbd; background: url(../img/ic-arrow-up-24.png) no-repeat 98% center;}
 
 input#check_btn{
     display:none;

@@ -43,4 +43,5 @@
 
 #bottom>button{width: 50%; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 5.2rem; text-align: center; height: 5.2rem; border-radius: 4px;}
 #bottom>.cancel{margin-right: 1.6rem; border: 1px solid #E2E2E2; color: #222; background: #fff;}
-#bottom>.change{background: #222; color: #fff;}
+#bottom>.change{background: #f5f5f5; color: #696969;}
+#bottom>.change.on{background: #222; color: #fff;}

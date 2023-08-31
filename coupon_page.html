@@ -24,9 +24,9 @@
             </div>
         </div>
     </header>
-    <bottom id="bottom">
+    <div class="bottom">
         <button>모든 쿠폰 한번에 받기</button>
-    </bottom>
+    </div>
     <div class="coupon_comment">
         <p>아래 쿠폰은 발급받은 후 상품 구매 시 사용할 수 있습니다.</p>
     </div>
@@ -121,5 +121,11 @@
         </div>
     </section>
 </body>
-
+<script>
+    if($('.coupon_wrap').length > 0){
+        $('.bottom > button').addClass('on')
+    }else{
+        $('.bottom > button').removeClass('on')
+    }
+</script>
 </html>

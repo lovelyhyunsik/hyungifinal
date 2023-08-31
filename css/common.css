@@ -31,6 +31,7 @@ legend,
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav::-webkit-scrollbar{display: none;}
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul{display: flex;}
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul>li:not(:first-child){margin-left: 1.2rem;}
+#oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul>li:last-child{padding-right: 2rem;}
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul>li>a{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; color: #222; padding: 0.8rem 1.2rem; background: #f5f5f5; border-radius: 20px; }
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul>li>a.on{background: #222; color: #fff;}
 #oneDepthTab>.categoryTab>.categoryTabcontent{padding-top: 1.6rem;}

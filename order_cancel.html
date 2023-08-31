@@ -127,7 +127,7 @@
     </div>
     <div class="bottom">
          <div class="bottomContainer">
-            <button>취소접수</button><!-- 셀렉트박스 체크되고 textBox에 텍스트 기입시 class='on' 추가 -->
+            <button>취소접수</button>
          </div>
     </div>
 </body>
@@ -196,6 +196,10 @@
     $('.noticeTitle_r>.ic_arrow').click(function(){
         $(this).toggleClass('on');
         $('.notice>.noticeGreyBox').toggleClass('on')
+    })
+
+    $('.cancelReasonWrap > .selectBox_type > ul > li').click(function(){
+        $('.bottomContainer > button').addClass("on")
     })
 </script>
 </html>

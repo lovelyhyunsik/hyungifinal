@@ -35,6 +35,40 @@
         <p class="alarmToggleNotice">마케팅 정보 수신에 동의 하시면 할인쿠폰, 세일, 이벤트
             등의 혜택 정보를 받으실 수 있습니다.</p>
     </div>
-    
+    <div class="popLayer">
+        <div class="popLayerContainer">
+            <p>배송지를 삭제 하시겠습니까?</p>
+            <div class="btnWrap">
+                <button class="cancel">취소</button>
+                <button class="check">확인</button>
+            </div>
+        </div>
+     </div>
 </body>
+<script>
+    $('.alarmToggle > label > input').change(function(){
+        if($('.alarmToggle > label > input').is(":checked")){
+            $('.popLayer').css("display","block")
+            $('.popLayerContainer > p').text('수신을 동의하시겠습니까?')
+            $('.popLayer .cancel').click(function(){
+                $('.alarmToggle > label > input').prop("checked", false)
+            })
+        }else{
+            $('.popLayer').css("display","block")
+            $('.popLayerContainer > p').text('수신을 해제하시겠습니까?')
+            $('.popLayer .cancel').click(function(){
+                $('.alarmToggle > label > input').prop("checked", true)
+            })
+        }
+    })
+
+    $('.check').click(function(){
+        $('.popLayer').css("display","none")
+    })
+
+    $('.cancel').click(function(){
+        $('.popLayer').css("display","none")
+        
+    })
+</script>
 </html>

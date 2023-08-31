@@ -58,11 +58,11 @@
         </div>
         <p>
             <label>
-                <input type="checkbox" id="check_btn">
+                <input type="checkbox" id="check_btn" class="id_save">
                 <span>아이디저장</span>
             </label>
             <label>
-                <input type="checkbox" id="check_btn">
+                <input type="checkbox" id="check_btn" class="auto_login">
                 <span>자동로그인</span>
             </label>
         </p>
@@ -94,4 +94,20 @@
         </div>
     </form>
 </body>
+<script>
+    $('.auto_login').click(function(){
+        if($('.id_save').is(":checked")){
+            
+        }else{
+            alert("아이디 저장이 자동 선택됩니다.")
+            $('.id_save').prop("checked", true)
+        }
+    })
+
+    $('.id_save').click(function(){
+        if($('.auto_login').is(":checked")){
+            $('.auto_login').prop("checked",false)
+        }
+    })
+</script>
 </html>

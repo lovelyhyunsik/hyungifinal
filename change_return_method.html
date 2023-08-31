@@ -39,7 +39,7 @@
                     <li>
                         <!-- <a href="#tab1" class="on"> -->
                         <label>
-                            <input type="radio" name="method" checked="">
+                            <input type="radio" name="method" checked="" class="auto">
                             <div class="label_r">
                                 <p>자동회수</p>
                                 <span>택배업체에서 방문수령 수거해갈게요</span>
@@ -50,7 +50,7 @@
                     <li>
                         <!-- <a href="#tab2"> -->
                         <label>
-                            <input type="radio" name="method">
+                            <input type="radio" name="method" class="direct">
                             <div class="label_r">
                                 <p>직접회수</p>
                                 <span>직접 상품을 발송할게요</span>
@@ -167,7 +167,7 @@
             </div>
         </div>
         <div class="bottom">
-            <a href="./change_return_pay.html">교환 / 반품 접수</a><!-- 위에 항목 다 선택되면 class:on 추가 -->
+            <a href="./change_return_pay.html">교환 / 반품 접수</a>
         </div>
     </div>
 </body>
@@ -242,6 +242,7 @@
 
         $('.changeAddress .selectBox_type>.optionItem_wrap').removeClass('on');
     })
+
 </script>
 
 </html>

@@ -507,7 +507,15 @@
 
     $('.likeIc').click(function(){
         $(this).parents('li').remove();
-    })//하트 클릭하면 그 아이템 목록 지워짐
+    })//하트 클릭하면 그 아이템 목록 지워짐.
+
+    $('#check_btn').change(function(){
+        if($('#check_btn').is(":checked")){
+            $(".itemListWrap > ul > .soldOut").css("display","none")
+        }else{
+            $(".itemListWrap > ul > .soldOut").css("display","block")
+        }
+    })
 </script>
 
 </html>

@@ -43,6 +43,7 @@
 
 .simple>.payContent>ul{display: flex; gap: 1.2rem; padding-top: 8px; border-bottom: 1px solid #f5f5f5;}
 .simple>.payContent>ul>li{width: 33.3333%; height: 4.8rem; text-align: center; line-height: 4.8rem; border: 1px solid #E2E2E2; border-radius: 4px; }
+.simple>.payContent>ul>li.on{width: 33.3333%; height: 4.8rem; text-align: center; line-height: 4.8rem; border: 1px solid #222; border-radius: 4px;}
 
 .payContent{padding: 2rem 0 4.2rem 0; border-bottom: 1px solid #f5f5f5; display: none;}
 .payContent>.swiper{width: 32rem;}

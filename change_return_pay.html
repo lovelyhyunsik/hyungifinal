@@ -34,37 +34,9 @@
     <div class="payMethodWrap">
         <h3>결제 수단</h3>
         <div class="payMethod">
-            <div class="hPay on">
+            <div class="creditCheckCard on">
                 <label>
                     <input type="radio" name="method" checked="">
-                    <span>H 페이결제</span>
-                </label>
-                <div class="payContent">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./img/84card.png" alt="">
-                                <div class="cardName">
-                                    <span>카드의 정석 POINT 주거래</span>
-                                    <button>체크</button>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/84card2.png" alt="">
-                                <div class="cardName">
-                                    <span>카드의 정석 POINT 주거래</span>
-                                    <button>체크</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="creditCheckCard">
-                <label>
-                    <input type="radio" name="method">
                     <span>신용/체크카드</span>
                 </label>
                 <div class="payContent">
@@ -107,8 +79,8 @@
                 </label>
                 <div class="payContent">
                     <ul>
+                        <li class="on"><img src="./img/kakaoPay.png" alt=""></li>
                         <li><img src="./img/naverPay.png" alt=""></li>
-                        <li><img src="./img/kakaoPay.png" alt=""></li>
                         <li><img src="./img/samsungPay.png" alt=""></li>
                     </ul>
                 </div>
@@ -192,6 +164,11 @@
         $(`.optionList.${optionType}`).css('display', 'block');
 
         $('.selectBox_type>.optionItem_wrap').removeClass('on');
+    })
+
+    $('.simple li').click(function(){
+        $('.simple li').removeClass('on');
+        $(this).addClass('on');
     })
   </script>
 </html>

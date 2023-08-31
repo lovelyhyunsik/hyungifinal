@@ -27,6 +27,15 @@
             </div>
         </div>
     </header>
+    <div class="popLayer">
+        <div class="popLayerContainer">
+            <p>배송지를 삭제 하시겠습니까?</p>
+            <div class="btnWrap">
+                <button class="cancel">취소</button>
+                <button class="check">확인</button>
+            </div>
+        </div>
+     </div>
     <div class="plusAddress">
         <div class="plusAddressContainer">
             <a href="./address_plus.html">
@@ -81,8 +90,43 @@
                         <button class="delete">삭제</button>
                     </div>
                 </li>
+                <li>
+                    <div class="userInfo">
+                        <span class="userName">홍길동</span>
+                        <span class="userNum">010-8648-2460</span>
+                    </div>
+                    <div class="userAddress">
+                        <p class="addressText"><span class="zipCode">[14046]</span>서울특별시 강남구 역삼동 역삼로 156 태광빌딩 5층</p>
+                    </div>
+                    <div class="btnWrap">
+                        <a href="" class="changeBtn">수정</a>
+                        <button class="delete">삭제</button>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
 </body>
+<script>
+    
+    var selectedIndex = 0;
+
+    $('.delete').click(function(){
+        $('body').addClass('hidden')
+        $('.popLayer').css("display","block")
+
+        selectedIndex = $(this).closest('li').index();
+    })
+
+    $('.cancel').click(function(){
+        $('.popLayer').css("display","none")
+        $('body').removeClass('hidden')
+    })
+
+    $('.check').click(function(){
+        $('.popLayer').css("display","none")
+        $('body').removeClass('hidden')
+        $(' li').eq(selectedIndex).remove();
+    })
+</script>
 </html>

@@ -20,8 +20,10 @@ $(function () {
 
     if (checked) {
       $(this).parents(".allAgreeBtn").siblings('.checkBtnList').find('input').prop("checked", true);
+      $('.certifiBtn').addClass('on')
     } else {
       $(this).parents(".allAgreeBtn").siblings('.checkBtnList').find('input').prop("checked", false);
+      $('.certifiBtn').removeClass('on')
     }
   });
 
@@ -29,20 +31,35 @@ $(function () {
     var checked = $(this).is(":checked");
 
     if (!checked) {
-      $(".allAgreeBtn>label>#check_btn").prop("checked", false);
+      $(".allAgreeBtn>label>#check_btn").prop("checked", false);  
     }
   });
 
   // 체크박스 개별 선택
   $(".checkBtnList").on("click", ".normal", function () {
     var is_checked = true;
+    var not_checked = false;
 
     $(".checkBtnList .normal").each(function () {
       is_checked = is_checked && $(this).is(":checked");
     });
 
+
     $(".allAgreeBtn>label>#check_btn").prop("checked", is_checked);
   });
+
+  //필수선택
+  $(".checkBtnList").on("click", ".essential", function(){
+    var is_checked2 = true;
+    $(".checkBtnList .essential").each(function () {
+      is_checked2 = is_checked2 && $(this).is(":checked");
+      if(!is_checked2){
+        $('.certifiBtn').removeClass('on')
+      }else{
+        $('.certifiBtn').addClass('on')
+      }
+    });
+  })
 
   //최상단 슬라이드
   var swiper = new Swiper(".auto-slide", {
@@ -76,10 +93,8 @@ $(function () {
 
   var prevScrollTop = $(window).scrollTop(),
     currentScrollTop = $(window).scrollTop();
-
     $(window).scroll(function (e) {
       currentScrollTop = $(this).scrollTop();
-    
       if (currentScrollTop <= 0) {
         $('#bottomGnb').removeClass('hidden');
       } else if (currentScrollTop > prevScrollTop) {

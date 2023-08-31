@@ -52,5 +52,13 @@
     $('.popLayerContainer>button').click(function(){
         $('.popLayer').css("display","none")
     })
+
+    $('.pwCheck').on("input", function(){
+        if($(".pwCheck input").val() === ""){
+            $('.check').removeClass('on')
+        }else{
+            $('.check').addClass('on')
+        }
+    })
 </script>
 </html>

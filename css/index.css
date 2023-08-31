@@ -59,7 +59,8 @@ li{word-break: keep-all;}
 .bestItemMore{ padding: 0 2rem 4rem 2rem;}
 .bestItemMore>a{display: block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; color: #222; padding: 1.2rem 0; border: 1px solid #e2e2e2; border-radius: 4px; text-align: center;}
 .lineBanner{padding-bottom: 4rem;}
-.lineBanner>img{display: block; width: 100%; height: auto;}
+.lineBanner > a{display: block;}
+.lineBanner > a > img{display: block; width: 100%; height: auto;}
 
 /* home_section_rec_brand */
 #homeSectionRecBrand{padding: 0 0 0 2rem;}

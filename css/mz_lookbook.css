@@ -16,7 +16,7 @@
 .brandPick>h3{display: inline-block;}
 .brandPick>a{display: block; padding-top: 1.3rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem;  color: #696969; float: right;}
 
-.mzLbRowWrap{display: flex;  gap: 0.8rem; padding-top: 2rem; padding-bottom: 7.5rem; justify-content: space-between; flex-wrap: wrap;}
+.mzLbRowWrap{display: flex; width: 100%; gap: 0.8rem; padding-top: 2rem; padding-bottom: 7.5rem; justify-content: space-between; flex-wrap: wrap;}
 .mzLbRowWrap>li{width: 31.5%;}
 .mzLbRowWrap>li:nth-child()
 .mzLbRowWrap>li>a{display: block;}

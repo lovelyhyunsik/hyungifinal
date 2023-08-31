@@ -30,7 +30,7 @@
                 <ul class="optionItem_wrap" id="crops1">
                     <li class="optionItem" data-id="option-cancel" value="a">취소/반품/교환</li>
                     <li class="optionItem" data-id="option-order" value="b">주문/결제</li>
-                    <li class="optionItem" data-id="option-item" value="c">상품</li>
+                    <li class="optionItem itemQuestion" data-id="option-item" value="c">상품</li>
                     <li class="optionItem" data-id="option-service" value="d">서비스</li>
                     <li class="optionItem" data-id="option-userInfo" value="e">화원정보</li>
                     <li class="optionItem" data-id="option-add" value="f">기타</li>
@@ -67,7 +67,7 @@
                 </ul>
             </div>
         </section>
-        <section id="itemSlect"><!-- 첫번째 셀렉트박스에서 취소/반품/교환 , 상품 선택시 나타나는 영역 능력부족으로 해결하지못함-->
+        <section id="itemSelect">
             <p>문의상품<span>*</span></p>
             <a href="./item_choice.html">문의 상품선택</a>
         </section>
@@ -91,23 +91,52 @@
             <div class="contact_device">
                 <div class="phone">
                     <label>
-                        <input type="checkbox" id="check_btn">
+                        <input type="checkbox" id="check_btn" class="phone_check">
                         <span>휴대폰</span>
                     </label>
                 </div>
                 <div class="e-mail">
                     <label>
-                        <input type="checkbox" id="check_btn">
+                        <input type="checkbox" id="check_btn" class="mail_check">
                         <span>이메일</span>
                     </label>
                 </div>
             </div>
+            <div class="emailInputWrap">
+                <div class="emailInput">
+                    <div class="firstInput">
+                        <label>
+                            <input class="textInput" type="text">
+                            <button class="inputTextDelete">
+                                <img src="./img/ic-close-fill-24px.png" alt="">
+                            </button>
+                        </label>
+                    </div>
+                    <span>@</span>
+                    <div class="secondInput">
+                        <label>
+                            <input type="text" class="domain textInput">
+                            <button class="inputTextDelete">
+                                <img src="./img/ic-close-fill-24px.png" alt="">
+                            </button>
+                        </label>
+                    </div>
+                </div>
+                <div class="selectBoxType">
+                    <button class="label">직접입력</button>
+                    <ul class="optionItemWrap" id="crops1">
+                        <li class="optionItem">naver.com</li>
+                        <li class="optionItem">daum.net</li>
+                        <li class="optionItem">kakao.com</li>
+                        <li class="optionItem">google.com</li>
+                        <li class="optionItem">직접입력</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-
-        <!-- 등록어떻게 처리할지 2번쨰 셀렉트박스 못함 -->
         <div id="bottom">
             <div class="enroll">
-                <a href="./one_on_one.html">등록</a><!-- 문의 유형 다선택되면 addClass="on " -->
+                <a href="./one_on_one.html">등록</a><!-- 문의 유형 다선택되면 addClass="on" -->
             </div>
         </div>
     </div>
@@ -129,28 +158,63 @@
         $('.selectBox_type>.optionItem_wrap').removeClass('on')
         $('.selectBox_type>.label').removeClass('on')
         $('.selectBox_type_detail').css("display","block")
-        
+        $('.selectBox_type_detail > .label').addClass('on')
+        $('.selectBox_type_detail > .label').text("상세 유형을 선택해주세요").css("color","#bdbdbd")
+
+        if($(this).hasClass('itemQuestion')){
+            $("#itemSelect").css("display","block");
+        }else{
+            $("#itemSelect").css("display","none");
+        }
+
         var optionType = e.target.dataset.id;
-        $('.optionList').css("display","none")
-        $(`.optionList.${optionType}`).css('display','block');
-       
-        $('.selectBox_type>.optionItem_wrap').removeClass('on');
+        //$('.optionList').css("display","none")
+        $('.optionList').removeClass("on");
+        $('.optionList').removeClass("choice");
+        $(`.optionList.${optionType}`).addClass("on").addClass('choice');
     })    
 
     $('.selectBox_type_detail>.label').click(function(){
         $(this).toggleClass('on');
-        $('.selectBox_type>.optionItem_wrap').removeClass('on');
+        $('.optionList.choice').toggleClass('on')
         /* $('.selectBox_type_detail>.optionList').toggleClass('on') */
     })
-
 
     $('.optionList>.optionItem').click(function(){
         var text_change2 = $(this).text()
         $('.selectBox_type_detail>.label').text(text_change2).css("color","#222")
         $('.selectBox_type_detail>.optionList>.optionItem').css("background","none")
         $(this).css("background","#f5f5f5")
-        $('.selectBox_type_detail>.optionList').css("display","none")
+        $('.selectBox_type_detail>.optionList.choice').toggleClass('on')
         $('.selectBox_type_detail>.label').removeClass('on')
+    })
+
+    $(".mail_check").click(function(){
+        if($('.mail_check').is(":checked")){
+            $(".emailInputWrap").css("display","block")
+        }else{
+            $(".emailInputWrap").css("display","none")
+        }
+    })
+
+    $('.emailInputWrap>.selectBoxType>button').click(function(){
+        $(this).toggleClass('on')
+        $('.emailInputWrap>.selectBoxType>.optionItemWrap').toggleClass('on')
+    })
+
+    $('.emailInputWrap>.selectBoxType>.optionItemWrap>.optionItem').click(function(){
+        var textChange = $(this).text();
+        $('.domain').val(textChange)
+        $('.emailInputWrap>.selectBoxType>.label').text(textChange)
+        $('.emailInputWrap>.selectBoxType>.optionItemWrap').toggleClass('on')
+        $('.emailInputWrap>.selectBoxType>button').removeClass('on')
+        $('.direct').css("display","none")
+        $('.emailInputWrap>.selectBoxType>.optionItemWrap>.optionItem').css("background","none")
+        $(this).css("background","#f5f5f5")
+    })//이메일 드롭박스
+
+    $('.emailInputWrap>.selectBoxType>.optionItemWrap>.optionItem:last-child').click(function(){
+        $('.domain').val("")
     })
 
     $(document).ready(function(){

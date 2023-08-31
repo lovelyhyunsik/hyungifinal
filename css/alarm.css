@@ -23,7 +23,7 @@ html,body{position: relative; height: 100%;}
 .tabNav>ul>li>a>span.redDot::after{content: ""; position: absolute; top: -5px; right: -4px; width: 5px; height: 5px; background: #e31616; border-radius: 50%;}
 
 .tab{}
-.tab>ul{padding-top: 1rem; padding-bottom: 6rem;}
+.tab>ul{padding-top: 1rem;}
 .tab>ul>li{}
 .tab>ul>li>a{display: block; padding: 1.6rem 2rem 2.5rem 2rem; border-bottom: 1px solid #F5F5F5;}
 .tab>ul>li>a>.alarmTitle{}

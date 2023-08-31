@@ -68,7 +68,8 @@
 
 .bottom{margin-top: 6.4rem; margin-bottom: 5.6rem; display: flex; padding: 0 2rem; gap: 1.6rem;}
 .bottom>a.before{width: 50%; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #222; background: #fff; padding: 1.3rem 0; border: 1px solid #e2e2e2; border-radius: 4px; box-sizing: border-box;}
-.bottom>a.after{width: 50%; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #fff; background: #222; padding: 1.4rem 0; border-radius: 4px;}
+.bottom>a.after{width: 50%; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #696969; background: #f5f5f5; padding: 1.4rem 0; border-radius: 4px;}
+.bottom>a.after.on{width: 50%; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #fff; background: #222; padding: 1.4rem 0; border-radius: 4px;}
 
 input:focus {outline: none;}
 
