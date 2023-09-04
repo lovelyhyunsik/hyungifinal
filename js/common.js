@@ -61,17 +61,6 @@ $(function () {
     });
   })
 
-  //최상단 슬라이드
-  var swiper = new Swiper(".auto-slide", {
-    loop: true,
-    autoplay: {
-      delay: 5000
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    }
-  });
 
   //headerGnb 스크롤 이동시 상단 고정
 
@@ -130,14 +119,16 @@ $(function () {
     }
   });
 
+
+  //footer arrow 버튼
+  $('.info_d_arrow').click(function(){
+    $('.info_content').toggleClass('on')
+    if($('.info_content').hasClass('on')){
+        $('.info_d_arrow').children('img').attr("src","./img/ic-arrow-up-24.png") 
+    }else{
+        $('.info_d_arrow').children('img').attr("src","./img/ic-arrow-down-24.png") 
+    }
+  })
+
 });
 
-//$(function () {
-//  /* $('.category_tabcontent > div').hide(); */
-//  $('.homeCategory_tabnav>ul>li>a').click(function () {
-//    $('.homeCategory_tabcontent > div').hide().filter(this.hash).fadeIn();
-//    $('.homeCategory_tabnav>ul>li>a').removeClass('on');
-//    $(this).addClass('on');
-//    return false;
-//  }).filter(':eq(0)').click();//home섹션 안에 tab처리
-//});
