@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    <div class="likeComment">
+        <p></p>
+    </div>
     <div class="basket_animate">장바구니에 상품을 담았습니다.</div>
     <div id="item_detail">
         <div>
@@ -32,9 +35,8 @@
                 </div>
             </header>
             <div id="bottom">
-                <div class="item_like">
+                <div class="itemLike">
                     <button>
-                        <img src="./img/ic-like-gr.png" alt="" class="img_change">
                     </button>
                 </div>
                 <div class="purchase">
@@ -406,6 +408,10 @@
                                         <a>
                                             <div class="item_img">
                                                 <img src="./img/item_2.png" alt="">
+                                                <div class="itemLike">
+                                                    <button>
+                                                    </button>
+                                                </div>
                                             </div>
                                             <div class="tab_item">
                                                 <P class="title">CHALI</P>
@@ -432,7 +438,6 @@
                                                 <img src="./img/item_2.png" alt="">
                                                 <div class="itemLike">
                                                     <button>
-                                                        <img src="./img/ic-like.png" alt="" class="img_change">
                                                     </button>
                                                 </div>
                                             </div>
@@ -456,7 +461,6 @@
                                                 <img src="./img/item_2.png" alt="">
                                                 <div class="itemLike">
                                                     <button>
-                                                        <img src="./img/ic-like.png" alt="" class="img_change">
                                                     </button>
                                                 </div>
                                             </div>
@@ -480,6 +484,10 @@
                                         <a>
                                             <div class="item_img">
                                                 <img src="./img/item_2.png" alt="">
+                                                <div class="itemLike">
+                                                    <button>
+                                                    </button>
+                                                </div>
                                             </div>
                                             <div class="tab_item">
                                                 <P class="title">CHALI</P>
@@ -506,6 +514,10 @@
                                         <a>
                                             <div class="item_img">
                                                 <img src="./img/item_2.png" alt="">
+                                                <div class="itemLike">
+                                                    <button>
+                                                    </button>
+                                                </div>
                                             </div>
                                             <div class="tab_item">
                                                 <P class="title">CHALI</P>
@@ -527,6 +539,10 @@
                                         <a>
                                             <div class="item_img">
                                                 <img src="./img/item_2.png" alt="">
+                                                <div class="itemLike">
+                                                    <button>
+                                                    </button>
+                                                </div>
                                             </div>
                                             <div class="tab_item">
                                                 <P class="title">CHALI</P>
@@ -548,6 +564,10 @@
                                         <a>
                                             <div class="item_img">
                                                 <img src="./img/item_2.png" alt="">
+                                                <div class="itemLike">
+                                                    <button>
+                                                    </button>
+                                                </div>
                                             </div>
                                             <div class="tab_item">
                                                 <P class="title">CHALI</P>
@@ -569,6 +589,10 @@
                                         <a>
                                             <div class="item_img">
                                                 <img src="./img/item_2.png" alt="">
+                                                <div class="itemLike">
+                                                    <button>
+                                                    </button>
+                                                </div>
                                             </div>
                                             <div class="tab_item">
                                                 <P class="title">CHALI</P>
@@ -902,17 +926,6 @@
       },
     });
 
-    //하트이미지 클릭변경
-    var ImgChange = 0;
-    $(".img_change").click(function () {
-      if (ImgChange == 0) {
-        $(this).attr("src", "./img/ic-like_pk.png");
-        ImgChange = 1;
-      } else {
-        $(this).attr("src", "./img/ic-like-gr.png");
-        ImgChange = 0;
-      }
-    });//하트 이미지가 달라 common.js에 있는 거 말고 개별적으로 쓰게했습니다.
 
     var good = 0;
     $(".good_img_change").click(function () {
@@ -1009,7 +1022,7 @@
     })//구매하기 안에 마이너스 버튼
 
     $('.delete_btn').click(function(){
-        $(this).parents('.purchase_item_wrap').remove()
+        $(this).parents('.purchase_item_container').remove()
     })//구매하기 안에 x버튼
     
     $('.allReview_btn').click(function(){
@@ -1022,7 +1035,7 @@
     $('.unfold_box .delete_btn').click(function(){
         $(this).parents('li').remove()
 
-        lalal();
+        countQa();
     })//Q&A 삭제버튼기능
 
     $('.unfold_box').click(function(){
@@ -1032,12 +1045,12 @@
     var reviewCount = $('.tab .best_review').length;
     $('.review_count').text(reviewCount)//후기카운트
 
-    function lalal () {
+    function countQa () {
         var qaCount = $('.qa_list_container>ul>li').length;
         $('.qa_count').text(qaCount)
     }//Q&A카운트
 
-    lalal();
+    countQa();
 
     $(".review_img_wrap > img").click(function () {
         $('body').addClass('hidden')

@@ -32,8 +32,8 @@ html,body{position: relative; height: 100%;}
 .itemListWrap>ul>li>.itemList>.itemImg>a{display: block; width: 100%;}
 .itemListWrap>ul>li>.itemList>.itemImg>a>img{width: 100%; position: absolute; top: 50%; transform: translateY(-50%);}
 .itemListWrap>ul>li>.itemList>.itemImg>.itemLike{position: absolute; z-index: 112; top: 0; right: 0;}
-.itemListWrap>ul>li>.itemList>.itemImg>.itemLike>button{background: none; padding: 8px 8px 0 0;}
-.itemListWrap>ul>li>.itemList>.itemImg>.itemLike>button>img{display: block; width: 100%; }
+.itemListWrap>ul>li>.itemList>.itemImg>.itemLike>button{background: url(../img/ic-like.png) no-repeat center; width: 40px; height: 40px;}
+.itemListWrap>ul>li>.itemList>.itemImg>.itemLike>button.on{background: url(../img/ic-like_pk.png) no-repeat center; width: 40px; height: 40px;}
 .itemListWrap>ul>li>.itemList>.itemListText{width: 71.875%; position: relative;}
 .itemListWrap>ul>li>.itemList>.itemListText>a{display: block;  }
 .itemListWrap>ul>li>.itemList>.itemListText>.itemClose{position: absolute; top: 2px; right: 2px;}

@@ -41,8 +41,8 @@ li,p{word-break: keep-all;}
 .itemWrap>ul>li>.itemNum{position: absolute; top: 0.8rem; left: 0.8rem; width: 32px; height: 32px; background: #222; text-align: center; }
 .itemWrap>ul>li>.itemNum>span{color: #fff; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; display: block; line-height: 3rem;}
 .itemWrap>ul>li>.itemLike{position: absolute; z-index: 112; top: 0.8rem; right: 0.8rem;}
-.itemWrap>ul>li>.itemLike>button{background: none;}
-.itemWrap>ul>li>.itemLike>button>img{display: block; padding: 1.2rem 1.1rem;}
+.itemWrap>ul>li>.itemLike>button{background: url(../img/ic-like.png) no-repeat center; width: 40px; height: 40px;}
+.itemWrap>ul>li>.itemLike>button.on{background: url(../img/ic-like_pk.png) no-repeat center; width: 40px; height: 40px;}
 
 .searchAreaClickPop{}
 .searchAreaClickPop>ul{padding: 1.6rem 0;}

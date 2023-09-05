@@ -50,8 +50,8 @@ html,body{position: relative; height: 100%;}
 .itemListWrap>ul>li>.itemList>.itemImg>a{display: block; width: 100%;}
 .itemListWrap>ul>li>.itemList>.itemImg>a>img{width: 100%; position: absolute; top: 50%; transform: translateY(-50%);}
 .itemListWrap>ul>li>.itemList>.itemImg>.itemLike{position: absolute; z-index: 112; top: 0; right: 0;}
-.itemListWrap>ul>li>.itemList>.itemImg>.itemLike>button{background: none; padding: 8px 8px 0 0;}
-.itemListWrap>ul>li>.itemList>.itemImg>.itemLike>button>img{display: block; width: 100%; }
+.itemListWrap>ul>li>.itemList>.itemImg>.itemLike>button{background: url(../img/ic-like.png) no-repeat center; width: 40px; height: 40px;}
+.itemListWrap>ul>li>.itemList>.itemImg>.itemLike>button.on{background: url(../img/ic-like_pk.png) no-repeat center; width: 40px; height: 40px;}
 .itemListWrap>ul>li>.itemList>.itemListText{width: 71.875%; position: relative;}
 .itemListWrap>ul>li>.itemList>.itemListText>a{display: block;  }
 .itemListWrap>ul>li>.itemList>.itemListText>.item_close{position: absolute; top: 2px; right: 2px;}
@@ -95,7 +95,9 @@ html,body{position: relative; height: 100%;}
 #brand>ul>li>a>.brandLeft>.brandName{margin-left: 1.2rem;}
 #brand>ul>li>a>.brandLeft>.brandName>.en{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
 #brand>ul>li>a>.brandLeft>.brandName>.ko{font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #969696;}
-.likeIc{background: none;}
+#brand>ul>li>.itemLike>button{background: url(../img/ic-like.png) no-repeat center; width: 40px; height: 40px;}
+#brand>ul>li>.itemLike>button.on{background: url(../img/ic-like_pk.png) no-repeat center; width: 40px; height: 40px;}
+
 input#check_btn{
     display:none;
     }

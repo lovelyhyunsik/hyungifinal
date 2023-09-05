@@ -108,16 +108,20 @@ $(function () {
   });
 
   //하트이미지 클릭변경
-  var ImgChange = 0;
-  $(".img_change").click(function () {
-    if (ImgChange == 0) {
-      $(this).attr("src", "./img/ic-like_pk.png");
-      ImgChange = 1;
-    } else {
-      $(this).attr("src", "./img/ic-like.png");
-      ImgChange = 0;
+  $(".itemLike > button").click(function(){
+    if($(this).hasClass('on')){
+      $(this).removeClass('on')
+      $('.likeComment').css("display","block")
+      $('.likeComment').fadeOut(2000);
+      $('.likeComment > p').text("찜하기 리스트에서 삭제되었습니다.")
+      
+    }else{
+      $(this).addClass('on')
+      $('.likeComment').css("display","block")
+      $('.likeComment').fadeOut(2000);
+      $('.likeComment > p').text("찜하기 리스트에 추가되었습니다.")
     }
-  });
+  })
 
 
   //footer arrow 버튼
