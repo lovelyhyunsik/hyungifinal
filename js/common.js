@@ -12,6 +12,7 @@ $(function () {
   $('.inputTextDelete').click(function () {
     $(this).siblings('input').val('');
     $(this).css("display", "none");
+    $('.bottom > a').removeClass('on')
   })
 
   // 체크박스 전체 선택

@@ -69,7 +69,7 @@
 #shippingInfo>.spotInput:focus{border-color: #bdbdbd;}
 #shippingInfo>.spotInput>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #222; padding: 1.2rem 0;}
 #shippingInfo>.spotInputAfter>.spotChange{position: absolute; top: 1.4rem ;right:2rem;  float: right; box-sizing: border-box; background: #fff; border: 1px solid #E2E2E2; border-radius: 4px;}
-#shippingInfo>.spotInputAfter>.spotChange>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; text-align: center; color: #222; padding: 8px 1.6rem;}
+#shippingInfo>.spotInputAfter>.spotChange>a{display: block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; text-align: center; color: #222; padding: 8px 1.6rem;}
 #shippingInfo>.spotInputAfter>.shippingInfo_container{margin-top: 2.4rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
 #shippingInfo>.spotInputAfter>.shippingInfo_container>.reciveUser{display: flex; justify-content: space-between;}
 #shippingInfo>.spotInputAfter>.shippingInfo_container>.reciveUser>.reciveUser_r>.reciveUserName{margin-right: 3px;}

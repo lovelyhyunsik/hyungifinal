@@ -45,7 +45,7 @@
     <div class="accountNum">
         <span>계좌번호</span>
         <label>
-            <input type="number" placeholder="-없이 입력">
+            <input type="number" placeholder="-없이 입력" class="textInput">
             <span class="error">올바른 계좌번호가 맞는지 확인해주세요</span>
             <button class="inputTextDelete">
                 <img src="./img/ic-close-fill-24px.png " alt="">
@@ -65,7 +65,7 @@
         </label> 
     </div>
     <div class="bottom">
-        <a href="./return_management.html">등록</a><!-- 모두다 체크되면 addClass:on -->
+        <a href="./return_management.html">등록</a>
     </div>
 </body>
 <script>
@@ -77,6 +77,7 @@
     
 
     $('.selectBox_type>.optionItem_wrap>.optionItem').click(function(e){
+        $('.selectBox_type').addClass('active')
         var text_change = $(this).text()
         $('.selectBox_type>.label').text(text_change).css("color","#222")
         $('.selectBox_type>.optionItem_wrap>.optionItem').css("background","none")
@@ -92,20 +93,38 @@
         $('.selectBox_type>.optionItem_wrap').removeClass('on');
     })   
     
-    $('input').on('input', function () {
-        if ($('input').val() == '') {
-            $('.accountNum>button').removeClass('on')
-            $('.accountNum>label>button').css("display","none")
+    $('.selectBox_type>.optionItem_wrap>.optionItem').click(function(){
+        if ($('input').val() !== '' && $('#check_btn').is(":checked") && $('.selectBox_type').hasClass('active')) {
+            $('.bottom > a').addClass('on')
         } else {
-            $('.accountNum>button').addClass('on')
-            $('.accountNum>label>button').css("display","block")
+            $('.bottom > a').removeClass('on')
+        }
+    })
+
+    $('input').on('input', function () {
+        if ($('input').val() !== '' && $('#check_btn').is(":checked") && $('.selectBox_type').hasClass('active')) {
+            $('.bottom > a').addClass('on')
+        } else {
+            $('.bottom > a').removeClass('on')
         }
     });
+
+    $('.checkBoxWrap > label').click(function(){
+        if($('input').val() !== '' && $('#check_btn').is(":checked") && $('.selectBox_type').hasClass('active')){
+            $('.bottom > a').addClass('on')
+        }else{
+            $('.bottom > a').removeClass('on')
+        }
+    })
+
 
     if($('input').hasClass('on')){
         $('.error').css("display","block")
     }else{
         $('.error').css("display","none")
     }
+
+
+    
 </script>
 </html>

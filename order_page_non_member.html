@@ -341,6 +341,7 @@
     })//결제수단 기능
 
     $('.selectBox_type>.label').click(function () {
+        $('.selectBox_type').addClass('active')
         $(this).toggleClass('on');
         $('.selectBox_type>.optionItem_wrap').toggleClass('on')
         $('.selectBox_type>.optionItem_wrap>.optionItem').click(function () {
@@ -378,20 +379,21 @@
     });
 
     $('.bankName .optionItem').click(function(){
-        if($('.accountUserBox').text().length > 0 && $('.accountInput > input').val().length > 0){
-            $('.accountCheckBtn').addClass('on');
-        }else{
-            $('.accountCheckBtn').removeClass('on');
+        if ($('.accountInput input').val() !== '' && $('.accountUserBox').text() !== '' && $('.bankName .selectBox_type').hasClass('active')) {
+            $('.accountCheckBtn').addClass('on')
+        } else {
+            $('.accountCheckBtn').removeClass('on')
         }
     })
 
-    $('.accountInput > input').keyup(function(){
-        if($('.accountUserBox').text().length > 0 && $('.bankName .label').css("color","rgb(34, 34, 34);")){
-            $('.accountCheckBtn').addClass('on');
-        }else{
-            $('.accountCheckBtn').removeClass('on');
+    $('.accountInput input').on('input', function () {
+        if ($('.accountInput input').val() !== '' && $('.accountUserBox').text() !== '' && $('.bankName .selectBox_type').hasClass('active')) {
+            $('.accountCheckBtn').addClass('on')
+        } else {
+            $('.accountCheckBtn').removeClass('on')
         }
-    })
+    });
+
 
     $('.accountCheckBtn').click(function(){
         if($(this).hasClass('on')){
