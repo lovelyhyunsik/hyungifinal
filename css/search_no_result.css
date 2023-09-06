@@ -17,8 +17,8 @@ li,p{word-break: keep-all;}
 .itemWrap>h3{padding: 2.4rem 2rem 2rem 2rem; font-family: 'Pretendard'; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; color: #222;}
 .itemWrap>ul{display: flex; flex-wrap: wrap; justify-content: space-between; padding-bottom: 6rem;}
 .itemWrap>ul>li{width: 49.5%; position: relative;}
-.itemWrap>ul>li>a>.itemImg{background: #e2e2e2; position: relative;}
-.itemWrap>ul>li>a>.itemImg>img{width: 100%; height: auto;}
+.itemWrap>ul>li>a>.itemImg{background: #e2e2e2; position: relative; aspect-ratio: 3/4;}
+.itemWrap>ul>li>a>.itemImg>img{width: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 .itemWrap>ul>li>a>.tabItem{padding: 1.2rem 1.2rem 0.8rem 1.2rem; height: 5.9rem;}
 .itemWrap>ul>li>a>.tabItem>.itemBrand{overflow: hidden; text-overflow: ellipsis; margin-bottom: 0.4rem; font-family: 'Montserrat'; font-weight: 600; font-size: 1.2rem; line-height: 1.5rem;}
 .itemWrap>ul>li>a>.tabItem>.itemName{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; color: #222; line-height: 2rem;  overflow: hidden; text-overflow: ellipsis;}
