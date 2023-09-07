@@ -273,7 +273,7 @@
                     </div>
                 </div>
             </section>
-            <div class="orederAgreeCheckWrap">
+            <div class="orderAgreeCheckWrap">
                 <div class="allAgreeBtn">
                     <label>
                         <input type="checkbox" id="check_btn">
@@ -445,6 +445,13 @@
         }
     })
 
+    $('.orderAgreeCheckWrap #check_btn').on("input",function(){
+        if($('.allAgreeBtn #check_btn').is(":checked")){
+            $('.finalBuyBtn').addClass('on');
+        }else{
+            $('.finalBuyBtn').removeClass('on');
+        }
+     })
 
 </script>
 

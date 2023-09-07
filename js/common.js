@@ -32,7 +32,7 @@ $(function () {
     var checked = $(this).is(":checked");
 
     if (!checked) {
-      $(".allAgreeBtn>label>#check_btn").prop("checked", false);  
+      $(".allAgreeBtn>label>#check_btn").prop("checked", false);
     }
   });
 
