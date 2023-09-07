@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/common.js"></script>
 </head>
 
 <body>
@@ -82,7 +83,7 @@
                             <input type="text" class="domain_input">
                         </div>
                         <div class="selectBoxType">
-                            <button class="label">선택</button>
+                            <button class="label">직접입력</button>
                             <ul class="optionItemWrap">
                                 <li class="optionItem">naver.com</li>
                                 <li class="optionItem">daum.net</li>
@@ -272,6 +273,40 @@
                     </div>
                 </div>
             </section>
+            <div class="orederAgreeCheckWrap">
+                <div class="allAgreeBtn">
+                    <label>
+                        <input type="checkbox" id="check_btn">
+                        <span>주문동의</span>
+                    </label>
+                    <p>본인은 구매조건, 주문 내용 확인 및 결제에 동의합니다.</p>
+                </div>
+                <div class="checkBtnList">
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" id="check_btn" class="normal">
+                                <span>개인정보 수집 및 이용 동의</span>
+                            </label>
+                            <a href="">보기</a>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" id="check_btn" class="normal">
+                                <span>개인정보 제 3자 제공 동의</span>
+                            </label>
+                            <a href="">보기</a>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" id="check_btn" class="normal">
+                                <span>전자결제대행 이용 동의</span>
+                            </label>
+                            <a href="">보기</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div id="bottom">
                 <div class="finalBuyBtn">
                     <a href="./order_complete.html">122,000원 결제</a>
@@ -320,6 +355,7 @@
         var textDomain = $(this).text();
         $('.domain_input').attr("value" , textDomain);
         $('.domain_input').attr("readonly",true)
+        $('.user_e-mail .selectBoxType > .label').css("color","#bdbdbd")
     })//이메일 셀렉트박스
 
     $('.user_e-mail .direct').click(function(){
@@ -402,8 +438,14 @@
             $(this).text("인증 완료")
             $(".accountInput > input").attr("readonly","true")
             $('.bankName > .selectBox_type > .label').off("click")
+            console.log("ss")
+            $(this).attr("disabled" ,true)
+        }else if($(this).hasClass('finish')){
+            console.log("finish")
         }
     })
+
+
 </script>
 
 </html>

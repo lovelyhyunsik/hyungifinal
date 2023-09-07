@@ -181,7 +181,7 @@
 
 
 
-#finalPrice_wrap{padding-bottom: 2.8rem; border-bottom: 1.2rem solid #f5f5f5; margin-bottom: 8rem;}
+#finalPrice_wrap{padding-bottom: 2.8rem; border-bottom: 1.2rem solid #f5f5f5;}
 #finalPrice_wrap>h3{padding: 2rem 2rem 1.2rem 2rem; font-family: 'Pretendard'; font-weight: 600; font-size: 1.8rem; line-height: 2.4rem; color: #222;}
 #finalPrice_wrap>.priceHistory{padding: 2rem 2rem 0 2rem;}
 #finalPrice_wrap>.priceHistory div{display: flex; align-items: center; justify-content: space-between;}
@@ -195,6 +195,30 @@
 #finalPrice_wrap>.finalPrice>.finalPrice_t>span{font-family: 'Pretendard'; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; color: #e31616;}
 #finalPrice_wrap>.finalPrice>.finalPrice_b{margin-top: 8px;}
 #finalPrice_wrap>.finalPrice>.finalPrice_b>p{text-align: right; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #bdbdbd;}
+
+.notice{margin-bottom: 8rem;}
+.notice > .noticeWhiteBox{background: #fff; display: flex; justify-content: space-between; padding: 1.2rem 2rem; border-bottom: 1px solid #f5f5f5;}
+.notice > .noticeWhiteBox > .noticeWhiteBox_l{display: flex; align-items: center; gap: 8px;}
+.notice > .noticeWhiteBox > .noticeWhiteBox_l > img{width: 2rem; height: 2rem;}
+.notice > .noticeWhiteBox > .noticeWhiteBox_l > span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; color: #222;}
+.notice > .noticeWhiteBox > button{background: none;}
+.notice > .noticeWhiteBox > button > img{}
+.notice > .noticeGreyBox{background: #f5f5f5; padding: 2rem; display: none;}
+.notice > .noticeGreyBox.on{display: block;}
+.notice > .noticeGreyBox > p{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 400; color: #969696;}
+.notice > .noticeGreyBox > p:not(:first-child){margin-top: 1.5rem;}
+.notice > .checkNoitce{padding: 2rem;}
+.notice > .checkNoitce > label > span{font-family: 'Pretendard'; font-size: 1.4rem; color: #696969; font-weight: 400;}
+
+.orederAgreeCheckWrap{margin-bottom: 8rem;}
+.orederAgreeCheckWrap > .allAgreeBtn{padding: 1.2rem 2rem; background: #fff;}
+.orederAgreeCheckWrap > .allAgreeBtn > label > span{font-family: 'Pretendard'; font-size: 1.6rem; font-weight: 400; color: #222;}
+.orederAgreeCheckWrap > .allAgreeBtn > p{margin-top: 1.2rem;  font-family: 'Pretendard'; font-size: 1.4rem; color: #222; font-weight: 400;}
+.orederAgreeCheckWrap > .checkBtnList{background: #f5f5f5; padding: 2rem;}
+.orederAgreeCheckWrap > .checkBtnList > ul{display: flex; flex-direction: column; gap: 1.5rem;}
+.orederAgreeCheckWrap > .checkBtnList > ul > li{display: flex; justify-content: space-between; align-items: center;}
+.orederAgreeCheckWrap > .checkBtnList > ul > li > label > span{font-family: 'Pretendard'; font-size: 1.4rem; color: #222; font-weight: 400;}
+.orederAgreeCheckWrap > .checkBtnList > ul > li > a{font-family: 'Pretendard'; font-size: 1.4rem; line-height: 2rem; color: #696969; text-decoration: underline;}
 
 #bottom{position: fixed; bottom: 0; width: 100%; z-index: 2; filter: drop-shadow(0px -1px 2px rgba(0, 0, 0, 0.04)); background: #fff; padding: 1.2rem 2rem 1.6rem 2rem; box-sizing: border-box;}
 #bottom>.finalBuyBtn{width: 100%; height: 5.2rem; background: #222; box-sizing: border-box; border-radius: 4px;}
@@ -261,3 +285,34 @@
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
+input#check_btn{
+  display:none;
+  }
+
+input#check_btn  > span{
+  vertical-align: middle;
+ }
+
+/* label:before에 체크하기 전 상태 CSS */
+input#check_btn + span:before{
+  content:"";
+  display:inline-block;
+  width:18px;
+  height:18px;
+  border:1px solid #e2e2e2;
+  border-radius: 2px;
+  vertical-align:middle;
+  margin-right: 8px;
+  background: #fff;
+  }
+  
+/* label:before에 체크 된 상태 CSS */  
+input#check_btn:checked + span:before{
+  content:"";
+  background-color:#222;
+  border-color:#222;
+  background-image: url(../img/check_btn.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  }
