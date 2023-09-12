@@ -46,18 +46,26 @@
      </div>
 </body>
 <script>
-    $('.alarmToggle > label > input').change(function(){
+    $('.alarmToggle > label > input').click(function(){
         if($('.alarmToggle > label > input').is(":checked")){
+            $(this).prop("checked", false)
             $('.popLayer').css("display","block")
             $('.popLayerContainer > p').text('수신을 동의하시겠습니까?')
             $('.popLayer .cancel').click(function(){
                 $('.alarmToggle > label > input').prop("checked", false)
             })
+            $('.popLayer .check').click(function(){
+                $('.alarmToggle > label > input').prop("checked", true)
+            })
         }else{
+            $(this).prop("checked", true)
             $('.popLayer').css("display","block")
             $('.popLayerContainer > p').text('수신을 해제하시겠습니까?')
             $('.popLayer .cancel').click(function(){
                 $('.alarmToggle > label > input').prop("checked", true)
+            })
+            $('.popLayer .check').click(function(){
+                $('.alarmToggle > label > input').prop("checked", false)
             })
         }
     })

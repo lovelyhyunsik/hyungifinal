@@ -424,9 +424,9 @@
 
     $('.accountInput input').on('input', function () {
         if ($('.accountInput input').val() !== '' && $('.accountUserBox').text() !== '' && $('.bankName .selectBox_type').hasClass('active')) {
-            $('.accountCheckBtn').addClass('on')
+            $('.accountCheckBtn').addClass('on');
         } else {
-            $('.accountCheckBtn').removeClass('on')
+            $('.accountCheckBtn').removeClass('on');
         }
     });
 
@@ -435,11 +435,10 @@
         if($(this).hasClass('on')){
             $(this).removeClass('on');
             $(this).addClass('finish');
-            $(this).text("인증 완료")
-            $(".accountInput > input").attr("readonly","true")
-            $('.bankName > .selectBox_type > .label').off("click")
-            console.log("ss")
-            $(this).attr("disabled" ,true)
+            $(this).text("인증 완료");
+            $(".accountInput > input").attr("readonly","true");
+            $('.bankName > .selectBox_type > .label').off("click");
+            $(this).attr("disabled" ,true);
         }else if($(this).hasClass('finish')){
             console.log("finish")
         }

@@ -39,11 +39,11 @@
         <div class="addressInput">
             <span>우편번호</span>
             <div class="zipCode">
-                <input type="number" placeholder="우편 번호를 검색하세요">
+                <input type="number" placeholder="우편 번호를 검색하세요" >
                 <a href="">주소찾기</a>
             </div>
             <div class="addressMain">
-                <input type="text" placeholder="우편번호 검색 후, 자동입력 됩니다">
+                <input type="text" placeholder="우편번호 검색 후, 자동입력 됩니다" >
             </div>
             <div class="addressDetail">
                 <input type="text" placeholder="상세주소 입력">
@@ -58,4 +58,26 @@
         <a href="">완료</a><!-- 모든 input 입력되면 addClass:on -->
     </div>
 </body>
+<script>
+        var $completeBtn = $(".bottom > a");
+        var $inputFields = $(".inputWrap input");
+
+        function checkInputs() {
+            var allInputsFilled = true;
+            $inputFields.each(function() {
+                if ($(this).val().trim() === "") {
+                    allInputsFilled = false;
+                }
+            });
+
+            if (allInputsFilled) {
+                $completeBtn.addClass("on");
+            } else {
+                $completeBtn.removeClass("on");
+            }
+        }
+
+        // 입력 필드에 변화가 있을 때마다 확인
+        $inputFields.on("input", checkInputs);
+</script>
 </html>
