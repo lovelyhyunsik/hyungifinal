@@ -23,18 +23,18 @@
 #menuExhibition>ul>li>a{display: block; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem;  color: #696969; }
 
 .exhibitionContent{padding-bottom: 4rem; border-bottom: 1px solid #f5f5f5;}
-.exhibitionContent>ul{max-width: 48rem; display: flex; overflow-x: scroll; padding: 0 2rem; margin: 0 auto; justify-content: space-between;}
+.exhibitionContent>ul{/* max-width: 48rem; */ display: flex; overflow-x: scroll; padding: 0 2rem;/*  margin: 0 auto; */ /* justify-content: space-between; */}
 .exhibitionContent>ul::-webkit-scrollbar{display: none;}
 .exhibitionContent>ul>li{}
 .exhibitionContent>ul>li:not(:first-child){margin-left: 1.2rem;}
 
 .exhibitionContent>ul>li>a{display: block; background: none;}
-.exhibitionContent>ul>li>a>.imgArea{position: relative; width: 15.2rem; height: 20.4rem; overflow: hidden;}
-.exhibitionContent>ul>li>a>.imgArea>img{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.exhibitionContent>ul>li>a>.imgArea{position: relative; width: 15.2rem; height: 20.4rem; overflow: hidden; aspect-ratio: 3/4;}
+.exhibitionContent>ul>li>a>.imgArea>img{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; aspect-ratio: 3/4;}
 .exhibitionContent>ul>li>a>.textArea{padding-top: 1.2rem;}
-.exhibitionContent>ul>li>a>.textArea>.textTop{margin-bottom: 0.8rem; width: 15.2rem;  }
+.exhibitionContent>ul>li>a>.textArea>.textTop{margin-bottom: 0.8rem; width: 15.2rem;}
 .exhibitionContent>ul>li>a>.textArea>.textTop>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #222; text-overflow: ellipsis; overflow: hidden; white-space:nowrap;}
-.exhibitionContent>ul>li>a>.textArea>.textBottom{ width: 15.2rem; height: 4rem;}
+.exhibitionContent>ul>li>a>.textArea>.textBottom{width: 15.2rem; height: 4rem;}
 .exhibitionContent>ul>li>a>.textArea>.textBottom>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969; text-overflow: ellipsis; overflow: hidden;  -webkit-line-clamp:2; display: -webkit-box;  -webkit-box-orient: vertical; text-align: left;}
 
 #menuMagazine{padding: 0 2rem 4rem 2rem;}
@@ -44,7 +44,7 @@
 #menuMagazine>ul>li>a{display: block; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem;  color: #696969; }
 #menuMagazine>.magazineContent>a{display: block; background: none;}
 #menuMagazine>.magazineContent>a:not(:first-child){margin-top: 1.6rem;}
-#menuMagazine>.magazineContent>a>.magazineList{margin: 0 auto; display: flex; max-width: 48rem;}
+#menuMagazine>.magazineContent>a>.magazineList{display: flex; max-width: 48rem;}
 #menuMagazine>.magazineContent>a>.magazineList>img{width: 38.8%; height: auto;}
 #menuMagazine>.magazineContent>a>.magazineList>.magazineText{ padding: 1.6rem 1.3rem 1.8rem 1.4rem;  }
 #menuMagazine>.magazineContent>a>.magazineList>.magazineText{width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}

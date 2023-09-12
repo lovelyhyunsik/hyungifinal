@@ -28,8 +28,8 @@ html,body{position: relative; height: 100%;}
 .itemListWrap>ul>li:first-child{margin-top: 1.2rem;}
 .itemListWrap>ul>li:not(:first-child){margin-top: 2rem;}
 .itemListWrap>ul>li>.itemList{display: flex; width: 100%;}
-.itemListWrap>ul>li>.itemList>.itemImg{width: 28.125%; position: relative; background: #e2e2e2;}
-.itemListWrap>ul>li>.itemList>.itemImg>a{display: block; width: 100%;}
+.itemListWrap>ul>li>.itemList>.itemImg{width: 28.125%; position: relative; background: #e2e2e2; aspect-ratio: 3/4;}
+.itemListWrap>ul>li>.itemList>.itemImg>a{display: block; position: absolute; width: 100%; height: 100%; top: 0; z-index: 111;}
 .itemListWrap>ul>li>.itemList>.itemImg>a>img{width: 100%; position: absolute; top: 50%; transform: translateY(-50%);}
 .itemListWrap>ul>li>.itemList>.itemImg>.itemLike{position: absolute; z-index: 112; top: 0; right: 0;}
 .itemListWrap>ul>li>.itemList>.itemImg>.itemLike>button{background: url(../img/ic-like.png) no-repeat center; width: 40px; height: 40px;}
