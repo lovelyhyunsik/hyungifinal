@@ -114,7 +114,7 @@ li{word-break: keep-all;}
 
 /* exhibition_section */
 .exhibitionCategoryTab>.exhibitionCategoryTabWrap{padding: 2.4rem 2rem;}
-.exhibitionCategoryTab>.exhibitionCategoryTabcontent{padding-bottom: 10.2rem;}
+.exhibitionCategoryTab>.exhibitionCategoryTabcontent{}
 .exhibitionCategoryTab>.exhibitionCategoryTabWrap>.exhibitionCategoryTabnav{ overflow-x: scroll; padding: 1.2rem 0 1.2rem 0;}
 .exhibitionCategoryTab>.exhibitionCategoryTabWrap>.exhibitionCategoryTabnav::-webkit-scrollbar{display: none;}
 .exhibitionCategoryTab>.exhibitionCategoryTabWrap>.exhibitionCategoryTabnav>ul{display: flex;}

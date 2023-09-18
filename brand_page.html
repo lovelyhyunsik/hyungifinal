@@ -42,7 +42,10 @@
                 <div class="imgTextWrap">
                     <div class="imgTextContainer">
                         <div class="imgTextTop">
-                            <img src="./img/ic-like.png" alt="" class="img_change">
+                            <div class="itemLike">
+                                <button>
+                                </button>
+                            </div>
                             <p>1,200</p>
                         </div>
                         <div class="imgTextBottom">
@@ -1579,6 +1582,12 @@
                                 <p>높은 가격순</p>
                             </div>
                         </li>
+                        <li>
+                            <div class="check_list">
+                                <div class="check_img"></div>
+                                <p>높은 가격순</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -1707,6 +1716,18 @@
                                             <span></span>
                                         </li>
                                         <li class="navy">
+                                            <span></span>
+                                        </li>
+                                        <li class="lightGrey">
+                                            <span></span>
+                                        </li>
+                                        <li class="grey">
+                                            <span></span>
+                                        </li>
+                                        <li class="black">
+                                            <span></span>
+                                        </li>
+                                        <li class="white">
                                             <span></span>
                                         </li>
                                         <li class="lightGrey">
@@ -1854,6 +1875,9 @@
     $(li_active).click(function () {
         $(li_active).removeClass('active')
         $(this).addClass('active')
+        $('body').removeClass('hidden')
+        $('#sort_popup>.sort_body').css({ "display": "none", "background": "none" })
+        $('#sort_popup>.sort_container').removeClass('fixed')
     })
     $(p_active).click(function () {
         var text_change = $(this).children('p').text()

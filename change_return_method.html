@@ -37,7 +37,6 @@
             <div class="tab_nav">
                 <ul>
                     <li>
-                        <!-- <a href="#tab1" class="on"> -->
                         <label>
                             <input type="radio" name="method" checked="" class="auto">
                             <div class="label_r">
@@ -45,10 +44,8 @@
                                 <span>택배업체에서 방문수령 수거해갈게요</span>
                             </div>
                         </label>
-                        <!-- </a> -->
                     </li>
                     <li>
-                        <!-- <a href="#tab2"> -->
                         <label>
                             <input type="radio" name="method" class="direct">
                             <div class="label_r">
@@ -56,7 +53,6 @@
                                 <span>직접 상품을 발송할게요</span>
                             </div>
                         </label>
-                        <!-- </a> -->
                     </li>
                 </ul>
             </div>
@@ -172,8 +168,8 @@
     </div>
 </body>
 <script>
-    $('.tab_nav ul li').click(function () {
-        var selectedIndex = $(this).index();
+    $('.tab_nav ul li label').click(function () {
+        var selectedIndex = $(this).parent('li').index();
 
         $('.tab_content .tab').removeClass('active');
         $('.tab_content .tab').eq(selectedIndex).addClass('active');
@@ -242,6 +238,18 @@
 
         $('.changeAddress .selectBox_type>.optionItem_wrap').removeClass('on');
     })
+
+    //function btnActive(){
+    //    if($("#tab1").hasClass('active')){
+    //        if($('.optionItem_wrap')){
+//
+    //        }
+    //    }else if($("#tab2").hasClass('active')){
+//
+    //    }
+    //}
+
+    
 
 </script>
 
