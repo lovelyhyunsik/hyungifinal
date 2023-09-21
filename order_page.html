@@ -16,6 +16,217 @@
 </head>
 
 <body>
+    <div class="return_modal_wrap">
+        <div class="return_modal_background"></div>
+        <div class="return_modal">
+            <div class="touch_line_wrap">
+                <div class="touch_line"></div>
+            </div>
+            <h3>환불계좌</h3>
+            <div class="return_modal_container">
+                <div class="bank_name">
+                    <span>은행명</span>
+                    <div class="selectBoxType">
+                        <button class="label">은행명</button>
+                        <ul class="optionItemWrap">
+                            <li class="optionItem">우리은행</li>
+                            <li class="optionItem">국민은행</li>
+                            <li class="optionItem">신한은행</li>
+                            <li class="optionItem">농협</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="account_num">
+                    <span>계좌번호</span>
+                    <input type="number" placeholder="-없이 입력">
+                </div>
+                <div class="account_user_name">
+                    <span>예금주</span>
+                    <input type="text" value="홍길동" readonly>
+                </div>
+                <div class="return_check">
+                    <div class="return_check_top">
+                        <label>
+                            <input type="checkbox" id="check_btn">
+                            <span>[필수] 개인정보 수집 및 이용 동의</span>
+                        </label>
+                        <button></button>
+                    </div>
+                    <div class="grey_box">
+                        <p>수집목적: 환불계좌 등록</p>
+                        <p>수집하는 개인정보: 예금주, 입금은행, 계좌번호</p>
+                        <p>개인정보의 처리 및 보유기간: 환불계좌 삭제 및 회원탈퇴 시 까지 서비스를 거부할 권리가 있으며, 다만 동의를 하지 않을 경우 목적에 따른 혜택이 제한될 수 있으나 그 밖에 불이익은 없습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_bottom">
+                <button>등록하기</button>
+            </div>
+        </div>
+    </div>
+    <div id="couponApply">
+        <div>
+            <header id="headerType2">
+                <div>
+                    <p>쿠폰적용</p>
+                    <div class="headerIcoWrap">
+                        <button class="icoLeftArrow"></button>
+                    </div>
+                </div>
+            </header>
+            <div class="bigSale">
+                <label>
+                    <input type="checkbox" id="check_btn">
+                    <span>최대 할인혜택 적용하기</span>
+                </label>
+            </div>
+            <section id="order_item_coupon_wrap">
+                <div class="order_item_coupon_container">
+                    <div class="brand_name">CHATELAINE</div>
+                    <div class="order_item_container_b">
+                        <div class="order_item_img">
+                            <img src="./img/item_2.png" alt="">
+                        </div>
+                        <div class="order_item_container_bl"> 
+                            <p class="item_name">라운드넥 아가일 니트</p>
+                            <p class="item_orderNumber">CLAWSW102</p>
+                            <div class="item_option">
+                                <p class="item_color">네이비</p>
+                                <p class="item_size">55</p>
+                                <p class="item_count">1개</p>
+                            </div>
+                            <p class="item_price">127000원</p>
+                        </div>
+                    </div>
+                    <div class="discountPrice"><!-- 셀렉트박스 선택되면 나타나게 -->
+                        <div class="discountPrice_l">할인금액</div>
+                        <div class="discountPrice_r"><span>-254000</span>원</div>
+                    </div> 
+                    <div class="selectBoxType">
+                        <button class="label">쿠폰을 선택해주세요</button>
+                        <ul class="optionItemWrap">
+                            <li class="optionItem">첫 구매 10%할인 쿠폰</li>
+                            <li class="optionItem">첫 구매 20%할인 쿠폰</li>
+                            <li class="optionItem">첫 구매 30%할인 쿠폰</li>
+                            <li class="optionItem">첫 구매 40%할인 쿠폰</li>
+                            <li class="optionItem">첫 구매 50%할인 쿠폰</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order_item_coupon_container">
+                    <div class="brand_name">CHATELAINE</div>
+                    <div class="order_item_container_b">
+                        <div class="order_item_img">
+                            <img src="./img/item_2.png" alt="">
+                        </div>
+                        <div class="order_item_container_bl">
+                            <p class="item_name">라운드넥 아가일 니트</p>
+                            <p class="item_orderNumber">CLAWSW102</p>
+                            <div class="item_option">
+                                <p class="item_color">네이비</p>
+                                <p class="item_size">55</p>
+                                <p class="item_count">1개</p>
+                            </div>
+                            <p class="item_price">127000원</p>
+                        </div>
+                    </div>
+                    <div class="discountPrice"><!-- 셀렉트박스 선택되면 나타나게 -->
+                        <div class="discountPrice_l">할인금액</div>
+                        <div class="discountPrice_r"><span>-254000</span>원</div>
+                    </div> 
+                    <div class="selectBoxType">
+                        <button class="label">쿠폰을 선택해주세요</button>
+                        <ul class="optionItemWrap">
+                            <li class="optionItem">첫 구매 10%할인 쿠폰</li>
+                            <li class="optionItem">첫 구매 20%할인 쿠폰</li>
+                            <li class="optionItem">첫 구매 30%할인 쿠폰</li>
+                            <li class="optionItem">첫 구매 40%할인 쿠폰</li>
+                            <li class="optionItem">첫 구매 50%할인 쿠폰</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order_item_coupon_container">
+                    <div class="brand_name">CHATELAINE</div>
+                    <div class="order_item_container_b">
+                        <div class="order_item_img">
+                            <img src="./img/item_2.png" alt="">
+                        </div>
+                        <div class="order_item_container_bl"> 
+                            <p class="item_name">라운드넥 아가일 니트</p>
+                            <p class="item_orderNumber">CLAWSW102</p>
+                            <div class="item_option">
+                                <p class="item_color">네이비</p>
+                                <p class="item_size">55</p>
+                                <p class="item_count">1개</p>
+                            </div>
+                            <p class="item_price">127000원</p>
+                        </div>
+                    </div>
+                    <div class="discountPrice"><!-- 셀렉트박스 선택되면 나타나게 -->
+                        <div class="discountPrice_l">할인금액</div>
+                        <div class="discountPrice_r"><span>-254000</span>원</div>
+                    </div> 
+                    <div class="selectBoxType">
+                        <button class="label">쿠폰을 선택해주세요</button>
+                        <ul class="optionItemWrap">
+                            <li class="optionItem">첫 구매 10%할인 쿠폰</li>
+                            <li class="optionItem">첫 구매 20%할인 쿠폰</li>
+                            <li class="optionItem">첫 구매 30%할인 쿠폰</li>
+                            <li class="optionItem">첫 구매 40%할인 쿠폰</li>
+                            <li class="optionItem">첫 구매 50%할인 쿠폰</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div id="bottom">
+                <button><span>25400</span>원 할인 적용</button>
+            </div>
+        </div>
+    </div>
+    <div id="infoChange">
+        <div>
+            <header id="headerType2">
+                <div>
+                    <p>정보 변경</p>
+                    <div class="headerIcoWrap">
+                        <button class="icoLeftArrow"></button>
+                    </div>
+                </div>
+            </header>
+            <section id="userInfo">
+                <div class="userName">
+                    <p>이름</p>
+                    <input type="text">
+                </div>
+                <div class="userEmail">
+                    <p>이메일</p>
+                    <input type="text"><span>@</span>
+                    <div class="selectBoxType">
+                        <button class="label">도메인</button>
+                        <ul class="optionItemWrap">
+                            <li class="optionItem">naver.com</li>
+                            <li class="optionItem">daum.net</li>
+                            <li class="optionItem">kakao.com</li>
+                            <li class="optionItem">google.com</li>
+                            <li class="optionItem">직접입력</li>
+                        </ul>
+                        <input type="text" class="direct"><!-- 직접입력 클릭시 나타나게 -->
+                    </div>
+                </div>
+                <div class="userNum">
+                    <p>휴대전화</p>
+                    <div class="phoneNumWrap">
+                        <span>010</span>
+                        <input type="text" class="phoneNum">
+                    </div>
+                </div>
+            </section>
+            <div id="bottom">
+                <button class="cancel">취소</button>
+                <button class="change">변경</button><!-- 위 항목 전체다 입력될시 addClass='on' -->
+            </div>
+        </div>
+    </div>
     <div id="oreder_page">
         <div>
             <header id="header_type2">
@@ -68,9 +279,7 @@
             <section id="order_user_wrap">
                 <div class="order_user_t">
                     <h3>주문자</h3>
-                    <a href="./info_change.html">
-                        <p>정보 변경</p>
-                    </a>
+                    <button class="info_change_btn">정보 변경</button>
                 </div>
                 <div class="order_user_b">
                     <div class="user_name"><span>이름</span>홍길동</div>
@@ -115,23 +324,23 @@
             <section id="discount_benefit">
                 <h3>할인혜택</h3>
                 <div class="coupon">
-                    <div class="noneCoupon_wrap">
+                    <div class="noneCoupon_wrap" style="display: none;">
                         <h4>쿠폰</h4>
                         <p class="noCoupon">적용 가능한 쿠폰이 없습니다.</p>
                     </div><!-- 쿠폰 없을 때 화면 -->
-                    <div class="someCoupon_wrap"  style="display: none;"><!-- 쿠폰이 있는데 적용하기 전 화면 display:none 처리 해놨습니다. 노출시 display:flex로 변경-->
+                    <div class="someCoupon_wrap"><!-- 쿠폰이 있는데 적용하기 전 화면 display:none 처리 해놨습니다. 노출시 display:flex로 변경-->
                         <div class="someCoupon_l">
                             <h4>쿠폰</h4>
                             <p class="someCoupon">적용 가능한 쿠폰이 <span><span class="couponNum">1</span>개</span> 있습니다.</p>
                         </div>
-                        <a href="./coupon_apply_page.html">적용하기</a>
+                        <button class="coupon_btn">적용하기</button>
                     </div>
-                    <div class="applyCoupon_wrap"  style="display: none;" ><!-- 쿠폰적용 화면 display:none 처리 해놨습니다. 노출시 display:flex로 변경-->
+                    <div class="applyCoupon_wrap" style="display: none;"><!-- 쿠폰적용 화면 display:none 처리 해놨습니다. 노출시 display:flex로 변경-->
                         <div class="applyCoupon_l">
                             <h4>쿠폰 <span class="applyCouponNum">1</span>장 적용</h4>
                             <p class="applyPrice">-<span class="applyPriceNum">25400</span>원</p>
                         </div>
-                        <a href="./coupon_apply_page.html">변경하기</a>
+                        <button class="coupon_btn">변경하기</button>
                     </div>
                 </div>
                 <div class="saving">
@@ -205,9 +414,9 @@
                             <span>현금결제</span>
                         </label>
                         <div class="payContent">
-                            <a href="./return_plus.html">환불계좌 등록</a><!-- 환불계좌 등록 안되어있을때 화면 -->
-                            <div class="yes_return" style="display: none;"><!-- 환불계좌 등록 되어있을때 화면 display:none처리해놨습니다. -->
-                                <a href="./return_management.html">환불계좌 변경</a>
+                            <button class="return_modal_btn" style="display: none;">환불계좌 등록</button><!-- 환불계좌 등록 안되어있을때 화면 -->
+                            <div class="yes_return"><!-- 환불계좌 등록 되어있을때 화면 display:none처리해놨습니다. -->
+                                <button class="return_modal_btn">환불계좌 변경</button>
                                 <div class="returnAccount">
                                     <div class="bankName">우리</div>
                                     <div class="accountNum">1000159689***</div>
@@ -300,7 +509,7 @@
         var targetLabel = $(this).closest('.selectBoxType').children('.label');
         var targetDiscount = $(this).closest('.selectBoxType').siblings('.discountPrice')
         targetLabel.text(textChange);
-
+        $('.direct').css("display", "none")
         $(this).parent('.optionItemWrap').toggleClass('on')
         $(targetLabel).removeClass('on')
         $(targetLabel).css("color", "#222")
@@ -311,13 +520,6 @@
     $('.optionItem:last-child').click(function () {
         $('.direct').css("display", "block")
     });//셀렉트 박스
-
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-      }
-    });//개별페이지 스와이퍼슬라이드기능
 
     $('.payMethod').children('div').click(function(){
         $('.payMethod>div').removeClass('on')
@@ -348,6 +550,54 @@
        }else{
            $('.finalBuyBtn').removeClass('on');
        }
+    })
+
+    $('.info_change_btn').click(function(){
+        $('#infoChange').css("display","block");
+        $('#oreder_page').css("display","none");
+    });
+
+    $('#infoChange .icoLeftArrow').click(function(){
+        $('#infoChange').css("display","none");
+        $('#oreder_page').css("display","block");
+    });
+
+    $('#bottom > .cancel').click(function(){
+        $('#infoChange').css("display","none");
+        $('#oreder_page').css("display","block");
+    });
+
+    $('.coupon_btn').click(function(){
+        $('#couponApply').css("display","block");
+        $('#oreder_page').css("display","none");
+    });
+
+    $('#couponApply .icoLeftArrow').click(function(){
+        $('#couponApply').css("display","none");
+        $('#oreder_page').css("display","block");
+    });
+
+    $('.return_modal_btn').click(function(){
+        $('body').addClass('hidden');
+        $('.return_modal_background').css({"display": "block", "background": "rgba(0,0,0,0.5)" });
+        $('.return_modal').addClass('fixed');
+    })
+
+    $('.return_modal_background').click(function(){
+        $('body').removeClass('hidden');
+        $('.return_modal_background').css({"display": "none", "background": "none" });
+        $('.return_modal').removeClass('fixed');
+    });
+
+    $(".touch_line_wrap").click(function () {
+        $('body').removeClass('hidden');
+        $('.return_modal_background').css({"display": "none", "background": "none" });
+        $('.return_modal').removeClass('fixed');
+    }); 
+
+    $('.return_check_top > button').click(function(){
+        $(this).toggleClass("on")
+        $('.return_check .grey_box').toggleClass("on")
     })
 </script>
 

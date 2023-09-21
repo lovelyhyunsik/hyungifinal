@@ -100,8 +100,8 @@
 .item_detail_tab_content>#item_detail_tab1>.item_detail_tab1_img > .size_wrap > .size_container > .size_box{margin-top: 20px;}
 .item_detail_tab_content>#item_detail_tab1>.item_detail_tab1_img > .size_wrap > .size_container > .size_box > table{}
 .item_detail_tab_content>#item_detail_tab1>.item_detail_tab1_img > .size_wrap > .size_container > .size_box > table > tbody > tr{height: 40px; border-bottom: 1px solid #e2e2e2;}
-.item_detail_tab_content>#item_detail_tab1>.item_detail_tab1_img > .size_wrap > .size_container > .size_box > table > tbody > tr > th{width: 20%; background: #f5f5f5; font-family: 'Pretendard';  font-weight: 400; font-size: 12px; line-height: 20px; color: #222; text-align: center;}
-.item_detail_tab_content>#item_detail_tab1>.item_detail_tab1_img > .size_wrap > .size_container > .size_box > table > tbody > tr > td{width: 20%; background: #fff; font-family: 'Pretendard';  font-weight: 400; font-size: 12px; line-height: 20px; color: #222; text-align: center;}
+.item_detail_tab_content>#item_detail_tab1>.item_detail_tab1_img > .size_wrap > .size_container > .size_box > table > tbody > tr > th{ background: #f5f5f5; font-family: 'Pretendard';  font-weight: 400; font-size: 12px; line-height: 20px; color: #222; text-align: center;}
+.item_detail_tab_content>#item_detail_tab1>.item_detail_tab1_img > .size_wrap > .size_container > .size_box > table > tbody > tr > td{ background: #fff; font-family: 'Pretendard';  font-weight: 400; font-size: 12px; line-height: 20px; color: #222; text-align: center;}
 .item_detail_tab_content>#item_detail_tab1>.item_detail_tab1_img > .size_wrap > .size_container > .size_box > .table_notice{margin-top: 15px; justify-content: space-between;}
 .item_detail_tab_content>#item_detail_tab1>.item_detail_tab1_img > .size_wrap > .size_container > .size_box > .table_notice > .table_notice_l{font-family: 'Pretendard'; font-size: 10px;}
 .item_detail_tab_content>#item_detail_tab1>.item_detail_tab1_img > .size_wrap > .size_container > .size_box > .table_notice > .table_notice_r{font-family: 'Pretendard'; font-size: 10px;}

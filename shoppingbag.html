@@ -192,63 +192,121 @@
           </div>
           <section id="purchase_popup">
             <div class="purchase_body"></div>
-            <div class="purchase_container">
-                <div class="touch_line_wrap">
-                    <div class="touch_line"></div>
-                </div>
-                <h3>옵션</h3>
-                <div class="select_box_wrap">
-                    <div class="select_box_container">
-                        <div class="selectBox_type">
-                            <button class="label">색상</button>
-                            <ul class="optionList" id="crops1">
-                                <li class="optionItem"><span class="color_circle"></span><p>네이비</p></li>
-                                <li class="optionItem"><span class="color_circle"></span><p>레드</p></li>
-                                <li class="optionItem"><span class="color_circle"></span><p>카멜</p></li>
-                                <li class="optionItem"><span class="color_circle"></span><p>엘로우</p></li>
-                                <li class="optionItem"><span class="color_circle"></span><p>그린</p></li>
-                                <li class="optionItem"><span class="color_circle"></span><p>오렌지</p></li>
-                            </ul>
-                        </div>
-                        <div class="selectBox_size">
-                            <button class="label">사이즈</button>
-                            <ul class="optionList" id="crops1">
-                                <li class="optionItem"><p class="size">55</p></li>
-                                <li class="optionItem"><p class="size">66</p></li>
-                                <li class="optionItem"><p class="size">77</p></li> 
-                                <li class="optionItem"><p class="size">88</p></li>
-                            </ul>
-                        </div>
-                        <div class="purchase_item_wrap">
-                            <div class="purchase_item_container">
-                                <div class="delete_btn"><img src="./img/ic-close_grey.png" alt=""></div>
-                                <div class="purchase_item_container_opt">
-                                    <span class="color_circle"></span>
-                                    <p>네이비</p>
-                                    <span class="slash">/</span>
-                                    <p class="size">55</p>
-                                </div>
-                                <div class="quantity">
-                                    <div class="quantity_container">
-                                        <div class="minus"><img src="./img/ic-minus.png" alt=""></div>
-                                        <div class="num">1</div>
-                                        <div class="plus"><img src="./img/ic-plus.png" alt=""></div>
+            <form>
+                <div class="purchase_container">
+                    <div class="touch_line_wrap">
+                        <div class="touch_line"></div>
+                    </div>
+                    <h3>옵션</h3>
+                    <div class="select_box_wrap">
+                        <div class="select_box_container">
+                            <div class="selectBox_type">
+                                <button type="button" class="label">색상</button>
+                                <ul class="optionList" id="crops1">
+                                    <li class="optionItem soldOutOpt">
+                                        <label for="">
+                                            <span class="color_circle"></span>
+                                            <input type="radio">
+                                            네이비
+                                        </label>
+                                    </li>
+                                    <li class="optionItem">
+                                        <label for="">
+                                            <span class="color_circle" style="background: red;"></span>
+                                            <input type="radio">
+                                            네이비
+                                        </label>
+                                    </li>
+                                    <li class="optionItem">
+                                        <label for="">
+                                            <span class="color_circle" style="background: red;"></span>
+                                            <input type="radio">
+                                            네이비
+                                        </label>
+                                    </li>
+                                    <li class="optionItem">
+                                        <label for="">
+                                            <span class="color_circle" style="background: red;"></span>
+                                            <input type="radio">
+                                            네이비
+                                        </label>
+                                    </li>
+                                    <li class="optionItem">
+                                        <label for="">
+                                            <span class="color_circle" style="background: red;"></span>
+                                            <input type="radio">
+                                            네이비
+                                        </label>
+                                    </li>
+                                    <li class="optionItem">
+                                        <label for="">
+                                            <span class="color_circle" style="background: red;"></span>
+                                            <input type="radio">
+                                            네이비
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="selectBox_size">
+                                <button type="button" class="label">사이즈</button>
+                                <ul class="optionList" id="crops1">
+                                    <li class="optionItem soldOutOpt">
+                                        <label for="">
+                                            <input type="radio">
+                                            55
+                                        </label>
+                                    </li>
+                                    <li class="optionItem">
+                                        <label for="">
+                                            <input type="radio">
+                                            66
+                                        </label>
+                                    </li>
+                                    <li class="optionItem ">
+                                        <label for="">
+                                            <input type="radio">
+                                            77
+                                        </label>
+                                    </li>
+                                    <li class="optionItem">
+                                        <label for="">
+                                            <input type="radio">
+                                            88
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="purchase_item_wrap">
+                                <div class="purchase_item_container">
+                                    <div class="delete_btn"><img src="./img/ic-close_grey.png" alt=""></div>
+                                    <div class="purchase_item_container_opt">
+                                        <span class="color_circle"></span>
+                                        <p>네이비</p>
+                                        <span class="slash">/</span>
+                                        <p class="size">55</p>
                                     </div>
-                                    <div class="item_price">
-                                        <span class="price_num">127000</span><span>원</span>
+                                    <div class="quantity">
+                                        <div class="quantity_container">
+                                            <div class="minus"><img src="./img/ic-minus.png" alt=""></div>
+                                            <div class="num">1</div>
+                                            <div class="plus"><img src="./img/ic-plus.png" alt=""></div>
+                                        </div>
+                                        <div class="item_price">
+                                            <span class="price_num">127000</span><span>원</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="purchase_container_bottom">
+                         <div class="purchase_container_bottom_button">
+                            <div class="cancel"><button type="button">취소</button></div>
+                            <div class="change"><button type="submit">변경</button></div>
+                         </div>
+                    </div>
                 </div>
-                <div class="purchase_container_bottom">
-                     <div class="purchase_container_bottom_button">
-                        <div class="cancel"><button>취소</button></div>
-                        <div class="change"><a href="./item_detail.html">변경</a></div>
-                     </div>
-                </div>
-            </div>
+            </form>
             </div>
         </section>
     </section>
@@ -281,24 +339,52 @@
     $(".optionChange").click(function () {
         $('body').addClass('hidden')
         $('#purchase_popup>.purchase_body').css({ "display": "block", "background": "rgba(0,0,0,0.5)" })
-        $('#purchase_popup>.purchase_container').addClass('fixed')
+        $('#purchase_popup>form>.purchase_container').addClass('fixed')
     })
     $("#purchase_popup>.purchase_body").click(function () {
         $('body').removeClass('hidden')
         $('#purchase_popup>.purchase_body').css({ "display": "none", "background": "none" })
-        $('#purchase_popup>.purchase_container').removeClass('fixed')
+        $('#purchase_popup>form>.purchase_container').removeClass('fixed')
     })
     $(".purchase_container_bottom_button>.cancel").click(function () {
         $('body').removeClass('hidden')
         $('#purchase_popup>.purchase_body').css({ "display": "none", "background": "none" })
-        $('#purchase_popup>.purchase_container').removeClass('fixed')
+        $('#purchase_popup>form>.purchase_container').removeClass('fixed')
     })
     $(".touch_line_wrap").click(function () {
         $('body').removeClass('hidden')
         $('#purchase_popup>.purchase_body').css({ "display": "none", "background": "none" })
-        $('#purchase_popup>.purchase_container').removeClass('fixed')
+        $('#purchase_popup>form>.purchase_container').removeClass('fixed')
     })//purchase_popup
 
 
+
+    $('.selectBox_type>.label').click(function(){
+        $(this).toggleClass('on')
+        $('.selectBox_type>.optionList').toggleClass('on')
+        $('.selectBox_type>.optionList>.optionItem').click(function(){
+            var text_change = $(this).text()
+            $('.selectBox_type>.label').text(text_change).css("color","#222")
+            $('.selectBox_type>.optionList>.optionItem').css("background","none")
+            $(this).css("background","#f5f5f5")
+            $('.selectBox_type>.optionList').removeClass('on')
+            $('.selectBox_type>.label').removeClass('on')
+            $('.selectBox_type_detail').css("display","block")
+        })
+    })
+
+    $('.selectBox_size>.label').click(function(){
+        $(this).toggleClass('on')
+        $('.selectBox_size>.optionList').toggleClass('on')
+        $('.selectBox_size>.optionList>.optionItem').click(function(){
+            var text_change = $(this).text()
+            $('.selectBox_size>.label').text(text_change).css("color","#222")
+            $('.selectBox_size>.optionList>.optionItem').css("background","none")
+            $(this).css("background","#f5f5f5")
+            $('.selectBox_size>.optionList').removeClass('on')
+            $('.selectBox_size>.label').removeClass('on')
+            $('.selectBox_size_detail').css("display","block")
+        })
+    })
 </script>
 </html>
