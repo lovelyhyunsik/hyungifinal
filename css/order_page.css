@@ -67,8 +67,7 @@
 #shippingInfo>.spotInput{margin-top: 2rem; width: 100%; background: #fff; border: 1px solid #E2E2E2; border-radius: 4px;}
 #shippingInfo>.spotInput:focus{border-color: #bdbdbd;}
 #shippingInfo>.spotInput>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #222; padding: 1.2rem 0;}
-#shippingInfo>.spotInputAfter>.spotChange{position: absolute; top: 1.4rem ;right:2rem;  float: right; box-sizing: border-box; background: #fff; border: 1px solid #E2E2E2; border-radius: 4px;}
-#shippingInfo>.spotInputAfter>.spotChange>a{display: block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; text-align: center; color: #222; padding: 8px 1.6rem;}
+#shippingInfo>.spotInputAfter>.spotChange{position: absolute; top: 1.4rem ;right:2rem;  float: right; box-sizing: border-box; background: #fff; border: 1px solid #E2E2E2; border-radius: 4px; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; text-align: center; color: #222; padding: 8px 1.6rem;}
 #shippingInfo>.spotInputAfter>.shippingInfo_container{margin-top: 2.4rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
 #shippingInfo>.spotInputAfter>.shippingInfo_container>.reciveUser{display: flex; justify-content: space-between;}
 #shippingInfo>.spotInputAfter>.shippingInfo_container>.reciveUser>.reciveUser_r>.reciveUserName{margin-right: 3px;}
@@ -446,6 +445,94 @@ input#check_btn:checked + span:before{
 .return_modal_wrap > .return_modal > .return_modal_container > .return_check > .grey_box.on{display: block;}
 .return_modal_wrap > .return_modal > .return_modal_container > .return_check > .grey_box > p{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 400; color: #969696;}
 .return_modal_wrap > .return_modal > .return_modal_container > .return_check > .grey_box > p:not(:first-child){margin-top: 10px;}
-.return_modal_wrap > .return_modal > .modal_bottom{position: fixed; bottom: 0; left: 0; width: 100%; text-align: center; padding: 20px; box-sizing: border-box;}
+.return_modal_wrap > .return_modal > .modal_bottom{position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; padding: 20px; box-sizing: border-box;}
 .return_modal_wrap > .return_modal > .modal_bottom > button{ width: 100%;  margin: 0 auto; box-sizing: border-box; background: #f5f5f5; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; padding: 15px 0; border-radius: 4px; color: #222;}
 .return_modal_wrap > .return_modal > .modal_bottom > button.on{background: #222; color: #fff;}
+
+.addressChange{display: none;}
+
+.addressChange #headerType2{position: fixed; height: 5.6rem; width: 100%; }
+.addressChange #headerType2>div{height: 5.6rem; width: 100%;}
+.addressChange #headerType2>div>p{text-align: center; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 5.6rem; color: #222;}
+.addressChange #headerType2>div>.headerIcoWrap{ width: 100%; position: absolute; top: 50%; transform: translateY(-50%); /* display: flex; */ /* justify-content: space-between; */}
+.addressChange #headerType2>div>.headerIcoWrap>button{display: inline-block; width: 2.4rem; height: 2.4rem;}
+.addressChange #headerType2>div>.headerIcoWrap>button.ico_left_arrow{background: url(../img/ic-arrow-left.png) no-repeat center; margin-left: 2rem;}
+.addressChange #headerType2>div>.headerIcoWrap>.headerIco{display: flex; float: right; margin-right: 2rem;}
+.addressChange #headerType2>div>.headerIcoWrap>.headerIco>a{display: block; width: 2.4rem; height: 2.4rem;}
+.addressChange #headerType2>div>.headerIcoWrap>.headerIco>a.icoSearch{background: url(../img/search_bk.png) no-repeat center / 100%;}
+.addressChange #headerType2>div>.headerIcoWrap>.headerIco>a.icoAlarm{ background: url(../img/alarm_bk.png) no-repeat center / 100%;}
+.addressChange #headerType2>div>.headerIcoWrap>.headerIco>a.icoShoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
+
+.addressChange .plusAddress{padding: 2rem 2rem;}
+.addressChange .plusAddress>.plusAddressContainer{width: 100%; border: 1px solid #E2E2E2; border-radius: 4px; background: #fff; padding: 1.1rem 0;}
+.addressChange .plusAddress>.plusAddressContainer>a{display: flex; justify-content: center; align-items: center; gap: 6px;}
+.addressChange .plusAddress>.plusAddressContainer>a>img{width: 2.4rem; height: auto;}
+.addressChange .plusAddress>.plusAddressContainer>a>span{font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222;}
+
+.addressChange .popLayer{display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.5); z-index: 999;}
+.addressChange .popLayer>.popLayerContainer{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: calc(100% - 4rem); background: #fff; border-radius: 8px; padding: 3.6rem 2rem 2rem 2rem; box-sizing: border-box;}
+.addressChange .popLayer>.popLayerContainer>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #696969; text-align: center;}
+.addressChange .popLayer>.popLayerContainer>.btnWrap{display: flex; gap: 1.2rem; padding-top: 4rem;}
+.addressChange .popLayer>.popLayerContainer>.btnWrap>button.cancel{width: 50%; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #222; padding: 1.1rem 0; border: 1px solid #E2E2E2; border-radius: 4px; background: #fff;}
+.addressChange .popLayer>.popLayerContainer>.btnWrap>button.check{width: 50%; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #fff; padding: 1.2rem 0; border-radius: 4px; background: #222;}
+
+
+.addressChange .content{height: calc(100vh - 5.6rem); overflow-y: scroll; margin-top: 56px;}
+.addressChange .main{}
+.addressChange .main>.noAddress{display: none; height: calc(100vh - 14.4rem);}
+.addressChange .main>.noAddress>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.addressChange .main>.yesAddress{}
+.addressChange .main>.yesAddress>ul{padding: 2rem 2rem; display: flex; flex-direction: column; gap: 2rem;}
+.addressChange .main>.yesAddress>ul>li{padding: 1.6rem 2rem; border: 1px solid #E2E2E2; border-radius: 8px;}
+.addressChange .main>.yesAddress>ul>li>.defaultTag{display: inline-block; font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #fff; padding: 0.4rem 0.8rem; background: #222; border-radius: 2px; }
+.addressChange .main>.yesAddress>ul>li>.userInfo{margin-top: 1.6rem; display: flex; gap: 8px;}
+.addressChange .main>.yesAddress>ul>li>.userInfo>.userName{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #222;}
+.addressChange .main>.yesAddress>ul>li>.userInfo>.userNum{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #222;}
+.addressChange .main>.yesAddress>ul>li>.userAddress{padding-top: 4px; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969;}
+.addressChange .main>.yesAddress>ul>li>.userAddress>.addressText>.zipCode{display: inline-block; padding-right: 6px;}
+.addressChange .main>.yesAddress>ul>li>.btnWrap{display: flex; gap: 8px; padding-top: 2rem; justify-content: right;}
+.addressChange .main>.yesAddress>ul>li>.btnWrap>a{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 0.7rem 1.5rem; background: #fff; border: 1px solid #E2E2E2; border-radius: 4px;}
+.addressChange .main>.yesAddress>ul>li>.btnWrap>button{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 0.8rem 1.6rem; background: #f5f5f5;  border-radius: 4px;}
+
+.addressPlus{display: none;}
+
+.addressPlus #headerType2{position: relative; height: 5.6rem; width: 100%; }
+.addressPlus #headerType2>div{height: 5.6rem; width: 100%;}
+.addressPlus #headerType2>div>p{text-align: center; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 5.6rem; color: #222;}
+.addressPlus #headerType2>div>.headerIcoWrap{ width: 100%; position: absolute; top: 50%; transform: translateY(-50%); /* display: flex; */ /* justify-content: space-between; */}
+.addressPlus #headerType2>div>.headerIcoWrap>button{display: inline-block; width: 2.4rem; height: 2.4rem;}
+.addressPlus #headerType2>div>.headerIcoWrap>button.icoLeftArrow{background: url(../img/ic-arrow-left.png) no-repeat center; margin-left: 2rem;}
+.addressPlus #headerType2>div>.headerIcoWrap>.headerIco{display: flex; float: right; margin-right: 2rem;}
+.addressPlus #headerType2>div>.headerIcoWrap>.headerIco>a{display: block; width: 2.4rem; height: 2.4rem;}
+.addressPlus #headerType2>div>.headerIcoWrap>.headerIco>a.icoSearch{background: url(../img/search_bk.png) no-repeat center / 100%;}
+.addressPlus #headerType2>div>.headerIcoWrap>.headerIco>a.icoAlarm{ background: url(../img/alarm_bk.png) no-repeat center / 100%;}
+.addressPlus #headerType2>div>.headerIcoWrap>.headerIco>a.icoShoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
+
+.addressPlus .inputWrap{padding: 0 2rem;}
+.addressPlus .inputWrap>.userNameInput{box-sizing: border-box;}
+.addressPlus .inputWrap>.userNameInput>span{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; display: inline-block; padding-bottom: 8px;}
+.addressPlus .inputWrap>.userNameInput>input{box-sizing: border-box; width: 100%; padding: 1.3rem 1.6rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px;}
+.addressPlus .inputWrap>.userNameInput>input:focus{border-color: #bdbdbd;}
+.addressPlus .inputWrap>.userNumInput{padding-top: 4rem;}
+.addressPlus .inputWrap>.userNumInput>span{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; display: inline-block; padding-bottom: 8px;}
+.addressPlus .inputWrap>.userNumInput>input{box-sizing: border-box; width: 100%; padding: 1.3rem 1.6rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px;}
+.addressPlus .inputWrap>.userNumInput>input:focus{border-color: #bdbdbd;}
+.addressPlus .inputWrap>.addressInput{padding: 4rem 0 15.8rem 0;}
+.addressPlus .inputWrap>.addressInput>span{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; display: inline-block; padding-bottom: 8px;}
+.addressPlus .inputWrap>.addressInput>.zipCode{display: flex; gap: 1.2rem;}
+.addressPlus .inputWrap>.addressInput>.zipCode>input{width: calc(100% - 10rem); box-sizing: border-box; padding: 1.3rem 1.6rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px;}
+.addressPlus .inputWrap>.addressInput>.zipCode>input:focus{/* border-color: #bdbdbd; */}
+.addressPlus .inputWrap>.addressInput>.zipCode>a{display: block; width: 8.8rem; height: 5.2rem; border: 1px solid #e2e2e2; border-radius: 4px; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 5.2rem; color: #222; text-align: center; box-sizing: border-box;}
+.addressPlus .inputWrap>.addressInput>.addressMain{padding-top: 1.6rem;}
+.addressPlus .inputWrap>.addressInput>.addressMain>input{box-sizing: border-box; width: 100%; padding: 1.3rem 1.6rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px;}
+.addressPlus .inputWrap>.addressInput>.addressMain>input:focus{/* border-color: #bdbdbd; */}
+.addressPlus .inputWrap>.addressInput>.addressDetail{padding-top: 1.6rem; padding-bottom: 3.3rem;}
+.addressPlus .inputWrap>.addressInput>.addressDetail>input{box-sizing: border-box; width: 100%; padding: 1.3rem 1.6rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px; }
+.addressPlus .inputWrap>.addressInput>.addressDetail>input:focus{border-color: #bdbdbd;}
+.addressPlus .inputWrap>.addressInput>label>span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969;}
+
+.addressPlus .bottom{position: fixed; bottom: 0; left: 0; width: 100%; padding: 1.2rem 2rem 1.6rem 2rem; background: #fff; filter: drop-shadow(0px -1px 2px rgba(0, 0, 0, 0.04)); box-sizing: border-box;}
+.addressPlus .bottom>a{display: block; width: 100%; background: #f5f5f5; padding: 1.4rem 0; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #696969; border-radius: 4px;}
+.addressPlus .bottom>a.on{display: block; width: 100%; background: #222; padding: 1.4rem 0; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #fff; border-radius: 4px;}
+
+input::placeholder{color: #bdbdbd;}

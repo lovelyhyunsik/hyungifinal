@@ -16,6 +16,141 @@
 </head>
 
 <body>
+    <div class="addressChange">
+        <header id="headerType2"> 
+            <div>
+                <p>배송지 변경</p>
+                <div class="headerIcoWrap">
+                <button class="ico_left_arrow"><span class="hide">뒤로가기</span></button>
+                    <div class="headerIco">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="popLayer">
+            <div class="popLayerContainer">
+                <p>배송지를 삭제 하시겠습니까?</p>
+                <div class="btnWrap">
+                    <button class="cancel">취소</button>
+                    <button class="check">확인</button>
+                </div>
+            </div>
+         </div>
+        <div class="content">
+            <div class="plusAddress">
+                <div class="plusAddressContainer">
+                    <a href="./address_plus.html">
+                        <img src="./img/ic-plus.png" alt="">
+                        <span>배송지 추가</span>
+                    </a>
+                </div>
+            </div>
+            <div class="main">
+                <div class="noAddress">
+                    <p>등록된 배송지가 없습니다.</p>
+                </div>
+                <div class="yesAddress">
+                    <ul>
+                        <li>
+                            <div class="defaultTag">기본배송지</div>
+                            <div class="userInfo">
+                                <span class="userName">홍길동</span>
+                                <span class="userNum">010-8648-2460</span>
+                            </div>
+                            <div class="userAddress">
+                                <p class="addressText"><span class="zipCode">[14046]</span>서울특별시 강남구 역삼동 역삼로 156 태광빌딩 5층</p>
+                            </div>
+                            <div class="btnWrap">
+                                <a href="" class="changeBtn">수정</a>
+                                <button class="delete">삭제</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="userInfo">
+                                <span class="userName">홍길동</span>
+                                <span class="userNum">010-8648-2460</span>
+                            </div>
+                            <div class="userAddress">
+                                <p class="addressText"><span class="zipCode">[14046]</span>서울특별시 강남구 역삼동 역삼로 156 태광빌딩 5층</p>
+                            </div>
+                            <div class="btnWrap">
+                                <a href="" class="changeBtn">수정</a>
+                                <button class="delete">삭제</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="userInfo">
+                                <span class="userName">홍길동</span>
+                                <span class="userNum">010-8648-2460</span>
+                            </div>
+                            <div class="userAddress">
+                                <p class="addressText"><span class="zipCode">[14046]</span>서울특별시 강남구 역삼동 역삼로 156 태광빌딩 5층</p>
+                            </div>
+                            <div class="btnWrap">
+                                <a href="" class="changeBtn">수정</a>
+                                <button class="delete">삭제</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="userInfo">
+                                <span class="userName">홍길동</span>
+                                <span class="userNum">010-8648-2460</span>
+                            </div>
+                            <div class="userAddress">
+                                <p class="addressText"><span class="zipCode">[14046]</span>서울특별시 강남구 역삼동 역삼로 156 태광빌딩 5층</p>
+                            </div>
+                            <div class="btnWrap">
+                                <a href="" class="changeBtn">수정</a>
+                                <button class="delete">삭제</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="addressPlus">
+        <header id="headerType2"> 
+            <div>
+                <p>배송지 입력</p>
+                <div class="headerIcoWrap">
+                <button class="icoLeftArrow"><span class="hide">뒤로가기</span></button>
+                    <div class="headerIco">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="inputWrap">
+            <div class="userNameInput">
+                <span>이름</span>
+                <input type="text" placeholder="수령인 이름">
+            </div>
+            <div class="userNumInput">
+                <span>휴대전화</span>
+                <input type="number" placeholder="-없이 입력">
+            </div>
+            <div class="addressInput">
+                <span>우편번호</span>
+                <div class="zipCode">
+                    <input type="number" placeholder="우편 번호를 검색하세요" >
+                    <a href="">주소찾기</a>
+                </div>
+                <div class="addressMain">
+                    <input type="text" placeholder="우편번호 검색 후, 자동입력 됩니다" >
+                </div>
+                <div class="addressDetail">
+                    <input type="text" placeholder="상세주소 입력">
+                </div>
+                <label>
+                    <input type="checkbox" id="check_btn" class="normal">
+                    <span>기본 배송지로 지정</span>
+                </label>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="">완료</a><!-- 모든 input 입력되면 addClass:on -->
+        </div>
+    </div>
     <div class="return_modal_wrap">
         <div class="return_modal_background"></div>
         <div class="return_modal">
@@ -286,12 +421,12 @@
             </section>
             <section id="shippingInfo">
                 <h3>배송정보</h3>
-                <button class="spotInput">
+                <button class="spotInput"  style="display: none;">
                     <p>배송지 입력</p>
                 </button>
-                <div class="spotInputAfter" style="display: none;"><!-- 배송지 입력 후에 나타나는 화면 display:none 처리 해놨습니다 -->
+                <div class="spotInputAfter"><!-- 배송지 입력 후에 나타나는 화면 display:none 처리 해놨습니다 -->
                     <button class="spotChange">
-                        <a href="./address_management.html">배송지 변경</a>
+                        배송지 변경
                     </button>
                     <div class="shippingInfo_container">
                         <div class="reciveUser">
@@ -595,6 +730,46 @@
     $('.return_check_top > button').click(function(){
         $(this).toggleClass("on")
         $('.return_check .grey_box').toggleClass("on")
+    });
+
+    $('.spotInput').click(function(){
+        $('#oreder_page').css("display","none");
+        $('.addressPlus').css("display","block");
+    });
+
+    $('.spotChange').click(function(){
+        $('#oreder_page').css("display","none");
+        $('.addressChange').css("display","block");
+    });
+
+    $('.addressPlus .icoLeftArrow').click(function(){
+        $('#oreder_page').css("display","block");
+        $('.addressPlus').css("display","none");
+    });
+
+    $('.addressChange .ico_left_arrow').click(function(){
+        $('#oreder_page').css("display","block");
+        $('.addressChange').css("display","none");
+    });
+
+    var selectedIndex = 0;
+
+    $('.addressChange .delete').click(function(){
+        $('body').addClass('hidden')
+        $('.addressChange .popLayer').css("display","block")
+
+        selectedIndex = $(this).closest('li').index();
+    })
+
+    $('.addressChange .cancel').click(function(){
+        $('.addressChange .popLayer').css("display","none")
+        $('body').removeClass('hidden')
+    })
+
+    $('.addressChange .check').click(function(){
+        $('.addressChange .popLayer').css("display","none")
+        $('body').removeClass('hidden')
+        $(' li').eq(selectedIndex).remove();
     })
 </script>
 
