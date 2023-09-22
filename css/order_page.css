@@ -334,7 +334,7 @@ input#check_btn:checked + span:before{
   #headerType2>div>.headerIcoWrap>.headerIco>a.icoSearch{ background: url(../img/search_bk.png) no-repeat center / 100%;}
   #headerType2>div>.headerIcoWrap>.headerIco>a.icoShoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
   
-  #userInfo{padding: 7.6rem 2rem 0 2rem;}
+  #userInfo{padding: 7.6rem 2rem 3rem 2rem; height: calc(100vh - 80px); overflow-y: scroll; box-sizing: border-box;}
   #userInfo p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-bottom: 8px;}
   #userInfo>.userName{}
   #userInfo>.userName>input{margin-top: 8px; display: block;  border: 1px solid #e2e2e2; padding: 1.1rem 1.6rem; border-radius: 4px; box-sizing: border-box; width: 100%; color: #222; font-family: 'Pretendard'; font-size: 1.6rem; line-height: 2.4rem;}
@@ -371,7 +371,7 @@ input#check_btn:checked + span:before{
 
 
   #couponApply{background: #fff; width: 100%; position: fixed; top: 0; left: 0; z-index: 999; display: none;}
-  #couponApply #order_item_coupon_wrap{height: calc(100vh - 199px); overflow-y: scroll;}
+  #couponApply #order_item_coupon_wrap{margin-top: 56px; height: calc(100vh - 136px); overflow-y: scroll;}
 
 #headerType2{background: #fff; position: fixed; top: 0; left: 0; z-index: 997; height: 5.6rem; width: 100%;}
 #headerType2>div{height: 5.6rem; width: 100%;}
@@ -383,9 +383,6 @@ input#check_btn:checked + span:before{
 #headerType2>div>.headerIcoWrap>.headerIco>a{display: block; width: 2.4rem; height: 2.4rem;}
 #headerType2>div>.headerIcoWrap>.headerIco>a.icoSearch{ background: url(../img/search_bk.png) no-repeat center / 100%;}
 #headerType2>div >.headerIcoWrap>.headerIco>a.icoShoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
-
-.bigSale{display: flex; padding: 1.8rem 0 2.3rem 1.8rem; margin-top: 5.6rem; align-items: center;}
-.bigSale>label>span {margin-left: 8px; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
 
 
 #order_item_coupon_wrap>.order_item_coupon_container{padding: 2.4rem 2rem 2.4rem 2rem; border-bottom: 1px solid #f5f5f5;}
