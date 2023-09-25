@@ -366,8 +366,8 @@ input#check_btn{
 
     #sort_popup{}
     #sort_popup>.sort_body{z-index: 998; width: 100%; height: 100%;  position: fixed; left: 0; top: 0;  background: none; display: none;}
-    #sort_popup>.sort_container{z-index: 999; width: 100%; height: 30.1rem; position: fixed; bottom: -30.1rem; background: #fff; border-radius: 1.2rem 1.6rem 0 0; transition: .5s;}
-    #sort_popup>.sort_container.fixed{transform: translateY(-30.1rem); transition: .5s;}
+    #sort_popup>.sort_container{z-index: 999; width: 100%; height: auto; position: fixed; bottom: -99rem; background: #fff; border-radius: 1.2rem 1.6rem 0 0; transition: .5s;}
+    #sort_popup>.sort_container.fixed{transform: translateY(-99rem); transition: .5s;}
     #sort_popup>.sort_container>.touch_line_wrap{width: 100%; height: 2.4rem;}
     #sort_popup>.sort_container>.touch_line_wrap>.touch_line{ width: 5.6rem; height: 5px; position: absolute; top: 10px; left: 50%; transform: translateX(-50%); background: #e2e2e2; border-radius: 10rem;}
     #sort_popup>.sort_container>ul{}

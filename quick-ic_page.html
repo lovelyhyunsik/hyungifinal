@@ -2778,6 +2778,9 @@
     $(li_active).click(function () {
         $(li_active).removeClass('active')
         $(this).addClass('active')
+        $('body').removeClass('hidden')
+        $('#sort_popup>.sort_body').css({ "display": "none", "background": "none" })
+        $('#sort_popup>.sort_container').removeClass('fixed')
     })
     $(p_active).click(function () {
         var text_change = $(this).children('p').text()
