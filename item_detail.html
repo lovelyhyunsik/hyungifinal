@@ -27,31 +27,19 @@
                 <li class="active">
                     <div class="check_list">
                         <div class="check_img"></div>
-                        <p>인기순</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="check_list">
-                        <div class="check_img"></div>
                         <p>최신순</p>
                     </div>
                 </li>
                 <li>
                     <div class="check_list">
                         <div class="check_img"></div>
-                        <p>할인율 높은순</p>
+                        <p>추천순</p>
                     </div>
                 </li>
                 <li>
                     <div class="check_list">
                         <div class="check_img"></div>
-                        <p>낮은 가격순</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="check_list">
-                        <div class="check_img"></div>
-                        <p>높은 가격순</p>
+                        <p>평점순</p>
                     </div>
                 </li>
             </ul>
@@ -180,6 +168,25 @@
                                 </ul>
                             </div>
                             <div class="purchase_item_wrap">
+                                <div class="purchase_item_container">
+                                    <div class="delete_btn"><img src="./img/ic-close_grey.png" alt=""></div>
+                                    <div class="purchase_item_container_opt">
+                                        <span class="color_circle"></span>
+                                        <p>네이비</p>
+                                        <span class="slash">/</span>
+                                        <p class="size">55</p>
+                                    </div>
+                                    <div class="quantity">
+                                        <div class="quantity_container">
+                                            <div class="minus"><img src="./img/ic-minus.png" alt=""></div>
+                                            <div class="num">1</div>
+                                            <div class="plus"><img src="./img/ic-plus.png" alt=""></div>
+                                        </div>
+                                        <div class="item_price">
+                                            <span class="price_num">127000</span><span>원</span>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="purchase_item_container">
                                     <div class="delete_btn"><img src="./img/ic-close_grey.png" alt=""></div>
                                     <div class="purchase_item_container_opt">
@@ -836,7 +843,7 @@
                                 </div>
                                 <div class="sort_wrap">
                                     <button class="sort">
-                                        <p>최신순</p>
+                                        <p>인기순</p>
                                         <img src="./img/ic-sort.png" alt="">
                                         <span></span>
                                     </button>
@@ -1215,6 +1222,36 @@
             $(this).children('img').attr("src","./img/ic-arrow-down-24.png")
         }
     })
+
+    $(".sort").click(function () {
+        $('body').addClass('hidden')
+        $('#sort_popup>.sort_body').css({ "display": "block", "background": "rgba(0,0,0,0.5)" })
+        $('#sort_popup>.sort_container').addClass('fixed')
+    })
+    $("#sort_popup>.sort_body").click(function () {
+        $('body').removeClass('hidden')
+        $('#sort_popup>.sort_body').css({ "display": "none", "background": "none" })
+        $('#sort_popup>.sort_container').removeClass('fixed')
+    })
+    $(".touch_line_wrap").click(function () {
+        $('body').removeClass('hidden')
+        $('#sort_popup>.sort_body').css({ "display": "none", "background": "none" })
+        $('#sort_popup>.sort_container').removeClass('fixed')
+    })//sort_popup
+
+    var li_active = $('.sort_container>ul>li')
+    var p_active = $('.sort_container>ul>li>.check_list')
+    $(li_active).click(function () {
+        $(li_active).removeClass('active')
+        $(this).addClass('active')
+        $('body').removeClass('hidden')
+        $('#sort_popup>.sort_body').css({ "display": "none", "background": "none" })
+        $('#sort_popup>.sort_container').removeClass('fixed')
+    })
+    $(p_active).click(function () {
+        var text_change = $(this).children('p').text()
+        $('.sort>p').text(text_change)
+    })//sort_popup 
 
 </script>
 

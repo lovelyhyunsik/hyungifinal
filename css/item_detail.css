@@ -285,7 +285,7 @@
 .photo_detail_popup_wrap > .photo_detail_popup_container .swiper-button-next{background: url(../img/ic-next-btn.png) no-repeat; background-position: center; width: calc(var(--swiper-navigation-size/ 60 * 60)); right: var(--swiper-navigation-sides-offset,10px);}
 .photo_detail_popup_wrap > .photo_detail_popup_container .swiper-button-prev{background: url(../img/ic-prev-btn.png) no-repeat; background-position: center; width: calc(var(--swiper-navigation-size/ 60 * 60)); left: var(--swiper-navigation-sides-offset,10px);}
 
-.select_box_wrap{height: 50.6rem; overflow-y: scroll;}
+.select_box_wrap{height: 32.8rem; overflow-y: scroll;}
 .select_box_container{height: auto; }
 .selectBox_type{ box-sizing: border-box;width: 100%; padding: 0 2rem; margin-top: 3.2rem;}
 .selectBox_type.on{}
@@ -296,7 +296,7 @@
 .selectBox_type>.optionList.on{display: block;}
 .selectBox_type>.optionList>li{font-family: 'Pretendard'; font-size: 1.4rem; line-height: 2rem; color: #222; }
 .selectBox_type>.optionList>li.soldOutOpt{pointer-events: none; color: #bdbdbd; touch-action: none;}
-.selectBox_type>.optionList>li>label{display: flex; padding: 1.4rem 1.6rem; width: 100%; height: 100%;}
+.selectBox_type>.optionList>li>label{display: flex; padding: 1.4rem 1.6rem; width: 100%; height: 100%; box-sizing: border-box;}
 .selectBox_type>.optionList>li>label>.color_circle{display: block; width: 2rem; height: 2rem; border: 1px solid #222; border-radius: 50%; margin-right: 1rem; box-sizing: border-box;}
 .selectBox_type>.optionList>li>label>input{display: none;}
 
@@ -309,11 +309,11 @@
 .selectBox_size>.optionList.on{display: block;}
 .selectBox_size>.optionList>li{font-family: 'Pretendard'; font-size: 1.4rem; line-height: 2rem; color: #222;}
 .selectBox_size>.optionList>li.soldOutOpt{pointer-events: none; color: #bdbdbd; touch-action: none;  }
-.selectBox_size>.optionList>li>label{display: flex; padding: 1.4rem 1.6rem; width: 100%; height: 100%;}
+.selectBox_size>.optionList>li>label{display: flex; padding: 1.4rem 1.6rem; width: 100%; height: 100%; box-sizing: border-box;}
 .selectBox_size>.optionList>li>label>input{display: none;}
 
 .purchase_item_wrap{padding: 0 2rem; margin-top: 2rem;}
-.purchase_item_wrap:last-child{margin-bottom: 20rem;}
+.purchase_item_wrap:last-child{margin-bottom: 10px;}
 .purchase_item_wrap>.purchase_item_container{ border-radius: 4px; background: #f5f5f5; position: relative;}
 .purchase_item_wrap>.purchase_item_container:not(:first-child){margin-top: 10px;}
 .purchase_item_wrap>.purchase_item_container>.delete_btn{position: absolute; right: 8px; top: 8px;}
@@ -363,3 +363,17 @@ input#check_btn{
     background-repeat: no-repeat;
     background-position: 50%;
     }
+
+    #sort_popup{}
+    #sort_popup>.sort_body{z-index: 998; width: 100%; height: 100%;  position: fixed; left: 0; top: 0;  background: none; display: none;}
+    #sort_popup>.sort_container{z-index: 999; width: 100%; height: 30.1rem; position: fixed; bottom: -30.1rem; background: #fff; border-radius: 1.2rem 1.6rem 0 0; transition: .5s;}
+    #sort_popup>.sort_container.fixed{transform: translateY(-30.1rem); transition: .5s;}
+    #sort_popup>.sort_container>.touch_line_wrap{width: 100%; height: 2.4rem;}
+    #sort_popup>.sort_container>.touch_line_wrap>.touch_line{ width: 5.6rem; height: 5px; position: absolute; top: 10px; left: 50%; transform: translateX(-50%); background: #e2e2e2; border-radius: 10rem;}
+    #sort_popup>.sort_container>ul{}
+    #sort_popup>.sort_container>ul>li{}
+    #sort_popup>.sort_container>ul>li>.check_list{display: flex; padding: 1.4rem 2rem;}
+    #sort_popup>.sort_container>ul>li>.check_list>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #696969; margin-left: 1rem; }
+    #sort_popup>.sort_container>ul>li.active>.check_list>p{color: #222;}
+    #sort_popup>.sort_container>ul>li>.check_list>.check_img{width: 2.4rem; height: 2.4rem; background: url(../img/ic-check.png);}
+    #sort_popup>.sort_container>ul>li.active>.check_list>.check_img{width: 2.4rem; height: 2.4rem; background: url(../img/ic-check_active.png);}    
