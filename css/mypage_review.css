@@ -26,7 +26,7 @@ html,body{position: relative; height: 100%;}
 .tab>#item>.notice{padding: 2rem 2rem 0 2rem;}
 .tab>#item>.notice>.noticeContainer{box-sizing: border-box; width: 100%; background: #f5f5f5; padding: 1.6rem 0; border-radius: 2px; }
 .tab>#item>.notice>.noticeContainer>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #696969; text-align: center;}
-.tab>#item>ul{padding: 0 2rem;}
+.tab>#item>ul{padding: 0 2rem 2rem 2rem;}
 .tab>#item>ul>li{padding-top: 2rem;}
 .tab>#item>ul>li>.itemInfo{display: flex; align-items: center; padding: 2rem 0;}
 .tab>#item>ul>li>.itemInfo>img{width: 6.4rem; height: 6.4rem; border-radius: 4px;}
@@ -37,7 +37,7 @@ html,body{position: relative; height: 100%;}
 .tab>#item>ul>li>.itemInfo>.itemInfoText>.itemOpt>span{color: #969696;}
 .tab>#item>ul>li>.itemInfo>.itemInfoText>.itemOpt>span.color{margin-right: 2px;}
 .tab>#item>ul>li>.itemInfo>.itemInfoText>.itemOpt>span.size{margin-left: 2px;}
-.tab>#item>ul>li>a{display: block; width: 100%; background: #222; border-radius: 4px; color: #fff; padding: 8px 0; text-align: center; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem;}
+.tab>#item>ul>li>button{display: block; width: 100%; background: #222; border-radius: 4px; color: #fff; padding: 8px 0; text-align: center; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem;}
 
 .tab>#no_review{width: 100%; display: none;}
 .tab>#no_review{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center;}
@@ -89,3 +89,66 @@ html,body{position: relative; height: 100%;}
 .deletePop>.deletePopContainer>.btn>button{width: 50%;}
 .deletePop>.deletePopContainer>.btn>button.cancel{background: #fff; border: 1px solid #e2e2e2; padding: 1.1rem 0; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #222; border-radius: 4px;}
 .deletePop>.deletePopContainer>.btn>button.popDelete{background: #222; padding: 1.2rem 0; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #fff; border-radius: 4px;}
+
+.review_write_wrap{display: none;}
+
+.review_write_wrap #header_type2{position: relative; height: 5.6rem; width: 100%; }
+.review_write_wrap #header_type2>div{height: 5.6rem; width: 100%;}
+.review_write_wrap #header_type2>div>p{text-align: center; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 5.6rem; color: #222;}
+.review_write_wrap #header_type2>div>.header_ico_wrap{ width: 100%; position: absolute; top: 50%; transform: translateY(-50%); /* display: flex; */ /* justify-content: space-between; */}
+.review_write_wrap #header_type2>div>.header_ico_wrap>button{display: inline-block; width: 2.4rem; height: 2.4rem;}
+.review_write_wrap #header_type2>div>.header_ico_wrap>button.ico_left_arrow{background: url(../img/ic-arrow-left.png) no-repeat center; margin-left: 2rem;}
+
+.review_write_wrap .itemThum{border-bottom: 1.2rem solid #f5f5f5;}
+.review_write_wrap .itemThum>a{display: flex; gap: 1.6rem; padding: 2rem 4.8rem 2rem 2rem; overflow: hidden; box-sizing: border-box;}
+.review_write_wrap .itemThum>a>img{width: 6.4rem; height: 6.4rem; border-radius: 4px;}
+.review_write_wrap .itemThum>a>.itemText{width: calc(100% - 12rem);}
+.review_write_wrap .itemThum>a>.itemText>.brandItemName{font-family: 'Pretendard'; font-weight: 700; font-size: 1.2rem; line-height: 1.6rem; color: #222;}
+.review_write_wrap .itemThum>a>.itemText>.itemName{width: 100%; margin-top: 4px; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.review_write_wrap .itemThum>a>.itemText>.itemOpt{margin-top: 4px; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #e2e2e2;}
+.review_write_wrap .itemThum>a>.itemText>.itemOpt>span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
+
+.review_write_wrap .starReview{padding: 1.6rem 2rem 4.8rem 2rem; text-align: center;}
+.review_write_wrap .starReview>h3{font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222; text-align: left;}
+
+.review_write_wrap .textReview{padding: 0 2rem 6.4rem 2rem;}
+.review_write_wrap .textReview>h3{padding: 2rem 0 1.6rem 0; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222; border-top: 1px solid #f5f5f5;}
+.review_write_wrap .textReview>.textareaWrap{position: relative; box-sizing: border-box; height: 13.2rem; background: #f5f5f5;}
+.review_write_wrap .textReview>.textareaWrap>textarea{box-sizing: border-box; width: 100%; height: 9.2rem; background: #f5f5f5; padding: 1.2rem 1.2rem 0 1.2rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
+.review_write_wrap .textReview>.textareaWrap>textarea::placeholder{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
+.review_write_wrap .textReview>.textareaWrap>span{position: absolute; bottom: 1.2rem; right: 1.2rem; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #969696;}
+
+.review_write_wrap input#inputImg{display: none;}
+.review_write_wrap .inputImgBtn{margin-top: 1.6rem; width: 100%; display: flex; justify-content: center; gap: 6px; border: 1px solid #E2E2E2; border-radius: 4px; background: #fff; padding: 1.1rem 0;}
+.review_write_wrap .inputImgBtn>span{font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222;}
+
+
+.review_write_wrap .textReview>span{display: block; margin-top: 1.2rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #969696;}
+
+.review_write_wrap .bottom{padding: 0 2rem 4rem 2rem; width: 100%; box-sizing: border-box;}
+.review_write_wrap .bottom>button{width: 100%; padding: 1.4rem 0; background: #f5f5f5; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; text-align: center; color: #696969; border-radius: 4px;}
+.review_write_wrap .bottom>button.on{background: #222; color: #fff;}
+
+.review_write_wrap .starpoint_wrap{display:inline-block; padding: 3.2rem 0 2.4rem 0; width: 24.8rem;}
+.review_write_wrap .starpoint_box{position:relative; background:url(../img/ic-review\ point-grey.png) 0 0 no-repeat;font-size:0;}
+.review_write_wrap .starpoint_box .starpoint_bg{display:block;position:absolute;top:0;left:0;height:4rem;background:url(../img/ic-review\ point-rd.png) 0 0  no-repeat;pointer-events:none;}
+.review_write_wrap .starpoint_box .label_star{display:inline-block;width:2rem;height:4rem;box-sizing:border-box;}
+.review_write_wrap .starpoint_box .label_star:nth-child(3){margin-left: 1.2rem;}
+.review_write_wrap .starpoint_box .label_star:nth-child(5){margin-left: 1.2rem;}
+.review_write_wrap .starpoint_box .label_star:nth-child(7){margin-left: 1.2rem;}
+.review_write_wrap .starpoint_box .label_star:nth-child(9){margin-left: 1.2rem;}
+.review_write_wrap .starpoint_box .star_radio{opacity:0;width:0;height:0;position:absolute;}
+.review_write_wrap .starpoint_box .star_radio:nth-of-type(1):checked ~ .starpoint_bg{width:8%;}
+.review_write_wrap .starpoint_box .star_radio:nth-of-type(2):checked ~ .starpoint_bg{width:20%;}
+.review_write_wrap .starpoint_box .star_radio:nth-of-type(3):checked ~ .starpoint_bg{width:29%;}
+.review_write_wrap .starpoint_box .star_radio:nth-of-type(4):checked ~ .starpoint_bg{width:40%;}
+.review_write_wrap .starpoint_box .star_radio:nth-of-type(5):checked ~ .starpoint_bg{width:50%;}
+.review_write_wrap .starpoint_box .star_radio:nth-of-type(6):checked ~ .starpoint_bg{width:60%;}
+.review_write_wrap .starpoint_box .star_radio:nth-of-type(7):checked ~ .starpoint_bg{width:71%;}
+.review_write_wrap .starpoint_box .star_radio:nth-of-type(8):checked ~ .starpoint_bg{width:80%;}
+.review_write_wrap .starpoint_box .star_radio:nth-of-type(9):checked ~ .starpoint_bg{width:92%;}
+.review_write_wrap .starpoint_box .star_radio:nth-of-type(10):checked ~ .starpoint_bg{width:100%;}
+
+.review_write_wrap .blind{position:absolute;clip:rect(0 0 0 0);margin:-1px;width:1px;height: 1px;overflow:hidden;}
+
+.review_write_wrap .starText{display: block; text-align: center; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #bdbdbd;}
