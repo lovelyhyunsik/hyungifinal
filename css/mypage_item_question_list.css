@@ -1,0 +1,45 @@
+#mypage_item_question_list{background: #fff; width: 100%;}
+
+#header_type2{position: relative; height: 5.6rem; width: 100%;}
+#header_type2>div{height: 5.6rem; width: 100%;}
+#header_type2>div>p{text-align: center; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 5.6rem; color: #222;}
+#header_type2>div>.header_ico_wrap{ width: 100%; position: absolute; top: 50%; transform: translateY(-50%); display: flex; justify-content: space-between;}
+#header_type2>div>.header_ico_wrap>a{ display: inline-block; width: 2.4rem; height: 2.4rem;}
+#header_type2>div>.header_ico_wrap>a.ico_left_arrow{background: url(../img/ic-arrow-left.png) no-repeat center; margin-left: 2rem;}
+#header_type2>div>.header_ico_wrap>.header_ico{display: flex; float: right; margin-right: 2rem;}
+#header_type2>div>.header_ico_wrap>.header_ico>a{display: block; width: 2.4rem; height: 2.4rem;}
+#header_type2>div>.header_ico_wrap>.header_ico>a.ico_search{ background: url(../img/search_bk.png) no-repeat center / 100%;}
+#header_type2>div>.header_ico_wrap>.header_ico>a.ico_shoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
+
+#answer_count{padding: 2rem 2rem;}
+#answer_count>ul{display: flex;  background: #f5f5f5;}
+#answer_count>ul>li{width: 33.3333%; text-align: center;}
+#answer_count>ul>li>button{background: none; width: 100%;  padding: 1.2rem 0 2rem 0;}
+#answer_count>ul>li>button>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.2rem; line-height: 1.6rem; color: #969696 ;}
+#answer_count>ul>li>button>.count{display: inline-block; margin-top: 1.6rem; font-family: 'Pretendard'; font-weight: 500; font-size: 1.8rem; line-height: 2.4rem; color: #969696;}
+#answer_count>ul>li>button>.count.on{color: #222; /* text-decoration-line: underline; */ border-bottom: 2px solid #222;}
+
+#answer_list_wrap{}
+#answer_list_wrap>.answer_no_list{padding-top: 10.2rem; text-align: center;}
+#answer_list_wrap>.answer_no_list>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; text-align: center; }
+#answer_list_wrap>.answer_no_list>a{display: inline-block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #222; text-align: center; padding: 0.8rem 1.6rem; box-sizing: border-box; background: #fff; border: 1px solid #e2e2e2; border-radius: 4px; margin-top: 2.4rem;}
+
+.grey_middle_dot{display: inline-block; width: 4px; height: 4px; border-radius: 50%; background: #bdbdbd;}
+
+.answer_list{padding: 0.8rem 2rem 2rem 2rem;}
+.answer_list>ul{}
+.answer_list>ul>li{padding-bottom: 7px; padding-top: 4px; position: relative;}
+.answer_list>ul>li:not(:first-child){margin-top: 2.4rem;}
+.answer_list>ul>li > a{display: flex; gap: 12px;}
+.answer_list>ul>li > a > .item_img{width: 80px; height: 80px;}
+.answer_list>ul>li > a > .item_img > img{width: 100%;}
+.answer_list>ul>li > a > .item_info{width: calc(100% - 92px);}
+.answer_list>ul>li > a > .item_info > .tag{font-family: 'Pretendard'; display: inline-block; padding: 4px 8px; background: #f5f5f5; font-size: 1.2rem; font-weight: 400; line-height: 1.6rem; border-radius: 2px;}
+.answer_list>ul>li > a > .item_info > .item_name{font-family: 'Pretendard'; margin-top: 6px; color: #222; font-size: 1.4rem; font-weight: 400; line-height: 20px; width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.answer_list>ul>li > a > .item_info > .answer_type{display: flex; margin-top: 8px;}
+.answer_list>ul>li.wait > a > .item_info > .answer_type > .answer_type_text{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 600; line-height: 20px; color: #bdbdbd; padding-right: 8px;}
+.answer_list>ul>li.complete > a > .item_info > .answer_type > .answer_type_text{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 600; line-height: 20px; color: #222; padding-right: 8px;}
+.answer_list>ul>li > a > .item_info > .answer_type > .question_date{position: relative; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #bdbdbd; padding: 0 0 0 8px;}
+.answer_list>ul>li > a > .item_info > .answer_type > .question_date::before{content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 1px; height: 12px; background: #e2e2e2;}
+.answer_list>ul>li > .delete_btn{position: absolute; top: 0; right: 0; background: none; font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 400; line-height: 2rem;}
+

@@ -1,0 +1,38 @@
+#mypage_item_question_detail{background: #fff; width: 100%;}
+
+#header_type2{position: relative; height: 5.6rem; width: 100%;}
+#header_type2>div{height: 5.6rem; width: 100%;}
+#header_type2>div>p{text-align: center; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 5.6rem; color: #222;}
+#header_type2>div>.header_ico_wrap{ width: 100%; position: absolute; top: 50%; transform: translateY(-50%); display: flex; justify-content: space-between;}
+#header_type2>div>.header_ico_wrap>a{ display: inline-block; width: 2.4rem; height: 2.4rem;}
+#header_type2>div>.header_ico_wrap>a.ico_left_arrow{background: url(../img/ic-arrow-left.png) no-repeat center; margin-left: 2rem;}
+#header_type2>div>.header_ico_wrap>.header_ico{display: flex; float: right; margin-right: 2rem;}
+#header_type2>div>.header_ico_wrap>.header_ico>a{display: block; width: 2.4rem; height: 2.4rem;}
+#header_type2>div>.header_ico_wrap>.header_ico>a.ico_search{ background: url(../img/search_bk.png) no-repeat center / 100%;}
+#header_type2>div>.header_ico_wrap>.header_ico>a.ico_shoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
+
+.qa_wrap{height: calc(100vh - 136px); overflow-y: scroll;}
+.qa_wrap > .item{ box-sizing: border-box; padding: 2rem; display: flex; width: 100%; align-items: center; gap: 16px; border-bottom: 8px solid #f5f5f5;}
+.qa_wrap > .item > .item_img{width: 64px; height: 64px;}
+.qa_wrap > .item > .item_img > img{width: 100%; height: 100%;}
+.qa_wrap > .item > .item_name{width: calc(100% - 80px); font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 500; line-height: 2rem; color: #222; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.qa_wrap > .qa_container{}
+.qa_wrap > .qa_container > .q_container{padding: 2rem 2rem 2.4rem 2rem; box-sizing: border-box;}
+.qa_wrap > .qa_container > .q_container > .tag{display: inline-block; font-family: 'Pretendard'; padding: 4px 8px; background: #f5f5f5;  font-size: 1.2rem; font-weight: 400; line-height: 1.6rem; border-radius: 2px;}
+.qa_wrap > .qa_container > .q_container > .q_text{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 400; line-height: 2rem; color: #222; margin-top: 2rem;}
+.qa_wrap > .qa_container > .q_container > .answer_type{display: flex; margin-top: 12px;}
+.qa_wrap > .qa_container.complete > .q_container > .answer_type > .answer_type_text{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 600; line-height: 2rem; color: #222; padding-right: 8px;}
+.qa_wrap > .qa_container.wait > .q_container > .answer_type > .answer_type_text{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 600; line-height: 2rem; color: #bdbdbd; padding-right: 8px;}
+.qa_wrap > .qa_container > .q_container > .answer_type > .question_date{position: relative; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #bdbdbd; padding: 0 0 0 8px;}
+.qa_wrap > .qa_container > .q_container > .answer_type > .question_date::before{content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 1px; height: 12px; background: #e2e2e2;}
+.qa_wrap > .qa_container > .a_container{padding: 1.6rem 2rem 2rem 4.2rem; position: relative;}
+.qa_wrap > .qa_container > .a_container::before{content: ""; position: absolute; left: 22px; top: 4px; width: 12px; height: 20px; box-sizing: border-box; border-left: 1px solid #bdbdbd; border-bottom: 1px solid #bdbdbd;}
+.qa_wrap > .qa_container > .a_container > .grey_box{padding: 1.6rem; border-radius: 4px; background: #f5f5f5;}
+.qa_wrap > .qa_container > .a_container > .grey_box > .a_text{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 400; line-height: 2rem; color: #222;}
+.qa_wrap > .qa_container > .a_container > .grey_box > .answer_info{display: flex; margin-top: 12px;}
+.qa_wrap > .qa_container > .a_container > .grey_box > .answer_info > .brand_name{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 400; line-height: 2rem; color: #969696; padding-right: 8px;}
+.qa_wrap > .qa_container > .a_container > .grey_box > .answer_info > .answer_date{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 400; line-height: 2rem; color: #969696; position: relative; padding-left: 8px;}
+.qa_wrap > .qa_container > .a_container > .grey_box > .answer_info > .answer_date::before{content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 1px; height: 12px; background: #e2e2e2;}
+
+.bottom{position: fixed; bottom: 0; left: 0; width: 100%; padding: 1.6rem 2rem; background: #fff; box-sizing: border-box;}
+.bottom > .delete_btn{width: 100%; background: #222; color: #fff; box-sizing: border-box; padding: 1.2rem 0; border-radius: 4px; font-family: 'Pretendard'; font-size: 1.6rem; font-weight: 500; line-height: 2.4rem;}

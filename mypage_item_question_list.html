@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/mypage_item_question_list.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+</head>
+
+<body>
+    <div id="mypage_item_question_list">
+        <div>
+            <header id="header_type2">
+                <div>
+                    <p>상품 문의 내역</p>
+                    <div class="header_ico_wrap">
+                        <a href="./one_on_one_write.html" class="ico_left_arrow"></a>
+                        <div class="header_ico">
+                            <a href="#" class="ico_search"><span class="hide">검색</span></a>
+                            <a href="" class="ico_shoppingbag"><span class="hide">쇼핑백</span></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section id="answer_count">
+                <ul>
+                    <li>
+                        <button class="all">
+                            <p>전체</p>
+                            <p class="all_count count">0</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <p>답변완료</p>
+                            <p class="complete_count count">0</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <p>답변대기</p>
+                            <p class="waiting_count count">0</p>
+                        </button>
+                    </li>
+                </ul>
+            </section>
+            <section id="answer_list_wrap">
+                <div class="answer_no_list"><!-- 문의 내역 없을경우 -->
+                    <p>등록된 상품 문의 내역이 없습니다.</p>
+                </div>
+                <div class="answer_list">
+                    <ul>
+                        <li class="wait"><!-- wait:답변대기 , complete:답변완료 -->
+                            <a href="./mypage_item_question_detail.html">
+                                <div class="item_img">
+                                    <img src="./img/item_img/item_1.png" alt="">
+                                </div>
+                                <div class="item_info">
+                                    <div class="tag">배송문의</div>
+                                    <div class="item_name">라운드넥 아가일 니트 CLAWSW102123123123123</div>
+                                    <div class="answer_type">
+                                        <div class="answer_type_text">답변대기</div>
+                                        <div class="question_date">22.10.01 14:06:24</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="delete_btn">삭제</button>
+                        </li>
+                        <li class="complete">
+                            <a href="./mypage_item_question_detail.html">
+                                <div class="item_img">
+                                    <img src="./img/item_img/item_1.png" alt="">
+                                </div>
+                                <div class="item_info">
+                                    <div class="tag">사이즈문의</div>
+                                    <div class="item_name">라운드넥 아가일 니트 CLAWSW102</div>
+                                    <div class="answer_type">
+                                        <div class="answer_type_text">답변완료</div>
+                                        <div class="question_date">22.10.01 14:06:24</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="delete_btn">삭제</button>
+                        </li>
+                        <li class="complete">
+                            <a href="./mypage_item_question_detail.html">
+                                <div class="item_img">
+                                    <img src="./img/item_img/item_1.png" alt="">
+                                </div>
+                                <div class="item_info">
+                                    <div class="tag">재입고문의</div>
+                                    <div class="item_name">라운드넥 아가일 니트 CLAWSW102</div>
+                                    <div class="answer_type">
+                                        <div class="answer_type_text">답변완료</div>
+                                        <div class="question_date">22.10.01 14:06:24</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="delete_btn">삭제</button>
+                        </li>
+                        <li class="complete">
+                            <a href="./mypage_item_question_detail.html">
+                                <div class="item_img">
+                                    <img src="./img/item_img/item_1.png" alt="">
+                                </div>
+                                <div class="item_info">
+                                    <div class="tag">재입고문의</div>
+                                    <div class="item_name">라운드넥 아가일 니트 CLAWSW102</div>
+                                    <div class="answer_type">
+                                        <div class="answer_type_text">답변완료</div>
+                                        <div class="question_date">22.10.01 14:06:24</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="delete_btn">삭제</button>
+                        </li>
+                        <li class="complete">
+                            <a href="./mypage_item_question_detail.html">
+                                <div class="item_img">
+                                    <img src="./img/item_img/item_1.png" alt="">
+                                </div>
+                                <div class="item_info">
+                                    <div class="tag">재입고문의</div>
+                                    <div class="item_name">라운드넥 아가일 니트 CLAWSW102</div>
+                                    <div class="answer_type">
+                                        <div class="answer_type_text">답변완료</div>
+                                        <div class="question_date">22.10.01 14:06:24</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="delete_btn">삭제</button>
+                        </li>
+                        <li class="complete">
+                            <a href="./mypage_item_question_detail.html">
+                                <div class="item_img">
+                                    <img src="./img/item_img/item_1.png" alt="">
+                                </div>
+                                <div class="item_info">
+                                    <div class="tag">재입고문의</div>
+                                    <div class="item_name">라운드넥 아가일 니트 CLAWSW102</div>
+                                    <div class="answer_type">
+                                        <div class="answer_type_text">답변완료</div>
+                                        <div class="question_date">22.10.01 14:06:24</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="delete_btn">삭제</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<script>
+
+    $(".delete_btn").click(function () {
+
+        $(this).closest(".answer_list>ul>li").remove()
+        visibliAllCount();
+        visibleAnswerNoList1();
+        visibliCompleteCount();
+        visibleAnswerNoList2();
+        visibliWaitingCount();
+        visibleAnswerNoList3();
+    })//삭제 버튼
+
+    function visibliAllCount() {
+        var all_length = $(".answer_list>ul>li").length;
+        $(".all_count").text(all_length)
+    }
+
+    $(function () {
+        var all_length = $(".answer_list>ul>li").length;
+        $(".all_count").text(all_length)
+    })
+
+    function visibleAnswerNoList1() {
+        if ($(".answer_list>ul>li").length > 0) {
+            $(".answer_no_list").css("display", "none");
+            $('.all_count').addClass('on')
+        } else {
+            $(".answer_no_list").css("display", "block");
+            $('.all_count').removeClass('on')
+        }
+    }
+
+    if ($(".answer_list>ul>li").length > 0) {
+        $(".answer_no_list").css("display", "none");
+        $('.all_count').addClass('on')
+    } else {
+        $(".answer_no_list").css("display", "block");
+        $('.all_count').removeClass('on')
+    }//전체 카운트
+
+    function visibliCompleteCount() {
+        var complete_length = $(".answer_list>ul>.complete").length;
+        $(".complete_count").text(complete_length)
+    }
+
+    $(function () {
+        var complete_length = $(".answer_list>ul>.complete").length;
+        $(".complete_count").text(complete_length)
+    })
+
+    function visibleAnswerNoList2() {
+        if ($(".answer_list>ul>.complete").length > 0) {
+            $('.complete_count').addClass('on')
+        } else {
+            $('.complete_count').removeClass('on')
+        }
+    }
+
+    if ($(".answer_list>ul>.complete").length > 0) {
+        $('.complete_count').addClass('on')
+    } else {
+        $('.complete_count').removeClass('on')
+    }//답변완료 카운트
+
+
+    function visibliWaitingCount() {
+        var waiting_length = $(".answer_list>ul>.wait").length;
+        $(".waiting_count").text(waiting_length)
+    }
+
+    $(function () {
+        var waiting_length = $(".answer_list>ul>.wait").length;
+        $(".waiting_count").text(waiting_length)
+    })
+
+    function visibleAnswerNoList3() {
+        if ($(".answer_list>ul>.wait").length > 0) {
+            $('.waiting_count').addClass('on')
+        } else {
+            $('.waiting_count').removeClass('on')
+        }
+    }
+
+    if ($(".answer_list>ul>.wait").length > 0) {
+        $('.waiting_count').addClass('on')
+    } else {
+        $('.waiting_count').removeClass('on')
+    }//답변대기 카운트
+</script>
+
+</html>
