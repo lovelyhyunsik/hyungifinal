@@ -108,9 +108,8 @@ li{word-break: keep-all;}
 .filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab03>ul>li>label>span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969;}
 
 .filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab04{}
-.filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab04>ul{padding-top: 2.4rem; display: flex; flex-wrap: wrap;}
+.filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab04>ul{display: flex; flex-wrap: wrap;}
 .filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab04>ul>li{width: 50%;}
-.filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab04>ul>li:nth-child(n+3){margin-top: 2rem;}
 .filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab04>ul>li>label{display: block; width: 12.9rem;}
 .filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab04>ul>li>label>input{}
 .filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab04>ul>li>label>span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969;}
@@ -124,6 +123,11 @@ li{word-break: keep-all;}
 .tab>ul>.inputWrap>div>label>input::placeholder{font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd;}
 .tab>ul>.inputWrap>div>label>span{position: absolute; right: 1.6rem; top: 50%; transform: translateY(-50%); font-family: 'Pretendard'; font-weight: 600; font-size: 1.4rem; line-height: 2.4rem; color: #696969;}
 .tab>ul>.inputWrap>div>span{font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222;}
+
+.w100-per{display: none; text-align: center; margin: 0 auto; padding: 4rem 0; width: 100% !important;}
+.w100-per > .search_result_none{}
+.w100-per > .search_result_none > p{font-family: 'Pretendard'; font-size: 1.6rem; font-weight: 400; line-height: 2.4rem; color: #969696;}
+.w100-per > .search_result_none > p:last-child{margin-top: 10px;}
 
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
@@ -223,3 +227,7 @@ input#check_btn{
     background-repeat: no-repeat;
     background-position: 50%;
     }
+
+    input.option_btn{
+      display:none;
+      }
