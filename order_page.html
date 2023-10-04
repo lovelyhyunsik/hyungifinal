@@ -39,10 +39,10 @@
         <div class="content">
             <div class="plusAddress">
                 <div class="plusAddressContainer">
-                    <a href="./address_plus.html">
+                    <button class="plusAddressBtn">
                         <img src="./img/ic-plus.png" alt="">
                         <span>배송지 추가</span>
-                    </a>
+                    </button>
                 </div>
             </div>
             <div class="main">
@@ -114,7 +114,7 @@
             <div>
                 <p>배송지 입력</p>
                 <div class="headerIcoWrap">
-                <button class="icoLeftArrow"><span class="hide">뒤로가기</span></button>
+                <button class="icoLeftArrow" data-target="addressPlus"><span class="hide">뒤로가기</span></button>
                     <div class="headerIco">
                     </div>
                 </div>
@@ -421,10 +421,10 @@
             </section>
             <section id="shippingInfo">
                 <h3>배송정보</h3>
-                <button class="spotInput"  style="display: none;">
+                <button class="spotInput" style="display: none;">
                     <p>배송지 입력</p>
                 </button>
-                <div class="spotInputAfter"><!-- 배송지 입력 후에 나타나는 화면 display:none 처리 해놨습니다 -->
+                <div class="spotInputAfter" ><!-- 배송지 입력 후에 나타나는 화면 display:none 처리 해놨습니다 -->
                     <button class="spotChange">
                         배송지 변경
                     </button>
@@ -534,9 +534,24 @@
                         </label>
                         <div class="payContent">
                             <ul>
-                                <li><img src="./img/naverPay.png" alt=""></li>
-                                <li><img src="./img/kakaoPay.png" alt=""></li>
-                                <li><img src="./img/samsungPay.png" alt=""></li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="method_list" checked>
+                                        <img src="./img/naverPay.png" alt="">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="method_list">
+                                        <img src="./img/kakaoPay.png" alt="">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="method_list">
+                                        <img src="./img/samsungPay.png" alt="">
+                                    </label>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -738,8 +753,12 @@
     });
 
     $('.spotChange').click(function(){
-        $('#oreder_page').css("display","none");
         $('.addressChange').css("display","block");
+        //$('#oreder_page').on('scroll touchmove mousewheel', function(event) {
+        //    event.preventDefault();
+        //    event.stopPropagation();
+        //    return false;
+        //});
     });
 
     $('.addressPlus .icoLeftArrow').click(function(){
@@ -771,6 +790,18 @@
         $('body').removeClass('hidden')
         $(' li').eq(selectedIndex).remove();
     })
+
+    $('.simple .payContent ul li label').click(function(){
+        $('.simple .payContent ul li label').removeClass('on');  
+        $(this).addClass('on');  
+    })
+
+    $('.plusAddressBtn').click(function(){
+        $('.addressPlus').css("display","block");
+        //$('.addressChange').css("display","none");
+    })
+
+
 </script>
 
 </html>
