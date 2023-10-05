@@ -35,13 +35,49 @@
         </div>
         <div class="idInput">
             <span>아이디</span>
-            <div class="idBox">abcd0001</div><!-- 회원가입시 입력했던 아이디 기본값으로 설정. 변경 불가능 -->
+            <input type="text" readonly><!-- 회원가입시 입력했던 아이디 기본값으로 설정. 변경 불가능 -->
         </div>
         <div class="pwInput">
             <span>비밀번호</span>
             <div class="pwInputBtn">
-                <input type="password" placeholder="비밀번호"><!-- 회원가입시 입력했던 비밀번호 기본값으로 설정. 변경 가능 -->
-                <button>변경</button>
+                <input type="password" placeholder="비밀번호" readonly><!-- 회원가입시 입력했던 비밀번호 기본값으로 설정 -->
+                <button class="pwChangeBtn">변경</button>
+            </div>
+        </div>
+        <div class="newPwWrap">
+            <div class="newPw">
+                <span>새 비밀번호</span>
+                <label>
+                    <input type="password" placeholder="새 비밀번호를 입력해주세요" maxlength="16" class="textInput">
+                    <button class="inputTextDelete">
+                        <img src="./img/ic-close-fill-24px.png" alt="">
+                    </button>
+                </label>
+                <div class="inputText">
+                    <div class="inputText_t">
+                        <img src="./img/ic-check-s-grey.png" alt="">
+                        <p>10자~16자 입력</p>
+                    </div>
+                    <div class="inputText_b">
+                        <img src="./img/ic-check-s-grey.png" alt="">
+                        <p>영어 대소문자/숫자/특수문자 중 2가지 이상 조합</p>
+                    </div>
+                </div>
+            </div>
+            <div class="newPwCheck">
+                <span>새 비밀번호 확인</span>
+                <label>
+                    <input type="password" placeholder="새 비밀번호를 입력해주세요" maxlength="16" class="textInput">
+                    <button class="inputTextDelete">
+                        <img src="./img/ic-close-fill-24px.png" alt="">
+                    </button>
+                </label>
+                <div class="inputText">
+                    <div class="inputText_t">
+                        <img src="./img/ic-check-s-grey.png" alt="">
+                        <p>동일한 비밀번호를 입력해 주세요.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="birthInput">
@@ -171,5 +207,43 @@
         $('body').removeClass('hidden')
         $('.popLayer').css("display","none")
     })
+
+    if($('input').hasClass('error')){
+        $('.errorText').css("display","block")
+     }else{
+         $('.errorText').css("display","none")
+     };//input에 error떠서 border-color가 빨간색이 되면 input하단 텍스트 생성
+ 
+     $('.newPw>label>input').click(function(){
+         $('.newPw>.inputText').css("display","block")
+     })//새 비밀번호 input클릭하면 하단 글씨 뜨게
+ 
+     $('.newPw>label>input').on('input', function () {
+         if ($('.newPw>label>input').val().length >= 10) {
+             $('.newPw>.inputText>.inputText_t>p').css("color", "#34A854")
+             $('.newPw>.inputText>.inputText_t>img').attr("src" , "./img/ic-check-s-green.png")
+         } else {
+             $('.newPw>.inputText>.inputText_t>p').css("color", "#969696")
+             $('.newPw>.inputText>.inputText_t>img').attr("src" , "./img/ic-check-s-grey.png")
+         }
+     });//새 비밀번호 첫번째거 10자이상이면 색깔 바뀌게 능력부족으로 영어 대소문자/숫자/특수문자 그부분은 처리하지 못함
+ 
+     $('.newPwCheck>label>input').click(function(){
+         $('.newPwCheck>.inputText').css("display","block")
+     })//새 비밀번호 확인 input클릭하면 하단 글씨 뜨게
+ 
+     $('.newPwCheck>label>input').on('input', function () {
+         if ($('.newPwCheck>label>input').val() == $('.newPw>label>input').val()) {
+             $('.newPwCheck>.inputText>.inputText_t>img').attr("src" , "./img/ic-check-s-green.png")
+             $('.newPwCheck>.inputText>.inputText_t>p').css("color", "#34A854")
+         } else {
+             $('.newPwCheck>.inputText>.inputText_t>img').attr("src" , "./img/ic-check-s-grey.png")
+             $('.newPwCheck>.inputText>.inputText_t>p').css("color", "#969696")
+         }
+     });//새 비밀번호와 새 비밀번호 확인 텍스트 같으면 색깔 바뀌게
+
+     $('.pwChangeBtn').click(function(){
+        $('.newPwWrap').css("display","block")
+     })
 </script>
 </html>

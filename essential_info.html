@@ -268,8 +268,90 @@
             </div>
         </div>
      </section>
-     <div class="bottom">
-        <a href="./choice_info.html">다음</a><!-- 다 선택 되면 addClass="on" -->
+     <section id="choiceInput">
+        <h3>선택 정보 입력</h3>
+        <div class="emailInputWrap">
+            <span>이메일</span>
+            <div class="emailInput">
+                <div class="firstInput">
+                    <label>
+                        <input class="textInput" type="text">
+                        <button class="inputTextDelete">
+                            <img src="./img/ic-close-fill-24px.png" alt="">
+                        </button>
+                    </label>
+                </div>
+                <span>@</span>
+                <div class="secondInput">
+                    <label>
+                        <input type="text" class="domain textInput">
+                        <button class="inputTextDelete">
+                            <img src="./img/ic-close-fill-24px.png" alt="">
+                        </button>
+                    </label>
+                </div>
+            </div>
+            <div class="selectBoxType">
+                <button class="label">직접입력</button>
+                <ul class="optionItemWrap" id="crops1">
+                    <li class="optionItem">naver.com</li>
+                    <li class="optionItem">daum.net</li>
+                    <li class="optionItem">kakao.com</li>
+                    <li class="optionItem">google.com</li>
+                    <li class="optionItem">직접입력</li>
+                </ul>
+            </div>
+        </div>
+        <div class="accountInputWrap">
+            <span>환불계좌</span>
+            <div class="accountInput">
+                <div class="selectBoxType">
+                    <button class="label">은행선택</button>
+                    <ul class="optionItemWrap" id="crops1">
+                        <li class="optionItem">국민은행</li>
+                        <li class="optionItem">신한은행</li>
+                        <li class="optionItem">우리은행</li>
+                        <li class="optionItem">농협</li>
+                    </ul>
+                </div>
+            </div>
+            <label>
+                <input type="num" class="textInput">
+                <button class="inputTextDelete">
+                    <img src="./img/ic-close-fill-24px.png" alt="">
+                </button>
+            </label>
+        </div>
+    </section>
+    <section id="reception">
+        <h3>이벤트 정보 수신</h3>
+        <div class="checkBoxForm">
+            <div class="allAgreeBtn">
+                <label>
+                    <input type="checkbox" id="check_btn">
+                    <span>전체동의</span>
+                </label>
+            </div>
+            <div class="checkBtnList">
+                <label>
+                    <input type="checkbox" id="check_btn" class="normal">
+                    <span>문자 (선택)</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="check_btn" class="normal">
+                    <span>이메일 (선택)</span>
+                </label> 
+                <label>
+                    <input type="checkbox" id="check_btn" class="normal">
+                    <span>카카오톡 (선택)</span>
+                </label> 
+            </div>
+        </div>
+        <p>다양한 이벤트 및 혜택에 대한 수신동의 여부를 선택해주세요.수신 동의 시 고객님을 위한 다양한 혜택정보를 제공합니다.</p>
+    </section>
+    <div class="bottom">
+        <a href="./join_banner.html" class="before">이전</a>
+        <a href="./join_complete.html" class="after">다음 </a><!-- 필수정보입력란 전부 기입시 addClass:on -->
     </div>
 </body>
 <script>
