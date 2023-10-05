@@ -421,10 +421,10 @@
             </section>
             <section id="shippingInfo">
                 <h3>배송정보</h3>
-                <button class="spotInput" style="display: none;">
+                <button class="spotInput" style="display: none;"><!-- 기본배송지가 기입이 안되어있는경우 화면 display:none 처리 해놨습니다-->
                     <p>배송지 입력</p>
                 </button>
-                <div class="spotInputAfter" ><!-- 배송지 입력 후에 나타나는 화면 display:none 처리 해놨습니다 -->
+                <div class="spotInputAfter">
                     <button class="spotChange">
                         배송지 변경
                     </button>
@@ -748,28 +748,45 @@
     });
 
     $('.spotInput').click(function(){
-        $('#oreder_page').css("display","none");
         $('.addressPlus').css("display","block");
+        $("html, body").css({"overflow":"hidden", "height":"100%"});
+        $("#oreder_page").bind("touchmove", function(e) {
+            e.preventDefault();
+        });
     });
 
     $('.spotChange').click(function(){
         $('.addressChange').css("display","block");
-        //$('#oreder_page').on('scroll touchmove mousewheel', function(event) {
-        //    event.preventDefault();
-        //    event.stopPropagation();
-        //    return false;
-        //});
+        $("html, body").css({"overflow":"hidden", "height":"100%"});
+        $("#oreder_page").bind("touchmove", function(e) {
+            e.preventDefault();
+        });
     });
 
     $('.addressPlus .icoLeftArrow').click(function(){
-        $('#oreder_page').css("display","block");
-        $('.addressPlus').css("display","none");
+        if($('.addressChange').css("display") === "block"){
+            $('.addressPlus').css("display","none");
+            $("html, body").css({"overflow":"hidden", "height":"100%"});
+            $("#oreder_page").bind("touchmove", function(e) {
+                e.preventDefault();
+            });
+        }else{
+            $('.addressPlus').css("display","none");
+            $("html, body").css({"overflow":"auto", "height":"auto"});
+            $('#oreder_page').unbind('touchmove');
+        }
+        
     });
 
     $('.addressChange .ico_left_arrow').click(function(){
-        $('#oreder_page').css("display","block");
         $('.addressChange').css("display","none");
+        $("html, body").css({"overflow":"auto", "height":"auto"});
+        $('#oreder_page').unbind('touchmove');
     });
+
+    $('.plusAddressBtn').click(function(){
+        $('.addressPlus').css("display","block");
+    })
 
     var selectedIndex = 0;
 
@@ -794,11 +811,6 @@
     $('.simple .payContent ul li label').click(function(){
         $('.simple .payContent ul li label').removeClass('on');  
         $(this).addClass('on');  
-    })
-
-    $('.plusAddressBtn').click(function(){
-        $('.addressPlus').css("display","block");
-        //$('.addressChange').css("display","none");
     })
 
 
