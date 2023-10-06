@@ -31,7 +31,7 @@
         <div class="nameInput">
             <span>이름</span>
             <label>
-                <input class="textInput" type="text" value="정현식">
+                <input class="textInput" type="text">
             </label>
         </div>
         <div class="idInput">
@@ -94,31 +94,29 @@
                 </div>
                 <span>@</span>
                 <div class="secondInput">
-                    <label>
-                        <input type="text" class="domain textInput">
-                        <button class="inputTextDelete">
-                            <img src="./img/ic-close-fill-24px.png" alt="">
-                        </button>
-                    </label>
+                    <div class="selectBoxType">
+                        <label>
+                            <input class="domain" placeholder="직접입력">
+                            <button class="label"></button>
+                        </label>
+                        <ul class="optionItemWrap" id="crops1">
+                            <li class="optionItem">naver.com</li>
+                            <li class="optionItem">daum.net</li>
+                            <li class="optionItem">kakao.com</li>
+                            <li class="optionItem">google.com</li>
+                            <li class="optionItem">직접입력</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="selectBoxType">
-                <button class="label">직접입력</button>
-                <ul class="optionItemWrap" id="crops1">
-                    <li class="optionItem">naver.com</li>
-                    <li class="optionItem">daum.net</li>
-                    <li class="optionItem">kakao.com</li>
-                    <li class="optionItem">google.com</li>
-                    <li class="optionItem">직접입력</li>
-                </ul>
-            </div>
+            <button>인증하기</button><!-- 두개의 input란 기입시 addClass="on" -->
         </div>
         <div class="birthInput">
             <span>생년월일</span>
             <div class="inputlist">
-                <input type="text" class="year" value="1998년">
-                <input type="text" class="month" value="3월">
-                <input type="text" class="day" value="12">
+                <input type="text" class="year">
+                <input type="text" class="month">
+                <input type="text" class="day">
             </div>
             <ul>
                 <li>
@@ -242,11 +240,6 @@
         $(this).parents('.optionItemWrap').siblings('.label').removeClass('on')
         $('.optionItem').css("background","none")
         $(this).css("background","#f5f5f5")
-        $('.secondInput .domain').val(textChange)
-    })
-
-    $('.optionItem:last-child').click(function(){
-        $('.secondInput .domain').val("")
     })
 
     $('.pwCheckInput>label>input').on('input', function () {
@@ -258,5 +251,23 @@
             $('.pwCheckInput>.inputText>.inputText_t>p').css("color", "#969696")
         }
     });//새 비밀번호와 새 비밀번호 확인 텍스트 같으면 색깔 바뀌게
+
+    $('.secondInput > .selectBoxType button').click(function(){
+        $(this).toggleClass('on');
+        $(this).parent('label').siblings('.optionItemWrap').toggleClass('on');
+    });
+
+    $('.secondInput > .selectBoxType .optionItem').click(function(){
+        var textChange = $(this).text();
+        $(this).parents('.optionItemWrap').siblings('label').find('input').val(textChange)
+        $('.secondInput > .selectBoxType button').removeClass('on')
+        $(this).parents('.optionItemWrap').removeClass('on')
+        $('.optionItem').css("background","none")
+        $(this).css("background","#f5f5f5")
+    });
+
+    $('.secondInput > .selectBoxType .optionItem:last-child').click(function(){
+        $(this).parents('.optionItemWrap').siblings('label').find('input').val("")
+    })
 </script>
 </html>

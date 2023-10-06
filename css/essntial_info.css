@@ -30,8 +30,8 @@
 .idInput>.inputBtn>label>input:focus{border-color: #bdbdbd;}
 .idInput>.inputBtn>label>.inputTextDelete{display: none; background: none; position: absolute; top: 50%; right: 1.6rem; transform: translateY(-50%); width: 2.4rem; height: 2.4rem;}
 .idInput>.inputBtn>label>.inputTextDelete>img{width: 100%;}
-.idInput>.inputBtn>button{width: 8.8rem; height: 4.8rem; border-radius: 4px; text-align: center; line-height: 5.2rem; color: #696969; background: #f5f5f5; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; /* margin-left: 1.2rem; */ box-sizing: border-box;}
-.idInput>.inputBtn>button.on{width: 8.8rem; height: 5.2rem; border-radius: 4px; text-align: center; line-height: 5.2rem; color: #fff; background: #222; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; /* margin-left: 1.2rem; */ box-sizing: border-box;}
+.idInput>.inputBtn>button{width: 8.8rem; height: 4.8rem; border-radius: 4px; text-align: center; line-height: 4.8rem; color: #696969; background: #f5f5f5; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; /* margin-left: 1.2rem; */ box-sizing: border-box;}
+.idInput>.inputBtn>button.on{width: 8.8rem; height: 5.2rem; border-radius: 4px; text-align: center; line-height: 4.8rem; color: #fff; background: #222; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; /* margin-left: 1.2rem; */ box-sizing: border-box;}
 .idInput>.rule{margin-left: 5px; margin-top: 5px; font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #969696;}
 
 .pwInput{margin-top: 4rem;}
@@ -119,22 +119,21 @@ input::placeholder{color: #bdbdbd;}
 .emailInputWrap>.emailInput>span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #969696; margin: 0 6px;}
 .emailInputWrap>.emailInput>.firstInput>label{position: relative; display: block; width: 12.4rem;}
 .emailInputWrap>.emailInput>.firstInput>label>input{width: 100%; padding: 1.1rem 4.5rem 1.1rem 1.6rem; box-sizing: border-box; font-family: 'Pretendard'; font-size: 1.6rem; font-weight: 400; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px;}
+.emailInputWrap>.emailInput>.firstInput>label>input:focus{border-color: #bdbdbd;}
 .emailInputWrap>.emailInput>.firstInput>label>.inputTextDelete{display: none; background: none; position: absolute; top: 50%; right: 1.6rem; transform: translateY(-50%); width: 2.4rem; height: 2.4rem;}
 .emailInputWrap>.emailInput>.firstInput>label>.inputTextDelete>img{width: 100%;}
 .emailInputWrap>.emailInput>.secondInput{width: 100%;}
-.emailInputWrap>.emailInput>.secondInput>label{position: relative; display: block; width: 100%}
-.emailInputWrap>.emailInput>.secondInput>label>input.domain{width: 100%; padding: 1.1rem 4.5rem 1.1rem 1.6rem; box-sizing: border-box; font-family: 'Pretendard'; font-size: 1.6rem; font-weight: 400; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px;}
-.emailInputWrap>.emailInput>.secondInput>label>.inputTextDelete{display: none; background: none; position: absolute; top: 50%; right: 1.6rem; transform: translateY(-50%); width: 2.4rem; height: 2.4rem;}
-.emailInputWrap>.emailInput>.secondInput>label>.inputTextDelete>img{width: 100%;}
-.emailInputWrap>.emailInput>div>label>input:focus{border-color: #bdbdbd;}
-
-.emailInputWrap>.selectBoxType>.optionItemWrap{width: 100%; padding: 8px 0; background: #fff; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); border-radius: 4px; display: none; margin-top: 4px;}
-.emailInputWrap>.selectBoxType>.optionItemWrap.on{display: block;}
-.emailInputWrap>.selectBoxType>.optionItemWrap>li{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 1.4rem 1.6rem;}
-.emailInputWrap>.selectBoxType{ box-sizing: border-box;width: 100%;}
-.emailInputWrap>.selectBoxType.on{}
-.emailInputWrap>.selectBoxType>button{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.3rem 1.6rem; border-radius: 4px; border: 1px solid #e2e2e2; background: url(../img/ic-arrow-down-24.png) no-repeat 98% center; line-height: 2.4rem;}
-.emailInputWrap>.selectBoxType>button.on{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.2rem 1.6rem; border-radius: 4px; border: 1px solid #bdbdbd; background: url(../img/ic-arrow-up-24.png) no-repeat 98% center;}
+.emailInputWrap>.emailInput>.secondInput>.selectBoxType{margin-top: 0; position: relative;}
+.emailInputWrap>.emailInput>.secondInput>.selectBoxType>label{position: relative; display: block; width: 100%}
+.emailInputWrap>.emailInput>.secondInput>.selectBoxType>label>input.domain{width: 100%; padding: 1.1rem 4.5rem 1.1rem 1.6rem; box-sizing: border-box; font-family: 'Pretendard'; font-size: 1.6rem; font-weight: 400; line-height: 2.4rem; color: #222; border: 1px solid #e2e2e2; border-radius: 4px;}
+.emailInputWrap>.emailInput>.secondInput>.selectBoxType>label>input:focus{border-color: #bdbdbd;}
+.emailInputWrap>.emailInput>.secondInput>.selectBoxType>label>button{width: 4.5rem; height: 100%; position: absolute; top: 50%; right: 0; transform: translateY(-50%); background: url(../img/ic-arrow-down-24.png) no-repeat center;}
+.emailInputWrap>.emailInput>.secondInput>.selectBoxType>label>button.on{width: 4.5rem; height: 100%; position: absolute; top: 50%; right: 0; transform: translateY(-50%); background: url(../img/ic-arrow-up-24.png) no-repeat center;}
+.emailInputWrap>.emailInput>.secondInput>.selectBoxType>.optionItemWrap{position: absolute; width: 100%; padding: 8px 0; background: #fff; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); border-radius: 4px; display: none; margin-top: 4px;}
+.emailInputWrap>.emailInput>.secondInput>.selectBoxType>.optionItemWrap.on{display: block;}
+.emailInputWrap>.emailInput>.secondInput>.optionItemWrap>li{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 1.4rem 1.6rem;}
+.emailInputWrap>button{width: 100%; height: 4.8rem; border-radius: 4px; text-align: center; font-family: 'Pretendard'; color: #696969; background: #f5f5f5; font-weight: 500; font-size: 1.6rem; box-sizing: border-box;}
+.emailInputWrap>button.on{width: 100%; height: 4.8rem; border-radius: 4px; text-align: center; font-family: 'Pretendard'; color: #fff; background: #222; font-weight: 500; font-size: 1.6rem; box-sizing: border-box;}
 
 .accountInputWrap{margin-top: 4rem;}
 .accountInputWrap>span{display: block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-bottom: 8px;}
