@@ -31,10 +31,7 @@
         <div class="nameInput">
             <span>이름</span>
             <label>
-                <input class="textInput" type="text" placeholder="이름">
-                <button class="inputTextDelete">
-                    <img src="./img/ic-close-fill-24px.png" alt="">
-                </button>
+                <input class="textInput" type="text" value="정현식">
             </label>
         </div>
         <div class="idInput">
@@ -46,8 +43,9 @@
                         <img src="./img/ic-close-fill-24px.png" alt="">
                     </button>
                 </label>
-                <button>중복확인</button>
+                <button>중복확인</button><!-- 규칙에맞기 기입시 addClass="on" -->
             </div>
+            <span class="rule">영문+숫자, 6자 이상</span>
         </div>
         <div class="pwInput">
             <span>비밀번호</span>
@@ -57,6 +55,16 @@
                     <img src="./img/ic-close-fill-24px.png" alt="">
                 </button>
             </label>
+            <div class="inputText">
+                <div class="inputText_t">
+                    <img src="./img/ic-check-s-grey.png" alt="">
+                    <p>10자~16자 입력</p>
+                </div>
+                <div class="inputText_b">
+                    <img src="./img/ic-check-s-grey.png" alt="">
+                    <p>영어 대소문자/숫자/특수문자 중 2가지 이상 조합</p>
+                </div>
+            </div>
         </div>
         <div class="pwCheckInput">
             <span>비밀번호 확인</span>
@@ -66,158 +74,51 @@
                     <img src="./img/ic-close-fill-24px.png" alt="">
                 </button>
             </label>
+            <div class="inputText">
+                <div class="inputText_t">
+                    <img src="./img/ic-check-s-grey.png" alt="">
+                    <p>동일한 비밀번호를 입력해 주세요.</p>
+                </div>
+            </div>
+        </div>
+        <div class="emailInputWrap">
+            <span>이메일</span>
+            <div class="emailInput">
+                <div class="firstInput">
+                    <label>
+                        <input class="textInput" type="text">
+                        <button class="inputTextDelete">
+                            <img src="./img/ic-close-fill-24px.png" alt="">
+                        </button>
+                    </label>
+                </div>
+                <span>@</span>
+                <div class="secondInput">
+                    <label>
+                        <input type="text" class="domain textInput">
+                        <button class="inputTextDelete">
+                            <img src="./img/ic-close-fill-24px.png" alt="">
+                        </button>
+                    </label>
+                </div>
+            </div>
+            <div class="selectBoxType">
+                <button class="label">직접입력</button>
+                <ul class="optionItemWrap" id="crops1">
+                    <li class="optionItem">naver.com</li>
+                    <li class="optionItem">daum.net</li>
+                    <li class="optionItem">kakao.com</li>
+                    <li class="optionItem">google.com</li>
+                    <li class="optionItem">직접입력</li>
+                </ul>
+            </div>
         </div>
         <div class="birthInput">
             <span>생년월일</span>
             <div class="inputlist">
-                <div class="selectBoxType year">
-                    <button class="label">출생년도</button>
-                    <ul class="optionItemWrap">
-                        <li class="optionItem">2023년</li>
-                        <li class="optionItem">2022년</li>
-                        <li class="optionItem">2021년</li>
-                        <li class="optionItem">2020년</li>
-                        <li class="optionItem">2019년</li>
-                        <li class="optionItem">2018년</li>
-                        <li class="optionItem">2017년</li>
-                        <li class="optionItem">2016년</li>
-                        <li class="optionItem">2015년</li>
-                        <li class="optionItem">2014년</li>
-                        <li class="optionItem">2013년</li>
-                        <li class="optionItem">2012년</li>
-                        <li class="optionItem">2011년</li>
-                        <li class="optionItem">2010년</li>
-                        <li class="optionItem">2009년</li>
-                        <li class="optionItem">2008년</li>
-                        <li class="optionItem">2007년</li>
-                        <li class="optionItem">2006년</li>
-                        <li class="optionItem">2005년</li>
-                        <li class="optionItem">2004년</li>
-                        <li class="optionItem">2004년</li>
-                        <li class="optionItem">2003년</li>
-                        <li class="optionItem">2002년</li>
-                        <li class="optionItem">2001년</li>
-                        <li class="optionItem">2000년</li>
-                        <li class="optionItem">1999년</li>
-                        <li class="optionItem">1998년</li>
-                        <li class="optionItem">1998년</li>
-                        <li class="optionItem">1998년</li>
-                        <li class="optionItem">1998년</li>
-                        <li class="optionItem">1997년</li>
-                        <li class="optionItem">1996년</li>
-                        <li class="optionItem">1995년</li>
-                        <li class="optionItem">1994년</li>
-                        <li class="optionItem">1993년</li>
-                        <li class="optionItem">1992년</li>
-                        <li class="optionItem">1991년</li>
-                        <li class="optionItem">1990년</li>
-                        <li class="optionItem">1989년</li>
-                        <li class="optionItem">1988년</li>
-                        <li class="optionItem">1987년</li>
-                        <li class="optionItem">1986년</li>
-                        <li class="optionItem">1985년</li>
-                        <li class="optionItem">1984년</li>
-                        <li class="optionItem">1983년</li>
-                        <li class="optionItem">1982년</li>
-                        <li class="optionItem">1981년</li>
-                        <li class="optionItem">1980년</li>
-                        <li class="optionItem">1979년</li>
-                        <li class="optionItem">1978년</li>
-                        <li class="optionItem">1977년</li>
-                        <li class="optionItem">1976년</li>
-                        <li class="optionItem">1975년</li>
-                        <li class="optionItem">1974년</li>
-                        <li class="optionItem">1973년</li>
-                        <li class="optionItem">1972년</li>
-                        <li class="optionItem">1971년</li>
-                        <li class="optionItem">1970년</li>
-                        <li class="optionItem">1969년</li>
-                        <li class="optionItem">1968년</li>
-                        <li class="optionItem">1967년</li>
-                        <li class="optionItem">1966년</li>
-                        <li class="optionItem">1965년</li>
-                        <li class="optionItem">1964년</li>
-                        <li class="optionItem">1963년</li>
-                        <li class="optionItem">1962년</li>
-                        <li class="optionItem">1961년</li>
-                        <li class="optionItem">1960년</li>
-                        <li class="optionItem">1959년</li>
-                        <li class="optionItem">1958년</li>
-                        <li class="optionItem">1957년</li>
-                        <li class="optionItem">1956년</li>
-                        <li class="optionItem">1955년</li>
-                        <li class="optionItem">1954년</li>
-                        <li class="optionItem">1953년</li>
-                        <li class="optionItem">1952년</li>
-                        <li class="optionItem">1951년</li>
-                        <li class="optionItem">1950년</li>
-                        <li class="optionItem">1949년</li>
-                        <li class="optionItem">1948년</li>
-                        <li class="optionItem">1947년</li>
-                        <li class="optionItem">1946년</li>
-                        <li class="optionItem">1945년</li>
-                        <li class="optionItem">1944년</li>
-                        <li class="optionItem">1943년</li>
-                        <li class="optionItem">1942년</li>
-                        <li class="optionItem">1941년</li>
-                        <li class="optionItem">1940년</li>
-                    </ul>
-                </div>
-                <div class="selectBoxType month">
-                    <button class="label">월</button>
-                    <ul class="optionItemWrap">
-                        <li class="optionItem">01월</li>
-                        <li class="optionItem">02월</li>
-                        <li class="optionItem">03월</li>
-                        <li class="optionItem">04월</li>
-                        <li class="optionItem">05월</li>
-                        <li class="optionItem">06월</li>
-                        <li class="optionItem">07월</li>
-                        <li class="optionItem">08월</li>
-                        <li class="optionItem">09월</li>
-                        <li class="optionItem">10월</li>
-                        <li class="optionItem">11월</li>
-                        <li class="optionItem">12월</li>
-                    </ul>
-                    <input type="text" class="direct"><!-- 직접입력 클릭시 나타나게 -->
-                </div>
-                <div class="selectBoxType day">
-                    <button class="label">일</button>
-                    <ul class="optionItemWrap">
-                        <li class="optionItem">01일</li>
-                        <li class="optionItem">02일</li>
-                        <li class="optionItem">03일</li>
-                        <li class="optionItem">04일</li>
-                        <li class="optionItem">05일</li>
-                        <li class="optionItem">06일</li>
-                        <li class="optionItem">07일</li>
-                        <li class="optionItem">08일</li>
-                        <li class="optionItem">09일</li>
-                        <li class="optionItem">10일</li>
-                        <li class="optionItem">11일</li>
-                        <li class="optionItem">12일</li>
-                        <li class="optionItem">13일</li>
-                        <li class="optionItem">14일</li>
-                        <li class="optionItem">15일</li>
-                        <li class="optionItem">16일</li>
-                        <li class="optionItem">17일</li>
-                        <li class="optionItem">18일</li>
-                        <li class="optionItem">19일</li>
-                        <li class="optionItem">20일</li>
-                        <li class="optionItem">21일</li>
-                        <li class="optionItem">22일</li>
-                        <li class="optionItem">23일</li>
-                        <li class="optionItem">24일</li>
-                        <li class="optionItem">25일</li>
-                        <li class="optionItem">26일</li>
-                        <li class="optionItem">27일</li>
-                        <li class="optionItem">28일</li>
-                        <li class="optionItem">29일</li>
-                        <li class="optionItem">30일</li>
-                        <li class="optionItem">31일</li>
-                    </ul>
-                    <input type="text" class="direct"><!-- 직접입력 클릭시 나타나게 -->
-                </div>
+                <input type="text" class="year" value="1998년">
+                <input type="text" class="month" value="3월">
+                <input type="text" class="day" value="12">
             </div>
             <ul>
                 <li>
@@ -270,38 +171,6 @@
      </section>
      <section id="choiceInput">
         <h3>선택 정보 입력</h3>
-        <div class="emailInputWrap">
-            <span>이메일</span>
-            <div class="emailInput">
-                <div class="firstInput">
-                    <label>
-                        <input class="textInput" type="text">
-                        <button class="inputTextDelete">
-                            <img src="./img/ic-close-fill-24px.png" alt="">
-                        </button>
-                    </label>
-                </div>
-                <span>@</span>
-                <div class="secondInput">
-                    <label>
-                        <input type="text" class="domain textInput">
-                        <button class="inputTextDelete">
-                            <img src="./img/ic-close-fill-24px.png" alt="">
-                        </button>
-                    </label>
-                </div>
-            </div>
-            <div class="selectBoxType">
-                <button class="label">직접입력</button>
-                <ul class="optionItemWrap" id="crops1">
-                    <li class="optionItem">naver.com</li>
-                    <li class="optionItem">daum.net</li>
-                    <li class="optionItem">kakao.com</li>
-                    <li class="optionItem">google.com</li>
-                    <li class="optionItem">직접입력</li>
-                </ul>
-            </div>
-        </div>
         <div class="accountInputWrap">
             <span>환불계좌</span>
             <div class="accountInput">
@@ -371,8 +240,23 @@
         $(this).parents('.optionItemWrap').siblings('.label').css("color","#222")
         $(this).parents('.optionItemWrap').toggleClass('on')
         $(this).parents('.optionItemWrap').siblings('.label').removeClass('on')
-        $(this).css("background","none")
+        $('.optionItem').css("background","none")
         $(this).css("background","#f5f5f5")
+        $('.secondInput .domain').val(textChange)
     })
+
+    $('.optionItem:last-child').click(function(){
+        $('.secondInput .domain').val("")
+    })
+
+    $('.pwCheckInput>label>input').on('input', function () {
+        if ($('.pwCheckInput>label>input').val() == $('.pwInput>label>input').val()) {
+            $('.pwCheckInput>.inputText>.inputText_t>img').attr("src" , "./img/ic-check-s-green.png")
+            $('.pwCheckInput>.inputText>.inputText_t>p').css("color", "#34A854")
+        } else {
+            $('.pwCheckInput>.inputText>.inputText_t>img').attr("src" , "./img/ic-check-s-grey.png")
+            $('.pwCheckInput>.inputText>.inputText_t>p').css("color", "#969696")
+        }
+    });//새 비밀번호와 새 비밀번호 확인 텍스트 같으면 색깔 바뀌게
 </script>
 </html>
