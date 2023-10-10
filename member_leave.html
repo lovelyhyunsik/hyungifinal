@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/member_leave.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <header id="header_type2">
+        <div>
+            <p>회원탈퇴</p>
+            <div class="header_ico_wrap">
+                <a href="./login.html" class="ico_left_arrow"></a>
+                <div class="header_ico">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="inputList">
+        <div class="currentPw">
+            <span>현재 비밀번호</span>
+            <label>
+                <input type="password" placeholder="현재 비밀번호를 입력해주세요" class="textInput"><!-- 현재 비밀번호가 맞지 않으면 addClass:error -->
+                <button class="inputTextDelete">
+                    <img src="./img/ic-close-fill-24px.png" alt="">
+                </button>
+            </label>
+            <p class="errorText">현재 비밀번호가 맞는지 다시 확인해주세요.</p>
+        </div>
+    </section>
+    <div class="bottom">
+        <button>회원탈퇴</button><!-- 현재비밀번호가 일치할경우 addClass=on -->
+    </div>
+    <div class="popLayer">
+        <div class="popContainer">
+            <p>정말 탈퇴하시겠습니까?<br>탈퇴할 경우 모든 혜택(포인트,쿠폰)이 소멸됩니다.</p>
+            <div class="btn_wrap">
+                <button class="cancel">취소</button>
+                <button class="check">확인</button>
+            </div>
+        </div>
+        <div class="popContainerDetail">
+            <p>탈퇴처리가 완료되었습니다.</p>
+            <button class="check">확인</button>
+        </div>
+    </div>
+</body>
+<script>
+    $('.bottom > button').click(function(){
+        $('.popLayer').css("display","block")
+    })
+
+    $('.popContainer > .btn_wrap > .check').click(function(){
+        $('.popContainer').css("display","none")
+        $('.popContainerDetail').css("display","block")
+    })
+
+    $('.popContainer > .btn_wrap > .cancel').click(function(){
+        $('.popLayer').css("display","none")
+    })
+
+</script>
+</html>
