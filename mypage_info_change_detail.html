@@ -17,34 +17,28 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <header id="headerType2">
-        <div>
-            <p>개인정보 수정</p> 
-            <div class="headerIcoWrap">
-                <a href="./bottom_gnb_mypage_member.html" class="icoLeftArrow"><span class="hide">뒤로가기</span></a>
-                <div class="headerIco">
+    <div class="pwLayer">
+        <header id="header_type2">
+            <div>
+                <p>비밀번호 변경</p>
+                <div class="header_ico_wrap">
+                    <a href="./login.html" class="ico_left_arrow"></a>
+                    <div class="header_ico">
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section id="infoInput">
-        <h3>기본정보</h3>
-        <div class="nameInput">
-            <span>이름</span>
-            <input type="text" placeholder="이름"><!-- 회원가입시 입력했던 이름 기본값으로 설정. 변경 가능 -->
-        </div>
-        <div class="idInput">
-            <span>아이디</span>
-            <input type="text" readonly><!-- 회원가입시 입력했던 아이디 기본값으로 설정. 변경 불가능 -->
-        </div>
-        <div class="pwInput">
-            <span>비밀번호</span>
-            <div class="pwInputBtn">
-                <input type="password" placeholder="비밀번호" readonly><!-- 회원가입시 입력했던 비밀번호 기본값으로 설정 -->
-                <button class="pwChangeBtn">변경</button>
+        </header>
+        <section id="inputList">
+            <div class="currentPw">
+                <span>현재 비밀번호</span>
+                <label>
+                    <input type="password" placeholder="현재 비밀번호를 입력해주세요" class="textInput"><!-- 현재 비밀번호가 맞지 않으면 addClass:error -->
+                    <button class="inputTextDelete">
+                        <img src="./img/ic-close-fill-24px.png" alt="">
+                    </button>
+                </label>
+                <p class="errorText">현재 비밀번호가 맞는지 다시 확인해주세요.</p>
             </div>
-        </div>
-        <div class="newPwWrap">
             <div class="newPw">
                 <span>새 비밀번호</span>
                 <label>
@@ -79,13 +73,47 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <div class="bottom">
+            <button>비밀번호 변경</button>
+        </div>
+        <div class="popLayer">
+            <div class="popContainer">
+                <p>비밀번호 변경이 완료되었습니다.</p>
+                <button>확인</button>
+            </div>
+        </div>
+    </div>
+    <header id="headerType2">
+        <div>
+            <p>개인정보 수정</p> 
+            <div class="headerIcoWrap">
+                <a href="./bottom_gnb_mypage_member.html" class="icoLeftArrow"><span class="hide">뒤로가기</span></a>
+                <div class="headerIco">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="infoInput">
+        <h3>기본정보</h3>
+        <div class="nameInput">
+            <span>이름</span>
+            <input type="text" placeholder="이름" readonly><!-- 회원가입시 입력했던 이름 기본값으로 설정. 변경 불가능 -->
+        </div>
+        <div class="idInput">
+            <span>아이디</span>
+            <input type="text" readonly><!-- 회원가입시 입력했던 아이디 기본값으로 설정. 변경 불가능 -->
+        </div>
+        <div class="pwInput">
+            <span>비밀번호</span>
+            <div class="pwInputBtn">
+                <button class="pwChangeBtn">변경</button>
+            </div>
         </div>
         <div class="birthInput">
             <span>생년월일</span>
-            <div class="inputlist"><!-- 회원가입시 입력했던 생년월일 기본값으로 설정. 변경 가능  -->
-                <input type="number" placeholder="출생년도" class="year">
-                <input type="number" placeholder="월" class="mon">
-                <input type="number" placeholder="일 " class="day">
+            <div class="inputlist"><!-- 회원가입시 입력했던 생년월일 기본값으로 설정. 변경 불가능  -->
+                <input type="text" readonly>
             </div>
             <ul>
                 <li>
@@ -104,7 +132,7 @@
         </div>
         <div class="gender">
             <span>성별</span>
-            <div class="genderBtn">
+            <div class="genderBtn"><!-- 변경 불가능 -->
                 <button class="woman on">여자</button>
                 <button class="man">남자</button>
             </div>
@@ -112,7 +140,7 @@
         <div class="addressInput">
             <span>우편번호</span><!-- 회원가입시 입력했던 우편번호 기본값으로 설정. 변경 가능  -->
             <div class="addressBtn">
-                <input type="number" placeholder="이름">
+                <input type="number" readonly>
                 <button>주소찾기</button>
             </div>
             <input type="text" class="address" placeholder="주소">
@@ -124,6 +152,36 @@
                 <div class="phoneNumBox">01012345678</div><!-- 회원가입시 입력했던 휴대전화 기본값으로 설정. 변경버튼누르면 변경할수있는 페이지로 넘어감  -->
                 <a href="./mypage_phone_certifi.html">변경</a>
             </div>
+        </div>
+        <div class="emailInputWrap">
+            <span>이메일</span>
+            <div class="emailInput">
+                <div class="firstInput">
+                    <label>
+                        <input class="textInput" type="text">
+                        <button class="inputTextDelete">
+                            <img src="./img/ic-close-fill-24px.png" alt="">
+                        </button>
+                    </label>
+                </div>
+                <span>@</span>
+                <div class="secondInput">
+                    <div class="selectBoxType">
+                        <label>
+                            <input class="domain" placeholder="직접입력">
+                            <button class="label"></button>
+                        </label>
+                        <ul class="optionItemWrap" id="crops1">
+                            <li class="optionItem">naver.com</li>
+                            <li class="optionItem">daum.net</li>
+                            <li class="optionItem">kakao.com</li>
+                            <li class="optionItem">google.com</li>
+                            <li class="optionItem">직접입력</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button>인증하기</button><!-- 두개의 input란 기입시 addClass="on" -->
         </div>
         <div class="joinMethod">
             <span>가입수단</span>
@@ -158,7 +216,7 @@
         <button>회원탈퇴</button>
     </section>
     <div class="bottom">
-         <button>수정하기</button>
+         <button class="complete">수정하기</button>
     </div>
     <div class="popLayer">
         <div class="popLayerContainer"><!-- 수정하기 버튼 누르면 나타나는 팝업 display:none 시켜놨습니다.-->
@@ -198,7 +256,7 @@
         $(".allAgreeBtn>label>#check_btn").prop("checked", is_checked);
     });
 
-    $('.bottom>button').click(function(){
+    $('.bottom>.complete').click(function(){
         $('body').addClass('hidden')
         $('.popLayer').css("display","block")
     })
@@ -241,9 +299,44 @@
              $('.newPwCheck>.inputText>.inputText_t>p').css("color", "#969696")
          }
      });//새 비밀번호와 새 비밀번호 확인 텍스트 같으면 색깔 바뀌게
+ 
+     $('.newPwCheck>label>input').on('input', function () {
+         if ($('.newPwCheck>label>input').val() == "") {
+             $('.pwLayer .bottom>button').removeClass('on')
+         } else {
+             $('.pwLayer .bottom>button').addClass('on')
+         }
+     });//모든input태그 입력되어야 bottom색깔 변해야하는데 능력부족으로 새 비밀번호 확인창 입력시 비밀번호 변경 버튼 addclass on 임시처리
+ 
+     $('.pwLayer .bottom>button').click(function(){
+         $('.pwLayer .popLayer').css("display","block")
+     })//bottom 버튼 클릭시 뜨는 팝업 처리
+
+     $('.popContainer > button').click(function(){
+        $(this).parents('.popLayer').css("display","none")
+        $('.pwLayer').css("display","none")
+     })
 
      $('.pwChangeBtn').click(function(){
-        $('.newPwWrap').css("display","block")
+        $('.pwLayer').css("display","block")
      })
+
+     $('.secondInput > .selectBoxType button').click(function(){
+        $(this).toggleClass('on');
+        $(this).parent('label').siblings('.optionItemWrap').toggleClass('on');
+    });
+
+    $('.secondInput > .selectBoxType .optionItem').click(function(){
+        var textChange = $(this).text();
+        $(this).parents('.optionItemWrap').siblings('label').find('input').val(textChange)
+        $('.secondInput > .selectBoxType button').removeClass('on')
+        $(this).parents('.optionItemWrap').removeClass('on')
+        $('.optionItem').css("background","none")
+        $(this).css("background","#f5f5f5")
+    });
+
+    $('.secondInput > .selectBoxType .optionItem:last-child').click(function(){
+        $(this).parents('.optionItemWrap').siblings('label').find('input').val("")
+    })
 </script>
 </html>
