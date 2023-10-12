@@ -55,12 +55,29 @@
                 <div class="btnWrap">
                     <div class="btnContainer">
                         <a href="./order_cancel.html" class="cancelRequest">취소요청</a>
-                        <a href="./shipping_tracking.html" class="tracking">배송조회</a>
                     </div>
                 </div>
-                <div class="tel">
-                    <span>1234-5678</span>
-                    <a href="1234-5678">문의하기</a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/Frame 2642.png" alt="">
+                    <div class="itemText">
+                       <div class="state">
+                           주문완료<span>12.01 (목) 도착</span>
+                       </div>
+                       <div class="brandItemName">
+                           <span class="brandName">CHATELAINE</span><span class="itemName">브러쉬 립조직 하이넥 티셔츠</span>
+                       </div>
+                       <div class="itemOpt">
+                           <span class="color">네이비</span>/<span class="size">55</span>/<span class="count">1개</span>
+                       </div>
+                       <div class="itemPrice">147,000원</div>
+                    </div>
+                </a>
+                <div class="btnWrap">
+                    <div class="btnContainer">
+                        <a href="./order_cancel.html" class="cancelRequest">취소요청</a>
+                    </div>
                 </div>
             </li>
             <li>
@@ -82,12 +99,7 @@
                 <div class="btnWrap">
                     <div class="btnContainer">
                         <a class="cancelRequest">취소요청</a>
-                        <a href="./shipping_tracking.html" class="tracking">배송조회</a>
                     </div>
-                </div>
-                <div class="tel">
-                    <span>1234-5678</span>
-                    <a href="1234-5678">문의하기</a>
                 </div>
             </li>
             <li class="shipping"><!-- 배송중:shipping , 구매확정:confirm ,배송완료:complete-->
@@ -108,13 +120,8 @@
                 </a>
                 <div class="btnWrap">
                     <div class="btnContainer">
-                        <a class="buyConfirm">구매확정</a>
                         <a href="./shipping_tracking.html" class="tracking">배송조회</a>
                     </div>
-                </div>
-                <div class="tel">
-                    <span>1234-5678</span>
-                    <a href="1234-5678">문의하기</a>
                 </div>
             </li>
         </ul>
@@ -137,14 +144,13 @@
                     </div>
                 </a>
                 <div class="btnWrap">
+                    <div class="greyBtn">
+                        <a href="" class="butConfirm">구매확정</a>
+                    </div>
                     <div class="btnContainer">
                         <a href="./change_return.html" class="changeRequest">교환 / 반품 요청</a>
                         <a href="./shipping_tracking.html" class="tracking">배송조회</a>
                     </div>
-                </div>
-                <div class="tel">
-                    <span>1234-5678</span>
-                    <a href="1234-5678">문의하기</a>
                 </div>
             </li>
             <li class="confirm">
@@ -168,18 +174,19 @@
                         <a href="./shipping_tracking.html" class="tracking">배송조회</a>
                     </div>
                 </div>
-                <div class="tel">
-                    <span>1234-5678</span>
-                    <a href="1234-5678">문의하기</a>
-                </div>
             </li>
         </ul>
     </section>
     <section id="info">
         <div class="orderUserInfo">
             <div class="orderUserInfoTop">
-                <p>주문자 정보</p>
-                <img src="./img/ic-arrow-up-24.png" alt="">
+                <div class="orderUserInfoTop_l">
+                    <p>주문자 정보</p>
+                    <div class="orderUserInfoUnfold">
+                        <span class="orderUserName_r">홍길동</span>/<span class="orderUserPhone_r">010-2244-8686</span>
+                    </div>
+                </div>
+                <img src="./img/ic-arrow-down-24.png" alt="">
             </div>
             <div class="orderUserInfoBottom">
                 <div class="orderUserName">
@@ -198,8 +205,14 @@
         </div>
         <div class="payInfo">
             <div class="payInfoTop">
-                <p>결제 정보</p>
-                <img src="./img/ic-arrow-up-24.png" alt="">
+                <div class="payInfoTop_l">
+                    <p>결제 정보</p>
+                    <div class="payInfoUnfold">
+                        <span class="itemPrice_r">522,100원</span>
+                    </div>
+                </div>
+                
+                <img src="./img/ic-arrow-down-24.png" alt="">
             </div>
             <div class="payInfoBottom">
                 <div class="payMethod">
@@ -232,8 +245,14 @@
         </div>
         <div class="shippingInfo">
             <div class="shippingInfoTop">
-                <p>배송 정보</p>
-                <img src="./img/ic-arrow-up-24.png" alt="">
+                <div class="shippingInfoTop_l">
+                    <p>배송 정보</p>
+                    <div class="shippingInfoUnfold">
+                        <span class="recipientName_r">홍길동</span>/<span class="recipientAddress_r">서울 특별시 강남구 역삼로 156 (태광빌딩) 5층 커머스랩</span>
+                    </div>
+                </div>
+                
+                <img src="./img/ic-arrow-down-24.png" alt="">
             </div>
             <div class="shippingInfoText">
                 <div class="recipientName">
@@ -252,4 +271,14 @@
         </div>
     </section>
 </body>
+<script>
+    $('#info > div').click(function(){
+        $(this).toggleClass('on')
+        if($(this).hasClass('on')){
+            $(this).find('img').attr("src" , "./img/ic-arrow-up-24.png")
+        }else{
+            $(this).find('img').attr("src" , "./img/ic-arrow-down-24.png" )
+        }
+    })
+</script>
 </html>
