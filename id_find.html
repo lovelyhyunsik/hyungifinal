@@ -17,7 +17,7 @@
 <body>
     <header id="headerType2">
         <div>
-            <p>아이디 찾기</p>
+            <p>ID/PW 찾기</p>
             <div class="headerIcoWrap">
                 <a href="./login.html" class="icoLeftArrow"></a>
                 <div class="headerIco">
@@ -25,6 +25,10 @@
             </div>
         </div>
     </header>
+    <div class="tabBtn">
+        <button class="idBtn on">아이디 찾기</button>
+        <button class="pwBtn">비밀번호 찾기</button>
+    </div>
     <section id="idFindWrap">
         <div class="idFind">
             <h3>본인인증으로 안전하게 찾기</h3>
@@ -42,5 +46,38 @@
             </li>
         </ul>
     </section>
+    <section id="pwFindWrap">
+        <div class="pwFind">
+            <h3>본인인증으로 안전하게 찾기</h3>
+            <p>본인 인증을 위해 아래 중 편리한 방법으로<br>본인인증을 진행해주세요.</p>
+        </div>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="./img/fluent_phone-lock-20-regular.png" alt="">
+                    <div class="certifiText">
+                        <p>휴대폰 인증</p>
+                        <span>휴대폰으로 본인인증하기</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
 </body>
+<script>
+    $('.tabBtn > button').click(function(){
+        $('.tabBtn > button').removeClass('on');
+        $(this).addClass('on');
+    });
+
+    $('.idBtn').click(function(){
+        $('#pwFindWrap').css("display","none");
+        $('#idFindWrap').css("display","block");
+    });
+
+    $('.pwBtn').click(function(){
+        ('#idFindWrap').css("display","none");
+        $('#pwFindWrap').css("display","block");
+    });
+</script>
 </html>

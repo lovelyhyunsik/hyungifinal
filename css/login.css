@@ -35,7 +35,6 @@
 .login>.joinFind{display: flex; justify-content: space-between; margin-top: 1.6rem;}
 .login>.joinFind>.join>a{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #969696;}
 .login>.joinFind>.find>a{position: relative; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #969696;}
-.login>.joinFind>.find>a.idFind::after{content: ""; position: absolute; top: 50%; right: -8px; transform: translateY(-50%); width: 1px; height: 1.2rem; background: #e2e2e2;}
 .login>.joinFind>.find>a.pwFind{margin-left: 12px;}
 .snsLogin{margin-top: 3.6rem;}
 .snsLogin>p{position: relative; text-align: center; font-family: 'Pretendard'; font-size: 1.4rem; line-height: 2rem; color: #969696;}
