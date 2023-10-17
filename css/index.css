@@ -151,6 +151,8 @@ li{word-break: keep-all;}
 .mzLatteBox>a>.textBox{padding: 2rem 1.6rem;}
 .mzLatteBox>a>.textBox>.textTop{padding-bottom: 0.8rem;}
 .mzLatteBox>a>.textBox>.textTop>p{font-family: 'Pretendard'; font-weight: 700; font-size: 1.4rem; line-height: 2rem; color: #222;}
+.mzLatteBox>a>.textBox>.textMiddle{padding-bottom: 0.8rem;}
+.mzLatteBox>a>.textBox>.textMiddle>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
 .mzLatteBox>a>.textBox>.textBottom{display: flex; justify-content: space-between;align-items: center;}
 .mzLatteBox>a>.textBox>.textBottom>.textBottomArea>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
 .mzLatteBox>a>.textBox>.textBottom>img{width: 2rem; height: 2rem; }
@@ -197,6 +199,7 @@ li{word-break: keep-all;}
 .mzLookbookTabWrap>.mzLookbookTabcontent>.tab>.mzLookbookBox>a>.mzLookbookBig>.mzLookbookBigTextWrap>.mzLookbookBigText>.textTop>p{font-family: 'Montserrat'; font-weight: 500; font-size: 1.2rem; line-height: 1.6rem; color: #fff; padding-bottom: 0.6rem;}
 .mzLookbookTabWrap>.mzLookbookTabcontent>.tab>.mzLookbookBox>a>.mzLookbookBig>.mzLookbookBigTextWrap>.mzLookbookBigText>.textMiddle{}
 .mzLookbookTabWrap>.mzLookbookTabcontent>.tab>.mzLookbookBox>a>.mzLookbookBig>.mzLookbookBigTextWrap>.mzLookbookBigText>.textMiddle>p{font-family: 'Montserrat'; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; color: #fff; padding-bottom: 0.4rem;}
+.mzLookbookTabWrap>.mzLookbookTabcontent>.tab>.mzLookbookBox>a>.mzLookbookBig>.mzLookbookBigTextWrap>.mzLookbookBigText>.textBottom>p{font-family: 'Montserrat'; font-weight: 500; font-size: 1.2rem; line-height: 2.4rem; color: #fff; padding-bottom: 0.4rem;}
 .mzLookbookTabWrap>.mzLookbookTabcontent>.tab>.mzLookbookBox>a>.mzLookbookBig>.mzLookbookBigTextWrap>.mzLookbookBigText>.rightArrow>img{width: 2rem; height: 2rem;}
 .mzLookbookTabWrap>.mzLookbookTabcontent>.tab>.mzLookbookBox>.mzLookbookRowWrap{display: flex; gap: 0.8rem; padding-top: 0.8rem; padding-bottom: 12rem; justify-content: space-between;}
 .mzLookbookTabWrap>.mzLookbookTabcontent>.tab>.mzLookbookBox>.mzLookbookRowWrap>li{width: 31.5%;}
