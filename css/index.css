@@ -58,7 +58,7 @@ li{word-break: keep-all;}
 #homeSectionBest>h3{padding:1.6rem 2rem;}
 .bestItemMore{ padding: 0 2rem 4rem 2rem;}
 .bestItemMore>a{display: block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; color: #222; padding: 1.2rem 0; border: 1px solid #e2e2e2; border-radius: 4px; text-align: center;}
-.lineBanner{padding-bottom: 4rem;}
+.lineBanner{padding-bottom: 4rem; aspect-ratio: 3/1;}
 .lineBanner > a{display: block;}
 .lineBanner > a > img{display: block; width: 100%; height: auto;}
 
@@ -70,7 +70,7 @@ li{word-break: keep-all;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide{display: block;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemBannerWrap{width: 100%; display: block;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>a>.recBrandItemBanner{position: relative;}
-#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>a>.recBrandItemBanner>img{}
+#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>a>.recBrandItemBanner>img{aspect-ratio: 4/3;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>a>.recBrandItemBanner>.bannerText{width: 100%; position: absolute; bottom: 0;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>a>.recBrandItemBanner>.bannerText>.bannerTextContainer{background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) -48.77%, rgba(0, 0, 0, 0) 99.99%, rgba(0, 0, 0, 0) 100%);padding: 3.2rem 0 3.2rem 2rem;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>a>.recBrandItemBanner>.bannerText>.bannerTextContainer>.bannerTitle{font-family: 'Montserrat'; font-weight: 700; font-size: 1.8rem; line-height: 2.2rem; color: #fff; padding-bottom: 0.8rem;}
@@ -82,7 +82,7 @@ li{word-break: keep-all;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a:not(:first-child){display: block; margin-top: 1.2rem;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a:nth-child(n+3){display: none;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item{display: flex; height: 13.9rem;}
-#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemImg{position: relative; width: 34.5%; background: #e2e2e2;}
+#homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemImg{position: relative; width: 34.5%; background: #fff;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemImg>img{}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText{padding: 0.8rem 2rem;}
 #homeSectionRecBrand>.recBrandItem>.swiper-wrapper>.swiper-slide>.recBrandItemListWrap>a>.item>.itemText>.itemName{font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #696969; margin-bottom: 0.4rem;}
@@ -97,7 +97,7 @@ li{word-break: keep-all;}
 /* home_section_magazine */
 #homeSectionMagazine{padding-top: 4rem;}
 #homeSectionMagazine a{display: block; width: 100%;}
-#homeSectionMagazine img{width: 100%;}
+#homeSectionMagazine img{width: 100%; aspect-ratio: 3/4;}
 #homeSectionMagazine>h3{padding: 1.6rem 2rem 1.6rem 2rem;}
 #homeSectionMagazine>.magazineMore{padding: 2rem 2rem 4rem 2rem;}
 #homeSectionMagazine>.magazineMore>a{display: block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; color: #222; padding: 1.2rem 0; border: 1px solid #e2e2e2; border-radius: 4px; text-align: center;}
@@ -106,8 +106,8 @@ li{word-break: keep-all;}
 #homeSectionBrand>h3{padding: 1.6rem 0;}
 #homeSectionBrand>ul{display: flex; box-sizing: border-box;   flex-wrap: wrap;  justify-content: space-between; gap: 0.8rem;}
 #homeSectionBrand>ul>li{width: 31.6%}
-#homeSectionBrand>ul>li>a{display: block; width: 100%;}
-#homeSectionBrand>ul>li>a>img{width: 100%;}
+#homeSectionBrand>ul>li>a{display: block; width: 100%; height: 100%;}
+#homeSectionBrand>ul>li>a>img{width: 100%; height: 100%;}
 
 /* best_section */
 
