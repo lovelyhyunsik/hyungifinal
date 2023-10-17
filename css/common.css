@@ -39,7 +39,7 @@ legend,
 #oneDepthTab>.categoryTab>.categoryTabcontent>.tab>h3{padding: 2.4rem 2rem 2rem 2rem; font-family: 'Pretendard'; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; color: #222;}
 #oneDepthTab>.categoryTab>.categoryTabcontent>.tab>ul{display: flex; flex-wrap: wrap; justify-content: space-between; padding-bottom: 0.8rem;}
 #oneDepthTab>.categoryTab>.categoryTabcontent>.tab>ul>li{width: 49.5%; position: relative;}
-#oneDepthTab>.categoryTab>.categoryTabcontent>.tab>ul>li>a>.itemImg{background: #e2e2e2; position: relative; aspect-ratio: 3/4;}
+#oneDepthTab>.categoryTab>.categoryTabcontent>.tab>ul>li>a>.itemImg{background: #fff; position: relative; aspect-ratio: 3/4;}
 #oneDepthTab>.categoryTab>.categoryTabcontent>.tab>ul>li>a>.itemImg>img{width: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 #oneDepthTab>.categoryTab>.categoryTabcontent>.tab>ul>li>a>.tabItem{padding: 1.2rem 1.2rem 0.8rem 1.2rem; height: 5.9rem;}
 #oneDepthTab>.categoryTab>.categoryTabcontent>.tab>ul>li>a>.tabItem>.itemBrand{overflow: hidden; text-overflow: ellipsis; margin-bottom: 0.4rem; font-family: 'Montserrat'; font-weight: 600; font-size: 1.2rem; line-height: 1.5rem;}

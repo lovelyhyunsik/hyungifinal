@@ -30,7 +30,7 @@ li{word-break: keep-all;}
 #exhibition_detail>div>#coupon_wrap>.coupon_description>ul{padding-top: 1.6rem; border-top: 1px solid #e2e2e2; }
 #exhibition_detail>div>#coupon_wrap>.coupon_description>ul>li{margin-left: 1.5rem; list-style: disc; position: relative; font-family: 'Pretendard'; font-weight: 400; font-size: 1rem; line-height: 2rem; color: #676767;}
 
-#exhibition_detail #oneDepthTab > .categoryTab > .categoryTabcontent > .tab > ul > li > a > .itemImg > img {height: 100%;}
+#exhibition_detail #oneDepthTab > .categoryTab > .categoryTabcontent > .tab > ul > li > a > .itemImg > img {}
 
 #shop_now{margin-top: 6rem; position: relative;}
 #shop_now>img{width: 100%;}
