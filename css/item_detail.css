@@ -41,8 +41,8 @@
 #item_detail #item_detail_info>button>img{width: 2.4rem; height: 2.4rem;}
 #shippingSaving{padding: 2.4rem 2rem; border-bottom: 1.2rem solid #f5f5f5; font-family: 'Pretendard';}
 #shippingSaving>.shipping_info{display: flex;}
-#shippingSaving>.shipping_info>.shipping_info_grey{width: 4.9rem; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
-#shippingSaving>.shipping_info>.shipping_info_black{margin-left: 4rem; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
+#shippingSaving>.shipping_info>.shipping_info_grey{width: 4.9rem; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; white-space: nowrap;}
+#shippingSaving>.shipping_info>.shipping_info_black{margin-left: 4rem; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;  white-space: nowrap;}
 #shippingSaving>.saving_point{display: flex; margin-top: 2rem;}
 #shippingSaving>.saving_point>.saving_point_grey{width: 4.9rem; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
 #shippingSaving>.saving_point>.saving_point_black{margin-left: 4rem; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
