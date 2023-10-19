@@ -1,0 +1,16 @@
+#headerType2{background: #fff; position: fixed; top: 0; left: 0; z-index: 997; height: 5.6rem; width: 100%;}
+#headerType2>div{height: 5.6rem; width: 100%;}
+#headerType2>div>p{text-align: center; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 5.6rem; color: #222;}
+#headerType2>div>.headerIcoWrap{ width: 100%; position: absolute; top: 50%; transform: translateY(-50%); display: flex; justify-content: space-between;}
+#headerType2>div>.headerIcoWrap>a{ display: inline-block; width: 2.4rem; height: 2.4rem;}
+#headerType2>div>.headerIcoWrap>a.icoLeftArrow{background: url(../img/ic-arrow-left.png) no-repeat center; margin-left: 2rem;}
+#headerType2>div>.headerIcoWrap>.headerIco{display: flex; float: right; margin-right: 2rem;}
+#headerType2>div>.headerIcoWrap>.headerIco>a{display: block; width: 2.4rem; height: 2.4rem;}
+#headerType2>div>.headerIcoWrap>.headerIco>a.icoSearch{ background: url(../img/search_bk.png) no-repeat center / 100%;}
+#headerType2>div>.headerIcoWrap>.headerIco>a.icoShoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
+#headerType2>div>.headerIcoWrap>.headerIco>a.icoClose{background: url(../img/ic-close.png) no-repeat center / 100%; margin-left: 1.2rem;}
+
+#agreeDetail{padding: 100px 25px 44px 25px;}
+#agreeDetail > div:not(:first-child){margin-top: 20px;}
+#agreeDetail > div > h2{font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; margin-bottom: 8px; color: #696969; line-height: 20px;}
+#agreeDetail > div > p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 18px; color: #696969;}
