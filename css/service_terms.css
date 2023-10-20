@@ -1,4 +1,4 @@
-#headerType2{position: relative; height: 5.6rem; width: 100%; }
+#headerType2{height: 5.6rem; width: 100%; background: #fff; position: fixed; top: 0; left: 0; z-index: 997;}
 #headerType2>div{height: 5.6rem; width: 100%;}
 #headerType2>div>p{text-align: center; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 5.6rem; color: #222;}
 #headerType2>div>.headerIcoWrap{ width: 100%; position: absolute; top: 50%; transform: translateY(-50%); /* display: flex; */ /* justify-content: space-between; */}
@@ -10,7 +10,7 @@
 #headerType2>div>.headerIcoWrap>.headerIco>a.icoAlarm{ background: url(../img/alarm_bk.png) no-repeat center / 100%;}
 #headerType2>div>.headerIcoWrap>.headerIco>a.icoShoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
 
-.terms_wrap{padding-bottom: 50px;}
-.terms{padding: 20px 20px 0 20px;}
-.terms > h3{font-family: 'Pretendard'; margin-bottom: 20px;}
-.terms > p{font-family: 'Pretendard'; font-size: 14px;}
+.terms_wrap{padding: 100px 25px 44px 25px;}
+.terms:not(:first-child){margin-top: 20px;}
+.terms > h3{font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; margin-bottom: 8px; color: #696969; line-height: 20px;}
+.terms > p{font-family: 'Pretendard'; font-weight: 400; font-size: 14px; color: #696969; line-height: 18px;}

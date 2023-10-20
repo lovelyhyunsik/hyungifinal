@@ -32,12 +32,15 @@
 .twoBtn>.certifiBtn{display: block; width: 100%; box-sizing: border-box; background: #f5f5f5; text-align: center; padding: 1.4rem 0; border-radius: 4px; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #696969; margin-left: 1.6rem;}
 .twoBtn>.certifiBtn.on{display: block; width: 100%; box-sizing: border-box; background: #222; text-align: center; padding: 1.4rem 0; border-radius: 4px; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #fff; margin-left: 1.6rem;}
 
-.layer{display: none; position: absolute; top: 0; z-index: 999; background: #fff;}
+.layer{display: none; position: fixed; top: 0; z-index: 999; background: #fff; height: 100%; overflow-y: scroll;}
 .layer > #headerType2{z-index: 998;}
 .layer #headerType2>div>.headerIcoWrap{ width: 100%; position: absolute; top: 50%; transform: translateY(-50%); display: flex; justify-content: space-between;}
 .layer #headerType2>div>.headerIcoWrap>button{ display: inline-block; width: 2.4rem; height: 2.4rem;}
 .layer #headerType2>div>.headerIcoWrap>button.icoLeftArrow{background: url(../img/ic-arrow-left.png) no-repeat center; margin-left: 2rem;} 
-.layer > #agreeDetail{overflow-y: scroll;}
+.layer > .terms_wrap{margin-top: 100px; padding: 0 25px 44px 25px; background: #fff;}
+.layer > .terms_wrap > div:not(:first-child){margin-top: 20px;}
+.layer > .terms_wrap > div > h3{font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; margin-bottom: 8px; color: #696969; line-height: 20px;}
+.layer > .terms_wrap > div > p{font-family: 'Pretendard'; font-weight: 400; font-size: 14px; color: #696969; line-height: 18px;}
 
 #agreeDetail{padding: 0 25px 44px 25px;}
 #agreeDetail > div:not(:first-child){margin-top: 20px;}

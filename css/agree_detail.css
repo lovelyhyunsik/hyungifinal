@@ -10,7 +10,7 @@
 #headerType2>div>.headerIcoWrap>.headerIco>a.icoShoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
 #headerType2>div>.headerIcoWrap>.headerIco>a.icoClose{background: url(../img/ic-close.png) no-repeat center / 100%; margin-left: 1.2rem;}
 
-#agreeDetail{padding: 100px 25px 44px 25px;}
-#agreeDetail > div:not(:first-child){margin-top: 20px;}
-#agreeDetail > div > h2{font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; margin-bottom: 8px; color: #696969; line-height: 20px;}
-#agreeDetail > div > p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 18px; color: #696969;}
+.terms_wrap{padding: 100px 25px 44px 25px;}
+.terms_wrap > div:not(:first-child){margin-top: 20px;}
+.terms_wrap > div > h3{font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; margin-bottom: 8px; color: #696969; line-height: 20px;}
+.terms_wrap > div > p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 18px; color: #696969;}
