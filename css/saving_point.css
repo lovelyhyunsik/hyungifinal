@@ -64,3 +64,5 @@
 .pointListContent>.yesSavingListWrap>ul>li>.yesSavingList_l>.stateText{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
 .pointListContent>.yesSavingListWrap>ul>li>.yesSavingList_r{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #222;}
 .pointListContent>.yesSavingListWrap>ul>li>.minus{color: #E31616;}
+.pointListContent>.yesSavingListWrap>ul>.item{padding-top: 10rem;}
+.pointListContent>.yesSavingListWrap>ul>.item>.name{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem;text-align: center; color: #969696;}
