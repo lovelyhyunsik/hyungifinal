@@ -52,3 +52,5 @@
 .membership_footer{padding: 2rem 2rem 8.7rem 2rem; background: #f5f5f5;}
 .membership_footer>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #969696;}
 .membership_footer>span{display: block; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; margin-top: 1.6rem;}
+
+#footer{padding: 0 !important;}
