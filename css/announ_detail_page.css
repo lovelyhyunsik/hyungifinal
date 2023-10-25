@@ -15,4 +15,4 @@
 .announDate{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #bdbdbd; text-align: right; margin-top: 6px;}
 .announContent{padding: 2rem 2rem;}
 .announContent>img{width: 100%; margin-bottom: 2rem;}
-.announContent>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
+.announContent>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; overflow-wrap: anywhere;}
