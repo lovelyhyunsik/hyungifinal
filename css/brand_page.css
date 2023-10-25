@@ -1,7 +1,8 @@
 li{word-break: keep-all;}
 
 #brandPage{background: #fff;width: 100%; height: 100%;}
-
+#brandPage #oneDepthTab>.categoryTab>.categoryTabWrap{padding: 2rem 0;}
+#brandPage #oneDepthTab>.categoryTab>.categoryTabcontent{padding-top: 0;}
 
 #headerType2{position: relative; height: 5.6rem; width: 100%;}
 #headerType2>div{height: 5.6rem; width: 100%;}
@@ -16,19 +17,20 @@ li{word-break: keep-all;}
 #headerType2>div>.headerIcoWrap>.headerIco>a.icoShoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
 
 #brandPageMain{position: relative;}
-#brandPageMain>img{width: 100%;}
-#brandPageMain>.imgTextWrap{width: 100%; position: absolute; bottom: 0; background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) -48.77%, rgba(0, 0, 0, 0) 99.99%, rgba(0, 0, 0, 0) 100%);}
-#brandPageMain>.imgTextWrap>.imgTextContainer{display: block; padding: 6rem 2rem 2.4rem 2rem; }
-#brandPageMain>.imgTextWrap>.imgTextContainer>.imgTextTop{display: flex; }
-#brandPageMain>.imgTextWrap>.imgTextContainer>.itemLike{}
-#brandPageMain>.imgTextWrap>.imgTextContainer> .imgTextTop >.itemLike > button{background: url(../img/ic-like.png) no-repeat center; width: 24px; height: 24px;}
-#brandPageMain>.imgTextWrap>.imgTextContainer> .imgTextTop >.itemLike > button.on{background: url(../img/ic-like_pk.png) no-repeat center; width: 24px; height: 24px;}
-#brandPageMain>.imgTextWrap>.imgTextContainer>.imgTextTop>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2.4rem; color: #fff; margin-left: 0.4rem;}
-#brandPageMain>.imgTextWrap>.imgTextContainer>.imgTextBottom{margin-top: 1.2rem;}
-#brandPageMain>.imgTextWrap>.imgTextContainer>.imgTextBottom>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #fff;}
+#brandPageMain > .swiper img{width: 100%;}
+#brandPageMain> .swiper .imgTextWrap{width: 100%; position: absolute; bottom: 0; background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) -48.77%, rgba(0, 0, 0, 0) 99.99%, rgba(0, 0, 0, 0) 100%);}
+#brandPageMain> .swiper .imgTextWrap>.imgTextContainer{display: block; padding: 6rem 2rem 2.4rem 2rem; }
+#brandPageMain> .swiper .imgTextWrap>.imgTextContainer>.imgTextTop{display: flex; }
+#brandPageMain> .swiper .imgTextWrap>.imgTextContainer>.itemLike{}
+#brandPageMain> .swiper .imgTextWrap>.imgTextContainer> .imgTextTop >.itemLike > button{background: url(../img/ic-like.png) no-repeat center; width: 24px; height: 24px;}
+#brandPageMain> .swiper .imgTextWrap>.imgTextContainer> .imgTextTop >.itemLike > button.on{background: url(../img/ic-like_pk.png) no-repeat center; width: 24px; height: 24px;}
+#brandPageMain> .swiper .imgTextWrap>.imgTextContainer>.imgTextTop>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2.4rem; color: #fff; margin-left: 0.4rem;}
+#brandPageMain> .swiper .imgTextWrap>.imgTextContainer>.imgTextBottom{margin-top: 1.2rem;}
+#brandPageMain> .swiper .imgTextWrap>.imgTextContainer>.imgTextBottom>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #fff;}
 
 
-.popup{display: flex; justify-content: flex-end; padding: 1rem 2rem 2rem 2rem;}
+
+.popup{display: flex; justify-content: flex-end; padding: 0 2rem 2rem 2rem;}
 .popup>button{background: none;}
 .popup>.sort{display: flex; padding-right: 1rem; position: relative; align-items: center;}
 .popup>.sort::after{content: ""; position: absolute; top: 50%; right: 0; transform: translateY(-50%); height: 1.2rem; width: 1px; background: #e2e2e2;}
