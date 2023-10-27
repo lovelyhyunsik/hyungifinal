@@ -2,7 +2,7 @@
 .basket_animate{display: none; background: rgba(0, 0, 0, 0.5); border-radius: 4px; position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 999; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; padding: 0.8rem 2rem; color: #fff; white-space: nowrap;}
 
 .item_detail_swiper{margin-top: 5.6rem;}
-#item_detail .swiper-slide{padding: 4rem 0; background: #f5f5f5;}
+#item_detail .swiper-slide{padding: 4rem 0;}
 #item_detail .swiper-pagination{left: 50%; transform: translateX(-50%);}
 
 
@@ -152,7 +152,7 @@
 .relation_item ul>li:not(:first-child){margin-left: 1.6rem;}
 .relation_item ul>li:last-child{margin-right: 2rem;}
 .relation_item ul>li>a{position: relative; display: block; background: none; width: 15rem;}
-.relation_item ul>li>a>.item_img{position: relative; height: 19.9rem; background: #e2e2e2;}
+.relation_item ul>li>a>.item_img{position: relative; height: 19.9rem; }
 .relation_item ul>li>a>.item_img>img{width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 .relation_item ul>li>a>.tab_item{padding: 1.2rem 1.2rem 0 1.2rem;}
 .relation_item ul>li>a>.tab_item>.title{font-family: 'Montserrat'; font-weight: 600; font-size: 1.2rem; color: #222; text-align: left;}

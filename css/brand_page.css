@@ -51,7 +51,8 @@ li{word-break: keep-all;}
 #sort_popup>.sort_container>ul{}
 #sort_popup>.sort_container>ul>li{}
 #sort_popup>.sort_container>ul>li>.check_list{display: flex; padding: 1.4rem 2rem;}
-#sort_popup>.sort_container>ul>li>.check_list>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #696969; margin-left: 1rem; }
+#sort_popup>.sort_container>ul>li>.check_list>button{background: none;}
+#sort_popup>.sort_container>ul>li>.check_list>button>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #696969; margin-left: 1rem; }
 #sort_popup>.sort_container>ul>li.active>.check_list>p{color: #222;}
 #sort_popup>.sort_container>ul>li>.check_list>.check_img{width: 2.4rem; height: 2.4rem; background: url(../img/ic-check.png);}
 #sort_popup>.sort_container>ul>li.active>.check_list>.check_img{width: 2.4rem; height: 2.4rem; background: url(../img/ic-check_active.png);}

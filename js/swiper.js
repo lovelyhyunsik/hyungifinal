@@ -1,7 +1,7 @@
 $(function () {
     //최상단 슬라이드
   var swiper = new Swiper(".auto-slide", {
-    loop: true,
+    loop: this.SwiperLength > 1,
     autoplay: {
       delay: 5000
     },

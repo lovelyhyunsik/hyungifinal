@@ -32,7 +32,7 @@ legend,
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul{display: flex;}
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul>li:not(:first-child){margin-left: 1.2rem;}
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul>li:last-child{padding-right: 2rem;}
-#oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul>li>a{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; color: #222; padding: 0.8rem 1.2rem; background: #f5f5f5; border-radius: 20px; }
+#oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul>li>a{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; color: #222; padding: 0.8rem 1.2rem; background: #f5f5f5; border-radius: 20px; white-space: nowrap;}
 #oneDepthTab>.categoryTab>.categoryTabWrap>.categoryTabnav>ul>li>a.on{background: #222; color: #fff;}
 #oneDepthTab>.categoryTab>.categoryTabcontent{padding-top: 1.6rem;}
 #oneDepthTab>.categoryTab>.categoryTabcontent>.tab{}
@@ -81,13 +81,14 @@ legend,
 #twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabnav2>ul{display: flex; overflow-x: scroll; padding: 1.2rem 0 1.6rem 0;}
 #twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabnav2>ul::-webkit-scrollbar{display: none;}
 #twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabnav2>ul>li:not(:first-child){margin-left: 1rem;}
-#twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabnav2>ul>li>a{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 0.8rem 1.2rem; background: #f5f5f5; border-radius: 2rem;}
+#twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabnav2>ul>li>a{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 0.8rem 1.2rem; background: #f5f5f5; border-radius: 2rem; white-space: nowrap;}
 #twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabnav2>ul>li>a.on{background: #222; color: #fff;}
 #twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabcontent2{}
 #twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabcontent2>.tab2{}
+#twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabcontent2>.tab2 > h3{padding: 2.4rem 2rem 2rem 2rem;font-family: 'Pretendard';font-weight: 700;font-size: 1.8rem;line-height: 2.4rem;color: #222;}
 #twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabcontent2>.tab2>ul{display: flex; flex-wrap: wrap; justify-content: space-between; padding-bottom: 0.8rem;}
 #twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabcontent2>.tab2>ul>li{width: 49.5%; position: relative;}
-#twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabcontent2>.tab2>ul>li>a>.itemImg{background: #e2e2e2; position: relative; aspect-ratio: 3/4;}
+#twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabcontent2>.tab2>ul>li>a>.itemImg{ position: relative; aspect-ratio: 3/4;}
 #twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabcontent2>.tab2>ul>li>a>.itemImg>img{width: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 #twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabcontent2>.tab2>ul>li>a>.tabItem{padding: 1.2rem 1.2rem 0.8rem 1.2rem; height: 5.9rem;}
 #twoDepthTab>.categoryTab>.categoryTabWrap>.categoryTabcontent>.tab>.categoryTab2Wrap>.categoryTabcontent2>.tab2>ul>li>a>.tabItem>.itemBrand{overflow: hidden; text-overflow: ellipsis; margin-bottom: 0.4rem; font-family: 'Montserrat'; font-weight: 600; font-size: 1.2rem; line-height: 1.5rem;}

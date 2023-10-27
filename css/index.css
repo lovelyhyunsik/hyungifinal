@@ -136,7 +136,7 @@ li{word-break: keep-all;}
 .magazineCategoryTab>.magazineCategoryTabWrap>.magazineCategoryTabnav::-webkit-scrollbar{display: none;}
 .magazineCategoryTab>.magazineCategoryTabWrap>.magazineCategoryTabnav>ul{display: flex;}
 .magazineCategoryTab>.magazineCategoryTabWrap>.magazineCategoryTabnav>ul>li:not(:first-child){margin-left: 1.2rem;}
-.magazineCategoryTab>.magazineCategoryTabWrap>.magazineCategoryTabnav>ul>li>a{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; color: #222; padding: 0.8rem 1.2rem; background: #f5f5f5; border-radius: 20px; }
+.magazineCategoryTab>.magazineCategoryTabWrap>.magazineCategoryTabnav>ul>li>a{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; color: #222; padding: 0.8rem 1.2rem; background: #f5f5f5; border-radius: 20px; white-space: nowrap;}
 .magazineCategoryTab>.magazineCategoryTabWrap>.magazineCategoryTabnav>ul>li>a.on{background: #222; color: #fff;}
 .magazineCategoryTab>.magazineCategoryTabWrap>.magazineCategoryTabcontent{padding-top: 0.8rem;}
 
