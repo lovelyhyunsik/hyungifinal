@@ -18,28 +18,29 @@ html,body{position: relative; height: 100%;}
 #no_item>a{display: inline-block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; text-align: center; color: #222; padding: 0.8rem 1.6rem; border: 1px solid #e2e2e2; border-radius: 4px; margin-top: 2.4rem;}
 
 #item{}
-#item>.itemWrapCheckDelete{display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; border-bottom: 8px solid #f5f5f5;}
-#item>.itemWrapCheckDelete>label>span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
-#item>.itemWrapCheckDelete>.delete{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; text-align: center; padding: 0.7rem 1.6rem; border: 1px solid #E2E2E2; border-radius: 4px ; box-sizing: border-box; color: #222; background: #fff;}
-#item>ul{border-bottom: 8px solid #f5f5f5;}
-#item>ul>.brandName{font-family: 'Pretendard'; font-weight: 600; font-size: 1.4rem; line-height: 1.7rem; padding: 2rem 2rem 8px 2rem;}
-#item>ul>li{padding: 2rem 2rem 2.8rem 2rem;}
-#item>ul>li:not(:last-child){border-bottom: 1px solid #f5f5f5;}
-#item>ul>li>.itemCheckDelete{display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; gap: 1.2rem;}
-#item>ul>li>.itemCheckDelete>label{width: calc(100% - 4rem);}
-#item>ul>li>.itemCheckDelete>label>span{display: block;  font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-#item>ul>li>.itemCheckDelete>button{background: none;}
-#item>ul>li>.itemInfoWrap{display: flex; gap: 1.6rem; margin-top: 1.6rem;}
-#item>ul>li>.itemInfoWrap>.itemImg{position: relative;}
-#item>ul>li>.itemInfoWrap>.itemImg>a{display: block;}
+#item>#inner_normal>.itemWrapCheckDelete{display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; border-bottom: 8px solid #f5f5f5;}
+#item>#inner_normal>.itemWrapCheckDelete>label>span{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
+#item>#inner_normal>.itemWrapCheckDelete>.delete{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; text-align: center; padding: 0.7rem 1.6rem; border: 1px solid #E2E2E2; border-radius: 4px ; box-sizing: border-box; color: #222; background: #fff;}
+#item>#inner_normal>ul{border-bottom: 8px solid #f5f5f5;}
+#item>#inner_normal>ul>.brandName{font-family: 'Pretendard'; font-weight: 600; font-size: 1.4rem; line-height: 1.7rem; padding: 2rem 2rem 8px 2rem;}
+#item>#inner_normal>ul>li{padding: 2rem 2rem 2.8rem 2rem;}
+#item>#inner_normal>ul>li:not(:last-child){border-bottom: 1px solid #f5f5f5;}
+#item>#inner_normal>ul>li>.itemCheckDelete{display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; gap: 1.2rem;}
+#item>#inner_normal>ul>li>.itemCheckDelete>label{width: calc(100% - 4rem);}
+#item>#inner_normal>ul>li>.itemCheckDelete>label>span{display: block; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#item>#inner_normal>ul>li>.itemCheckDelete>button{background: none;}
+#item>#inner_normal>ul>li>.itemInfoWrap{display: flex; gap: 1.6rem; margin-top: 1.6rem;}
+#item>#inner_normal>ul>li>.itemInfoWrap>.itemImg{position: relative; width: 80px; height: 107px;}
+#item>#inner_normal>ul>li>.itemInfoWrap>.itemImg>a{display: block; width: 100%; height: 100%;}
+#item>#inner_normal>ul>li>.itemInfoWrap>.itemImg>a > img{width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 
-#item>ul>li>.itemInfoWrap>.itemInfo{width: 100%; padding-top: 4px;}
-#item>ul>li>.itemInfoWrap>.itemInfo>.itemName{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; margin-bottom: 4px;}
-#item>ul>li>.itemInfoWrap>.itemInfo>.itemName>.color{margin-right: 3px;}
-#item>ul>li>.itemInfoWrap>.itemInfo>.itemName>.size{margin: 0 3px;}
-#item>ul>li>.itemInfoWrap>.itemInfo>.itemName>.count{margin-left: 3px;}
-#item>ul>li>.itemInfoWrap>.itemInfo>.itemPrice{font-family: 'Pretendard'; font-weight: 700; font-size: 1.4rem; line-height: 2rem; color: #222;}
-#item>ul>li>.itemInfoWrap>.itemInfo>.optionChange{margin-top: 2rem; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; text-align: center; color: #222; padding: 8px 7.1rem; border: 1px solid #E2E2E2; border-radius: 4px; box-sizing: border-box; background: #fff; white-space: nowrap;}
+#item>#inner_normal>ul>li>.itemInfoWrap>.itemInfo{ padding-top: 4px;}
+#item>#inner_normal>ul>li>.itemInfoWrap>.itemInfo>.itemName{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; margin-bottom: 4px;}
+#item>#inner_normal>ul>li>.itemInfoWrap>.itemInfo>.itemName>.color{margin-right: 3px;}
+#item>#inner_normal>ul>li>.itemInfoWrap>.itemInfo>.itemName>.size{margin: 0 3px;}
+#item>#inner_normal>ul>li>.itemInfoWrap>.itemInfo>.itemName>.count{margin-left: 3px;}
+#item>#inner_normal>ul>li>.itemInfoWrap>.itemInfo>.itemPrice{font-family: 'Pretendard'; font-weight: 700; font-size: 1.4rem; line-height: 2rem; color: #222;}
+#item>#inner_normal>ul>li>.itemInfoWrap>.itemInfo>.optionChange{margin-top: 2rem; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; text-align: center; color: #222; padding: 8px 7.1rem; border: 1px solid #E2E2E2; border-radius: 4px; box-sizing: border-box; background: #fff; white-space: nowrap;}
 
 .finalPriceWrap{padding: 0 2rem 14.2rem 2rem;}
 .finalPriceWrap>h3{font-family: 'Pretendard'; font-weight: 600; font-size: 1.8rem; line-height: 2.4rem; color: #222; padding: 2rem 0 1.2rem 0;}
