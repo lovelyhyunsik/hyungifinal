@@ -31,7 +31,7 @@
 .answerList>ul>li>.answerListTop>.answerButton>.answerChange{background: none; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; margin-right: 1.2rem;}
 .answerList>ul>li>.answerListTop>.answerButton>.answerDelete{background: none; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
 .answerList>ul>li>.answerListMiddle{ margin-top: 6px;}
-.answerList>ul>li>.answerListMiddle>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
+.answerList>ul>li>.answerListMiddle>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; overflow-wrap: anywhere;}
 .answerList>ul>li>.answerListMiddle>.imgAttach{margin-top: 1.2rem;}
 .answerList>ul>li>.answerListMiddle>.imgAttach>img{width: 7.2rem; height: 7.2rem;}
 .answerList>ul>li>.answerListMiddle>.imgAttach>img:not(:first-child){margin-left: 1.2rem;}
@@ -44,5 +44,5 @@
 #operatorAnswerWrap{position: relative; padding: 1.6rem 2rem 4rem 4.2rem;}
 #operatorAnswerWrap>.arrowBox{position: absolute; top: 4px; left: 2.2rem; width: 1.2rem; height: 2rem; border-left: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; box-sizing: border-box;}
 #operatorAnswerWrap>.operatorAnswer{background: #f5f5f5; padding: 1.6rem 1.6rem; border-radius: 4px;}
-#operatorAnswerWrap>.operatorAnswer>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
+#operatorAnswerWrap>.operatorAnswer>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; overflow-wrap: anywhere;}
 #operatorAnswerWrap>.operatorAnswer>p.operatorAnswerDate{color: #969696; margin-top: 1.2rem;}

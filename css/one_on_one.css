@@ -40,7 +40,7 @@
 .answer_list>ul>li>.answer_button>.answer_change{background: none; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; margin-right: 1.2rem;}
 .answer_list>ul>li>.answer_button>.answer_delete{background: none; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
 .answer_list>ul>li>a>.answer_list_middle{ margin-top: 6px;}
-.answer_list>ul>li>a>.answer_list_middle>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
+.answer_list>ul>li>a>.answer_list_middle>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; overflow-wrap: anywhere;}
 .answer_list>ul>li>a>.answer_list_bottom{display: flex; margin-top: 1rem;}
 .answer_list>ul>li>a>.answer_list_bottom>.answer_waiting_text{font-family: 'Pretendard'; font-weight: 600; font-size: 1.4rem; line-height: 2rem; color: #bdbdbd; padding: 0 8px 0 0;}
 .answer_list>ul>li>a>.answer_list_bottom>.answer_complete_text{font-family: 'Pretendard'; font-weight: 600; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 0 8px 0 0;}

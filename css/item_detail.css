@@ -267,9 +267,9 @@
 .qa_list_wrap>.qa_list_container>ul>li>.fold_box.on{background: #f5f5f5; padding: 2rem 2.4rem; display: block;}
 .qa_list_wrap>.qa_list_container>ul>li>.fold_box>.fold_box_question{display: flex;}
 .qa_list_wrap>.qa_list_container>ul>li>.fold_box>.fold_box_question>.fold_box_question_left{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
-.qa_list_wrap>.qa_list_container>ul>li>.fold_box>.fold_box_question>.fold_box_question_right{margin-left: 1.6rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
+.qa_list_wrap>.qa_list_container>ul>li>.fold_box>.fold_box_question>.fold_box_question_right{margin-left: 1.6rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; overflow-wrap: anywhere;}
 .qa_list_wrap>.qa_list_container>ul>li>.fold_box>.fold_box_answer{margin-top: 1.6rem;}
-.qa_list_wrap>.qa_list_container>ul>li>.fold_box>.fold_box_answer>.fold_box_answer_container{display: flex; margin-bottom: 2rem;}
+.qa_list_wrap>.qa_list_container>ul>li>.fold_box>.fold_box_answer>.fold_box_answer_container{display: flex; margin-bottom: 2rem; overflow-wrap: anywhere;}
 .qa_list_wrap>.qa_list_container>ul>li>.fold_box>.fold_box_answer>.fold_box_answer_container>.fold_box_answer_left{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696; white-space: nowrap;}
 .qa_list_wrap>.qa_list_container>ul>li>.fold_box>.fold_box_answer>.fold_box_answer_container>.fold_box_answer_right{margin-left: 1.6rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
 .qa_list_wrap>.qa_list_container>ul>li>.fold_box>.fold_box_answer>.fold_box_answer_user{display: flex; justify-content: end; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}

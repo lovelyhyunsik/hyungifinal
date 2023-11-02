@@ -19,7 +19,7 @@
 .qa_wrap > .qa_container{}
 .qa_wrap > .qa_container > .q_container{padding: 2rem 2rem 2.4rem 2rem; box-sizing: border-box;}
 .qa_wrap > .qa_container > .q_container > .tag{display: inline-block; font-family: 'Pretendard'; padding: 4px 8px; background: #f5f5f5;  font-size: 1.2rem; font-weight: 400; line-height: 1.6rem; border-radius: 2px;}
-.qa_wrap > .qa_container > .q_container > .q_text{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 400; line-height: 2rem; color: #222; margin-top: 2rem;}
+.qa_wrap > .qa_container > .q_container > .q_text{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 400; line-height: 2rem; color: #222; margin-top: 2rem; overflow-wrap: anywhere;}
 .qa_wrap > .qa_container > .q_container > .answer_type{display: flex; margin-top: 12px;}
 .qa_wrap > .qa_container.complete > .q_container > .answer_type > .answer_type_text{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 600; line-height: 2rem; color: #222; padding-right: 8px;}
 .qa_wrap > .qa_container.wait > .q_container > .answer_type > .answer_type_text{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 600; line-height: 2rem; color: #bdbdbd; padding-right: 8px;}
@@ -28,7 +28,7 @@
 .qa_wrap > .qa_container > .a_container{padding: 1.6rem 2rem 2rem 4.2rem; position: relative;}
 .qa_wrap > .qa_container > .a_container::before{content: ""; position: absolute; left: 22px; top: 4px; width: 12px; height: 20px; box-sizing: border-box; border-left: 1px solid #bdbdbd; border-bottom: 1px solid #bdbdbd;}
 .qa_wrap > .qa_container > .a_container > .grey_box{padding: 1.6rem; border-radius: 4px; background: #f5f5f5;}
-.qa_wrap > .qa_container > .a_container > .grey_box > .a_text{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 400; line-height: 2rem; color: #222;}
+.qa_wrap > .qa_container > .a_container > .grey_box > .a_text{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 400; line-height: 2rem; color: #222; overflow-wrap: anywhere;}
 .qa_wrap > .qa_container > .a_container > .grey_box > .answer_info{display: flex; margin-top: 12px;}
 .qa_wrap > .qa_container > .a_container > .grey_box > .answer_info > .brand_name{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 400; line-height: 2rem; color: #969696; padding-right: 8px;}
 .qa_wrap > .qa_container > .a_container > .grey_box > .answer_info > .answer_date{font-family: 'Pretendard'; font-size: 1.4rem; font-weight: 400; line-height: 2rem; color: #969696; position: relative; padding-left: 8px;}
