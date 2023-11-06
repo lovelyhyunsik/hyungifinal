@@ -79,11 +79,14 @@
             <textarea id="textBox" placeholder="최소 10 자 이상 입력해주세요" maxlength="3000"></textarea>
             <span id="reCount">0/3,000</span>
         </div>
-        <label class="inputImgBtn" for="inputImg">
-            <img src="./img/ic-camera.png" alt="">
-            <span>사진 업로드</span>
-        </label>
-        <input type="file" name="inputImg" id="inputImg" accept="image/">
+        <div class="file_box_wrap">
+            <label class="inputImgBtn" for="ex_file">
+                <img src="./img/ic-camera.png" alt="">
+                <span>사진 업로드</span>
+            </label>
+            <input type="file" name='upload[]' id="ex_file" multiple accept="image/png, image/jpeg ,image/jpg">
+        </div>
+        <div class="file_wrap"></div>
         <span>상품과 무관한 사진을 첨부할 경우 통보 없이 리뷰가 <br>삭제 및 적립 혜택이 취소 될 수 있습니다.</span>
     </div>
     <div class="bottom">
@@ -153,5 +156,41 @@
         $('.starText').text('5점 (아주 좋아요)')
         $('.starText').css("color","#e31616")
     })
+
+    var sel_files = [];
+    var maxFiles = 3; // 최대 업로드 파일 수
+
+    $('#ex_file').on("change" , handleImgsFilesSelect);
+
+    function handleImgsFilesSelect(e){
+        var files = e.target.files;
+        var filesArr = Array.prototype.slice.call(files);
+
+        // 업로드 파일 수가 최대 파일 수를 초과하는 경우 처리
+        if (sel_files.length + filesArr.length > maxFiles) {
+            alert("최대 " + maxFiles + "장 업로드 가능합니다.");
+            return;
+        }
+
+        filesArr.forEach(function(f){
+        
+            sel_files.push(f);
+
+            var reader = new FileReader();
+            reader.onload = function(e) {
+
+                var img_html = "<div><button></button><img src=\"" + e.target.result + "\" /></div>";
+
+                $(".file_wrap").append(img_html);
+            }
+            reader.readAsDataURL(f)
+        });
+    }
+
+    $('.file_wrap').on('click', 'div > button', function () {
+        $(this).parent().remove();
+        // 파일 삭제 시 업로드된 파일 배열에서도 제거
+        sel_files.splice(sel_files.indexOf($(this).parent()[0]), 1);
+    });
 </script>
 </html>

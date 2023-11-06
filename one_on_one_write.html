@@ -80,11 +80,14 @@
             <span id="reCount">0/100</span>
         </section>
         <section id="imgAttach">
-            <label for="file">
-                <div class="btn_attach">사진 첨부</div>
-            </label>
-            <input type="file" name="file" id="file" accept="image/">
-            <span>최대 3장 업로드 가능합니다.</span>
+            <div class="file_box_wrap">
+                <label for="ex_file">
+                    <div class="btn_attach">사진 첨부</div>
+                </label>
+                <input type="file" name='upload[]' id="ex_file" multiple accept="image/png, image/jpeg ,image/jpg">
+                <span>최대 3장 업로드 가능합니다.</span>
+            </div>
+            <div class="file_wrap"></div>
         </section>
         <section id="contact">
             <p>답변받을 연락수단</p>
@@ -227,5 +230,42 @@
             }
         })
     })//textarea 글자수 세기
+
+    var sel_files = [];
+    var maxFiles = 3; // 최대 업로드 파일 수
+
+    $('#ex_file').on("change" , handleImgsFilesSelect);
+
+    function handleImgsFilesSelect(e){
+        var files = e.target.files;
+        var filesArr = Array.prototype.slice.call(files);
+
+        // 업로드 파일 수가 최대 파일 수를 초과하는 경우 처리
+        if (sel_files.length + filesArr.length > maxFiles) {
+            alert("최대 " + maxFiles + "장 업로드 가능합니다.");
+            return;
+        }
+
+        filesArr.forEach(function(f){
+        
+            sel_files.push(f);
+
+            var reader = new FileReader();
+            reader.onload = function(e) {
+
+                var img_html = "<div><button></button><img src=\"" + e.target.result + "\" /></div>";
+
+                $(".file_wrap").append(img_html);
+            }
+            reader.readAsDataURL(f)
+        });
+    }
+
+    $('.file_wrap').on('click', 'div > button', function () {
+        $(this).parent().remove();
+        // 파일 삭제 시 업로드된 파일 배열에서도 제거
+        sel_files.splice(sel_files.indexOf($(this).parent()[0]), 1);
+    });
+
 </script>
 </html>
