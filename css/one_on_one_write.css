@@ -31,7 +31,7 @@ h4{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 
 #itemSelect{display: none; padding: 2rem 2rem;}
 #itemSelect>p{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-bottom: 8px;}
 #itemSelect>p>span{color: #e31616;}
-#itemSelect>a{display: block; width: 100%; background: #fff; border: 1px solid #E2E2E2; border-radius: 4px; font-family: 'Pretendard'; padding: 1.1rem 0; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222; text-align: center;}
+#itemSelect>a{display: block; width: 100%; background: #fff; border: 1px solid #E2E2E2; border-radius: 4px; font-family: 'Pretendard'; padding: 1.1rem 0; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222; text-align: center; box-sizing: border-box;}
 
 #one_on_one_write_title{padding: 0 2rem;}
 #one_on_one_write_title>h3{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-bottom: 8px;}
@@ -86,6 +86,24 @@ h4{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 
 .emailInputWrap>.selectBoxType.on{}
 .emailInputWrap>.selectBoxType>button{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.3rem 1.6rem; border-radius: 4px; border: 1px solid #e2e2e2; background: url(../img/ic-arrow-down-24.png) no-repeat 98% center; line-height: 2.4rem;}
 .emailInputWrap>.selectBoxType>button.on{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.2rem 1.6rem; border-radius: 4px; border: 1px solid #bdbdbd; background: url(../img/ic-arrow-up-24.png) no-repeat 98% center;}
+
+.request_item_box{border: 1px solid #e2e2e2; box-sizing: border-box; padding: 20px; border-radius: 4px; position: relative;}
+.request_item_box > .delete{position: absolute; width: 24px; height: 24px; top: 16px; right: 16px; background: none;}
+.request_item_box > .delete > img{width: 100%;}
+.request_item_box > .request_item_box_content{display: flex; gap: 20px; border-bottom: 1px solid #F5F5F5;}
+.request_item_box > .request_item_box_content > .item_img{width: 65px; height: 80px; position: relative;}
+.request_item_box > .request_item_box_content > .item_img > img{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%;}
+.request_item_box > .request_item_box_content > .item_info{display: flex; padding: 8px 0; flex-direction: column; justify-content: space-between; width: calc(100% - 85px);}
+.request_item_box > .request_item_box_content > .item_info > .item_brand{font-family: 'Montserrat'; font-weight: 600; font-size: 12px; color: #222;}
+.request_item_box > .request_item_box_content > .item_info > .item_name{font-family: 'Pretendard'; font-weight: 400; font-size: 14px; line-height: 24px; color: #696969; width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.request_item_box > .request_item_box_content > .item_info > .item_opt{font-family: 'Pretendard'; font-weight: 400; font-size: 14px; line-height: 24px; color: #696969;}
+.request_item_box > .request_item_box_content > .item_info > .item_opt > .color{}
+.request_item_box > .request_item_box_content > .item_info > .item_opt > .size{}
+.request_item_box > .request_item_box_content > .item_info > .item_opt > .count{}
+.request_item_box > .order_data{display: flex; justify-content: space-between; align-items: center; margin-top: 20px;}
+.request_item_box > .order_data > .order_date{font-family: 'Pretendard'; font-weight: 400; font-size: 13px; line-height: 24px; color: #222;}
+.request_item_box > .order_data > .order_num{font-family: 'Pretendard'; font-weight: 400; font-size: 13px; line-height: 24px; color: #222;}
+.request_item_box > .order_data > .order_num > span{font-family: 'Pretendard'; font-weight: 500; font-size: 13px; line-height: 24px; color: #222;}
 
 input#check_btn{
     display:none;
