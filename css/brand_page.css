@@ -17,7 +17,7 @@ li{word-break: keep-all;}
 #headerType2>div>.headerIcoWrap>.headerIco>a.icoShoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
 
 #brandPageMain{position: relative;}
-#brandPageMain > .swiper img{width: 100%;}
+#brandPageMain > .swiper img{width: 100%; aspect-ratio: 4/3;}
 #brandPageMain> .swiper .imgTextWrap{width: 100%; position: absolute; bottom: 0; background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) -48.77%, rgba(0, 0, 0, 0) 99.99%, rgba(0, 0, 0, 0) 100%);}
 #brandPageMain> .swiper .imgTextWrap>.imgTextContainer{display: block; padding: 6rem 2rem 2.4rem 2rem; }
 #brandPageMain> .swiper .imgTextWrap>.imgTextContainer>.imgTextTop{display: flex; }

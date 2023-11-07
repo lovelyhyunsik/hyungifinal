@@ -33,7 +33,7 @@ li{word-break: keep-all;}
 #exhibition_detail #oneDepthTab > .categoryTab > .categoryTabcontent > .tab > ul > li > a > .itemImg > img {}
 
 #shop_now{margin-top: 6rem; position: relative;}
-#shop_now>img{width: 100%;}
+#shop_now>img{width: 100%; aspect-ratio: 4/3;}
 #shop_now>.shop_now_text{/* width: 12.3rem; */ background: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 #shop_now>.shop_now_text>p{font-family: 'Montserrat'; font-weight: 700; font-size: 1.4rem; line-height: 1.7rem; color: #fff; text-align: center;}
 #shop_now>.shop_now_text>a{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #fff; }
