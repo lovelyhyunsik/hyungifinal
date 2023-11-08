@@ -4,7 +4,7 @@
 #header .headerTop div{font-size: 0;}
 #header .headerTop div a{display: inline-block; width: 2.4rem; height: 2.4rem;}
 #header .headerTop div a.icoSearch{background: url(../img/search_bk.png) no-repeat center / 100%; margin-right: 1.2rem;}
-#header .headerTop div a.icoShoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; position: relative;}
+#header .headerTop div a.icoShoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; position: relative; margin-left: 0 !important;}
 #header .headerTop div .icoShoppingbag>.numberTag{position: absolute; bottom: 11px; left: 10px; padding: 1px 5px; background: #e31616; border-radius: 1.4rem; font-family: 'Pretendard'; font-weight: 500; font-size: 1rem; color: #f5f5f5;}
 #header .headerTop>.logoBk>a {display: block; width: 12.5rem; height: 2.6rem; background: url(../img/logo_bk.png) no-repeat 0 0 / 100% auto;}
 

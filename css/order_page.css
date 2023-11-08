@@ -19,7 +19,7 @@
 #order_item_wrap>.order_item_container{padding: 2.4rem 2rem 2.4rem 2rem; border-bottom: 1px solid #f5f5f5;}
 #order_item_wrap>.order_item_container>.brand_name{font-family: 'Pretendard'; font-weight: 600; font-size: 1.2rem; line-height: 1.4rem; color: #222;}
 #order_item_wrap>.order_item_container>.order_item_container_b{display: flex; margin-top: 1.6rem;}
-#order_item_wrap>.order_item_container>.order_item_container_b>.order_item_img{width: 8rem; height: 10.7rem; background: #e2e2e2; display: flex; align-items: center; justify-content: center;}
+#order_item_wrap>.order_item_container>.order_item_container_b>.order_item_img{width: 8rem; height: 10.7rem; display: flex; align-items: center; justify-content: center;}
 #order_item_wrap>.order_item_container>.order_item_container_b>.order_item_img>img{width: 8rem;}
 #order_item_wrap>.order_item_container>.order_item_container_b>.order_item_container_bl{padding: 0.6rem 1.6rem 0.5rem 1.6rem;}
 #order_item_wrap>.order_item_container>.order_item_container_b>.order_item_container_bl>.item_name{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222;}
