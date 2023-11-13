@@ -85,6 +85,7 @@ li{word-break: keep-all;}
 .filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab02>ul>.grey>span{background: #a9a9a9;}
 .filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab02>ul>.black>span{background: #000;}
 .filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab02>ul>.white>span{background: #fff; border: 1px solid #e2e2e2; width: 2.6rem; height: 2.6rem;}
+.filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab02>ul>li>input[value = WH] + span{border: 1px solid #e2e2e2; box-sizing: border-box;}
 
 .filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab03{}
 .filter_category_tab>.filter_category_tab_wrap>.category_tabcontent>#tab03>ul{padding-top: 2.4rem; display: flex; flex-wrap: wrap;}
