@@ -12,4 +12,4 @@
 
 .photo_wrap{display: flex; gap: 5px; flex-wrap: wrap; padding: 25px 20px;}
 .photo_wrap > a {display: block; width: calc(25% - 15px / 4);}
-.photo_wrap > a > img{width: 100%;}
+.photo_wrap > a > img{width: 100%; aspect-ratio: 1/1;}
