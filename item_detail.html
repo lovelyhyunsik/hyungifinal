@@ -18,6 +18,61 @@
 </head>
 
 <body>
+    <div class="popup_wrap">
+        <header id="headerType2">
+            <div>
+                <div class="headerIcoWrap">
+                    <a href="./item_detail.html" class="icoLeftArrow"><span class="hide">뒤로가기</span></a>
+                    <div class="headerIco">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="photo_review_detail_content">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./img/84card.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/img2.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/img3.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/img4.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/img1.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/img2.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/img3.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/img4.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/img1.png" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+        </div>
+        <div class="best_review">
+            <div class="user_container">
+                <div class="review_star">
+                    <div class="best_tag">BEST</div>
+                    <img src="./img/ic-review point-rd (small).png" alt="">
+                    <img src="./img/ic-review point-rd (small).png" alt="">
+                    <img src="./img/ic-review point-rd (small).png" alt="">
+                    <img src="./img/ic-review point-rd (small).png" alt="">
+                    <img src="./img/ic-review point-rd (small).png" alt="">
+                </div>
+                <div class="user_container_right">
+                    <div class="userId">abc*****</div>
+                    <div class="date">22.10.01</div>
+                </div>
+            </div>
+            <div class="purchase_opt">
+                구매옵션 : <span class="color">핑크</span>/<span class="opt_right">비공개</span>
+            </div>
+            <div class="review_content">
+                158/60 상체 골격이 튼튼한 편인데 1사이즈도 널널해요! 두터운 니트 껴입고 입을 수 있는데, 패딩치고는 조금 얇긴 해요~ 빵빵하고 막 따수운 패딩은 아닌데 겨울에
+                편하게 입고다닐 정도? 키 작으시면 1사이즈 구매하세요~
+            </div>
+            <div class="good_btn">
+                <button><img src="./img/ic-good.png" alt="" class="good_img_change"></button>
+                <span>1024</span>
+            </div>
+        </div>
+    </div>
     <div class="coupon_page">
         <header id="headerType2">
             <div>
@@ -910,18 +965,25 @@
                     <div id="photo_review_wrap">
                         <h3>포토리뷰 40</h3>
                         <div class="photo_review_container">
-                            <a href="./photo_review_detail.html" class="photo_review_img">
-                                <img src="./img/84card2.png" alt="">
-                            </a>
-                            <a href="./photo_review_detail.html" class="photo_review_img">
-                                <img src="./img/img2.png" alt="">
-                            </a>
-                            <a href="./photo_review_detail.html" class="photo_review_img">
-                                <img src="./img/img3.png" alt="">
-                            </a>
-                            <a href="./photo_review_all.html" class="photo_review_img more_view">
-                                <img src="./img/img4.png" alt="">
-                            </a>
+                            <li>
+                                <button>
+                                    <img src="./img/84card2.png" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./img/84card2.png" alt="">
+                                </button>
+                            </li><li>
+                                <button>
+                                    <img src="./img/84card2.png" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./img/84card2.png" alt="">
+                                </button>
+                            </li>
                         </div>
                     </div>
                     <div id="review_list_wrap">
@@ -1363,6 +1425,11 @@
     } else {
         $('.coupon_page .bottom > button').removeClass('on')
     }
+
+    $('.photo_review_container > li > button').click(function(){
+        $('.popup_wrap').css("display","block")
+        $('body').addClass('fix')
+    })
 
 </script>
 
