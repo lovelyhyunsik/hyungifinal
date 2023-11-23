@@ -214,7 +214,7 @@
 #review_list_wrap>.best_review>.user_container{margin-top: 1.2rem; display: flex; justify-content: space-between;}
 #review_list_wrap>.best_review>.user_container>.review_star{display: flex; align-items: center;}
 #review_list_wrap>.best_review>.user_container>.review_star>.best_tag{width: 4.8rem; height: 2rem; text-align: center; font-family: 'Montserrat'; font-weight: 500; font-size: 1.2rem; line-height: 1.8rem; color: #222; border: 1px solid #222; border-radius: 2px; display: inline-block; box-sizing: border-box; margin-right: 8px;}
-#review_list_wrap>.best_review>.user_container>.review_star>img{display: block; width: 2rem; height: 2rem;}
+#review_list_wrap>.best_review>.user_container>.review_star>img{display: block; width: 10rem; height: 2rem;}
 #review_list_wrap>.best_review>.user_container>.user_container_right{display: flex; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
 #review_list_wrap>.best_review>.user_container>.user_container_right>.userId{padding-right: 8px; position: relative;}
 #review_list_wrap>.best_review>.user_container>.user_container_right>.userId::after{content: ''; position: absolute; top: 50%; right: 0; transform: translateY(-50%); width: 1px; height: 1.2rem; background: #e2e2e2;}
