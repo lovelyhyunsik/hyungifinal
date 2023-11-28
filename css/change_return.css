@@ -36,8 +36,23 @@
 
 .changeOpt{margin-bottom: 2rem; padding: 0 2rem;}
 .changeOpt>span{display: block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-bottom: 8px;}
-.reason{padding: 0 2rem;}
-.reason>span{display: block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-bottom: 8px;}
+.reason{padding: 0 0 4rem 0;}
+.reason>span{display: block; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; margin-bottom: 15px; padding: 0 2rem;}
+.reason > .buyer_reason{padding: 0 2rem;}
+.reason > .buyer_reason > p{font-family: 'Pretendard'; color: #696969; font-size: 1.4rem; margin-bottom: 5px;}
+.reason > .seller_reason{margin-top: 20px; padding: 0 2rem;}
+.reason > .seller_reason > p{font-family: 'Pretendard'; color: #696969; font-size: 1.4rem; margin-bottom: 5px;}
+
+#imgAttach{padding:  3rem 2rem 0 2rem; display: none;}
+#imgAttach>.file_box_wrap{display: flex;}
+#imgAttach>.file_box_wrap>label{}
+#imgAttach>.file_box_wrap>label>.btn_attach{display: flex; align-items: center; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; color: #fff; width: 8.1rem; height: 3.6rem; background: #222; border-radius: 4px; justify-content: center;}
+#imgAttach>.file_box_wrap>input{display: none;}
+#imgAttach>.file_box_wrap>span{margin-left: 1.2rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 3.6rem; color: #969696;}
+#imgAttach>.file_wrap{display: flex; margin-top: 2rem; gap: 1.5rem;}
+#imgAttach>.file_wrap > div{position: relative; background: rgba(245,245,245,1);}
+#imgAttach>.file_wrap > div > button{position: absolute; top: 6px; right: 6px; background: url(../img/ic-close-fill-24px.png) no-repeat center / 24px 24px; width: 24px; height: 24px;}
+#imgAttach>.file_wrap > div > img{width: 8rem; height: 8rem;}
 
 .selectBox_type{ box-sizing: border-box;width: 100%;}
 .selectBox_type.on{}
@@ -67,7 +82,7 @@
 .notice>.noticeGreyBox>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
 .notice>.noticeGreyBox>p:last-child{margin-top: 1.6rem;}
 
-.bottom{padding: 2.4rem 2rem 6.8rem 2rem;}
+.bottom{padding: 2.4rem 2rem 2.4rem 2rem;}
 .bottom>.bottomContainer{width: 100%;}
 .bottom>.bottomContainer>a{display: block; width: 100%; text-align: center; padding: 1.4rem 0; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #696969; border-radius: 4px; background: #f5f5f5;}
 .bottom>.bottomContainer>a.on{display: block; width: 100%; text-align: center; padding: 1.4rem 0; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #fff; border-radius: 4px; background: #222;}
@@ -99,10 +114,10 @@ span.ic_arrow.on{display: block; background: url(../img/ic-arrow-down-24.png) no
 #purchase_popup .selectBox_type>button{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.1rem 1.6rem; border-radius: 4px; border: 1px solid #bdbdbd; background: url(../img/ic-arrow-down-24.png) no-repeat 98% center; line-height: 2.4rem;}
 #purchase_popup .selectBox_type>button.on{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.2rem 1.6rem; border-radius: 4px; border: 1px solid #bdbdbd; background: url(../img/ic-arrow-up-24.png) no-repeat 98% center;}
 
-#purchase_popup .selectBox_type>.optionList{width: 100%; padding: 8px 0; background: #fff; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); border-radius: 4px; display: none; margin-top: 4px;}
-#purchase_popup .selectBox_type>.optionList.on{display: block;}
-#purchase_popup .selectBox_type>.optionList>li{display: flex; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 1.4rem 1.6rem;}
-#purchase_popup .selectBox_type>.optionList>li>.color_circle{display: block; width: 2rem; height: 2rem; background: #053988; border-radius: 50%; margin-right: 1rem;}
+#purchase_popup .selectBox_type>.optionItem_wrap{width: 100%; padding: 8px 0; background: #fff; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); border-radius: 4px; display: none; margin-top: 4px;}
+#purchase_popup .selectBox_type>.optionItem_wrap.on{display: block;}
+#purchase_popup .selectBox_type>.optionItem_wrap>li{display: flex; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 1.4rem 1.6rem;}
+#purchase_popup .selectBox_type>.optionItem_wrap>li>.color_circle{display: block; width: 2rem; height: 2rem; background: #053988; border-radius: 50%; margin-right: 1rem;}
 
 #purchase_popup .selectBox_size{ box-sizing: border-box;width: 100%; padding: 0 2rem; margin-top: 1.2rem;}
 #purchase_popup .selectBox_size.on{}
@@ -164,10 +179,144 @@ span.ic_arrow.on{display: block; background: url(../img/ic-arrow-down-24.png) no
 .refundMethod{padding: 0 2rem; border-bottom: 1.2rem solid #f5f5f5;}
 .refundMethod>.refundMethodTitle{display: flex; justify-content: space-between; align-items: center; padding: 2rem 0;}
 .refundMethod>.refundMethodTitle>h3{font-family: 'Pretendard'; font-weight: 600; font-size: 1.8rem; line-height: 2.4rem; color: #222;}
-.refundMethod>.refundMethodContent{display: flex; justify-content: space-between; padding: 2rem 0 2.8rem 0;}
+.refundMethod>.refundMethodContent{display: flex; justify-content: space-between; flex-direction: column; padding: 2rem 0 2.8rem 0;}
 .refundMethod>.refundMethodContent.on{display: flex; justify-content: space-between; padding: 2rem 0 2.8rem 0; display: none;}
-.refundMethod>.refundMethodContent>.refundMethodContent_l{font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222;}
+.refundMethod>.refundMethodContent>.refundMethodContent_l > h3{font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222;}
 .refundMethod>.refundMethodContent>.refundMethodContent_r{}
-.refundMethod>.refundMethodContent>.refundMethodContent_r>span{display: block; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; text-align: right;}
+.refundMethod>.refundMethodContent>.refundMethodContent_r>span{display: block; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; text-align: left;}
 .refundMethod>.refundMethodContent>.refundMethodContent_r>.refundMethodContent_r_t{color: #696969;}
 .refundMethod>.refundMethodContent>.refundMethodContent_r>.refundMethodContent_r_b{color: #969696;}
+
+.virtual_account{padding: 32px 0;}
+.virtual_account > .deposit_price > .gr_text{font-weight: 400; font-size: 14px; line-height: 20px; color: #969696; white-space: nowrap; margin-right: 31px; font-family: 'Pretendard';}
+.virtual_account > .deposit_price > .bk_text{font-weight: 400; font-size: 14px; line-height: 20px; color: #222; white-space: nowrap; font-family: 'Pretendard';}
+.virtual_account > .deposit_date{margin-top: 12px;}
+.virtual_account > .deposit_date > .gr_text{font-weight: 400; font-size: 14px; line-height: 20px; color: #969696;  white-space: nowrap; margin-right: 31px; font-family: 'Pretendard';}
+.virtual_account > .deposit_date > .bk_text{font-weight: 400; font-size: 14px; line-height: 20px; color: #222; white-space: nowrap; font-family: 'Pretendard';}
+.virtual_account > .refund_account_wrap{display: flex; align-items: center; margin-top: 12px;}
+.virtual_account > .refund_account_wrap > .gr_text{font-weight: 400; font-size: 14px; line-height: 20px; color: #969696;  white-space: nowrap; margin-right: 34px; font-family: 'Pretendard';}
+.virtual_account > .refund_account_wrap > .no_account{display: flex; gap: 15px; align-items: center;}
+.virtual_account > .refund_account_wrap > .no_account > p{display: inline-block; font-weight: 400; font-size: 14px; line-height: 20px; color: #222; white-space: nowrap; font-family: 'Pretendard';}
+.virtual_account > .refund_account_wrap > .no_account > button{background: #fff; color: #222; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; padding: 0.7rem 1.5rem; border: 1px solid #E2E2E2; border-radius: 4px; white-space: nowrap;}
+.virtual_account > .refund_account_wrap > .yes_account{display: flex; gap: 15px; align-items: center;}
+.virtual_account > .refund_account_wrap > .yes_account > .account_info{display: flex; flex-direction: column; font-weight: 400; font-size: 14px; line-height: 20px; color: #222; white-space: nowrap; font-family: 'Pretendard';}
+.virtual_account > .refund_account_wrap > .yes_account > button{background: #fff; color: #222; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; padding: 0.7rem 1.5rem; border: 1px solid #E2E2E2; border-radius: 4px; white-space: nowrap;}
+.card{padding: 32px 0;}
+.card > .card_name{}
+.card > .card_name > .gr_text{font-weight: 400; font-size: 14px; line-height: 20px; color: #969696;  white-space: nowrap; margin-right: 44px; font-family: 'Pretendard';}
+.card > .card_name > .bk_text{font-weight: 400; font-size: 14px; line-height: 20px; color: #222; white-space: nowrap; font-family: 'Pretendard';}
+.card > .deposit_date{margin-top: 12px;}
+.card > .deposit_date > .gr_text{font-weight: 400; font-size: 14px; line-height: 20px; color: #969696;  white-space: nowrap; margin-right: 31px; font-family: 'Pretendard';}
+.card > .deposit_date > .bk_text{font-weight: 400; font-size: 14px; line-height: 20px; color: #222; white-space: nowrap; font-family: 'Pretendard';}
+
+.pickAddress{padding: 0 2rem 4rem 2rem; border-bottom: 1px solid #f5f5f5;}
+.pickAddress>.pickAddressTitle{display: flex; justify-content: space-between; align-items: center; padding: 1.4rem 0 0.6rem 0;}
+.pickAddress>.pickAddressTitle>h3{font-family: 'Pretendard'; font-weight: 600; font-size: 1.8rem; line-height: 2.4rem; color: #222;}
+.pickAddress>.pickAddressTitle>button{background: #fff; color: #222; font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem;  padding: 0.7rem 1.5rem; border: 1px solid #E2E2E2; border-radius: 4px;}
+.pickAddress>.userInfo{padding: 2rem 0 0 0;}
+.pickAddress>.userInfo>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969;}
+.pickAddress>.userInfo>p.userZipNumAddress{margin-top: 6px;}
+.pickAddress>.userInfo>p>span.userName{display: inline-block; margin-right: 5px;}
+.pickAddress>.userInfo>p>span.userNum{display: inline-block; margin-left: 5px;}
+.pickAddress>.userInfo>p>span.zipNum{display: inline-block; margin-right: 5px;}
+.pickAddress>.selectBox_type{margin-top: 2.4rem;}
+
+.shippingCompany{padding: 0 2rem;}
+.shippingCompany>h3{padding: 2rem 0 1.2rem 0; font-family: 'Pretendard'; font-weight: 600; font-size: 1.8rem; line-height: 2.4rem; color: #222;}
+.shippingCompany>.shippingCompanyText{padding: 2rem 0 1rem 0; border-bottom: 1px solid #e2e2e2;}
+.shippingCompany>.shippingCompanyText>.shippingCompanyName{display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;}
+.shippingCompany>.shippingCompanyText>.shippingCompanyName>.shippingCompanyName_l{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
+.shippingCompany>.shippingCompanyText>.shippingCompanyName>.shippingCompanyName_r{font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; line-height: 2.4rem; color: #222;}
+.shippingCompany>.shippingCompanyText>.changeReturnPay{display: flex; justify-content: space-between; align-items: center;}
+.shippingCompany>.shippingCompanyText>.changeReturnPay>.changeReturnPay_l{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #969696;}
+.shippingCompany>.shippingCompanyText>.changeReturnPay>.changeReturnPay_r{font-family: 'Pretendard'; font-weight: 600; font-size: 1.6rem; line-height: 2.4rem; color: #222;}
+
+.shippingCompany>.finalchangeReturnPay{display: flex; justify-content: space-between; padding: 2rem 0 2.8rem 0;}
+.shippingCompany>.finalchangeReturnPay>.finalchangeReturnPay_l{font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #222;}
+.shippingCompany>.finalchangeReturnPay>.finalchangeReturnPay_r{display: flex; flex-direction: column; gap: 8px;}
+.shippingCompany>.finalchangeReturnPay>.finalchangeReturnPay_r>.finalchangeReturnPay_r_t{display: inline-block; font-family: 'Pretendard'; font-weight: 700; font-size: 1.8rem; line-height: 2.4rem; color: #e31616; text-align: right;}
+.shippingCompany>.finalchangeReturnPay>.finalchangeReturnPay_r>.finalchangeReturnPay_r_b{display: inline-block; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #bdbdbd;}
+
+/* 환불계좌 팝업 */
+
+.return_popup_wrap{display: none; overflow-y: scroll; position: fixed; top: 0; left: 0; background: #fff; width: 100%; height: 100%; z-index: 999;}
+
+.return_popup_wrap >#headerType2{position: relative; height: 5.6rem; width: 100%; }
+.return_popup_wrap >#headerType2>div{height: 5.6rem; width: 100%;}
+.return_popup_wrap >#headerType2>div>p{text-align: center; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 5.6rem; color: #222;}
+.return_popup_wrap >#headerType2>div>.headerIcoWrap{ width: 100%; position: absolute; top: 50%; transform: translateY(-50%); /* display: flex; */ /* justify-content: space-between; */}
+.return_popup_wrap >#headerType2>div>.headerIcoWrap>a{display: inline-block; width: 2.4rem; height: 2.4rem;}
+.return_popup_wrap >#headerType2>div>.headerIcoWrap>button.icoLeftArrow{display: inline-block; width: 2.4rem; height: 2.4rem; background: url(../img/ic-arrow-left.png) no-repeat center; margin-left: 2rem;}
+.return_popup_wrap >#headerType2>div>.headerIcoWrap>.headerIco{display: flex; float: right; margin-right: 2rem;}
+.return_popup_wrap >#headerType2>div>.headerIcoWrap>.headerIco>a{display: block; width: 2.4rem; height: 2.4rem;}
+.return_popup_wrap >#headerType2>div>.headerIcoWrap>.headerIco>a.icoSearch{background: url(../img/search_bk.png) no-repeat center / 100%;}
+.return_popup_wrap >#headerType2>div>.headerIcoWrap>.headerIco>a.icoAlarm{ background: url(../img/alarm_bk.png) no-repeat center / 100%;}
+.return_popup_wrap >#headerType2>div>.headerIcoWrap>.headerIco>a.icoShoppingbag{background: url(../img/shoppingbag_bk.png) no-repeat center / 100%; margin-left: 1.2rem;}
+.return_popup_wrap >#headerType2>div>.headerIcoWrap>.headerIco>a.plus{display: block; width: 2.5rem; height: 2.4rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2.4rem; color: #2e82ff;}
+
+.return_popup_wrap > .scroll_body{overflow-y: scroll; padding-bottom: 80px;}
+
+.return_popup_wrap .bankNameselect{padding: 2rem 2rem;}
+.return_popup_wrap .bankNameselect>span{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969;}
+
+.return_popup_wrap .selectBox_type{padding-top: 8px; box-sizing: border-box;width: 100%;}
+.return_popup_wrap .selectBox_type.on{}
+.return_popup_wrap .selectBox_type>button{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.1rem 1.6rem; border-radius: 4px; border: 1px solid #bdbdbd; background: url(../img/ic-arrow-down-24.png) no-repeat 98% center; line-height: 2.4rem;}
+.return_popup_wrap .selectBox_type>button.on{display: flex; align-items: center;  width: 100%; background: #fff; font-family: 'Pretendard'; font-size: 1.6rem; color: #bdbdbd; padding: 1.2rem 1.6rem; border-radius: 4px; border: 1px solid #bdbdbd; background: url(../img/ic-arrow-up-24.png) no-repeat 98% center;}
+
+.return_popup_wrap .selectBox_type>.optionItem_wrap{width: 100%; padding: 8px 0; background: #fff; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); border-radius: 4px; display: none; margin-top: 4px;}
+.return_popup_wrap .selectBox_type>.optionItem_wrap.on{display: block;}
+.return_popup_wrap .selectBox_type>.optionItem_wrap>li{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #222; padding: 1.4rem 1.6rem;}
+
+.return_popup_wrap .accountNum{padding: 2rem 2rem;}
+.return_popup_wrap .accountNum>span{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; display: inline-block; margin-bottom: 8px;}
+.return_popup_wrap .accountNum>label{position: relative; display: block;}
+.return_popup_wrap .accountNum>label>input{ width: 100%; border: 1px solid #E2E2E2; border-radius: 4px; padding: 1.3rem 4.5rem 1.3rem 1.6rem; font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #222; box-sizing: border-box;}
+.return_popup_wrap .accountNum>label>input.on{position: relative; border-color: #e31616;}
+.return_popup_wrap .accountNum>label>.error{display: none; font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #e31616; display: block; margin-top: 4px; margin-left: 8px;}
+.return_popup_wrap .accountNum>label>input:focus{border-color: #bdbdbd;}
+.return_popup_wrap .accountNum>label>input::placeholder{color: #bdbdbd;}
+.return_popup_wrap .accountNum>label>.inputTextDelete{display: none; position: absolute; top: 50%; right: 16px; transform: translateY(-50%); background: none; height: 2.4rem; width: 2.4rem;}
+.return_popup_wrap .accountNum>label>.inputTextDelete>img{width: 100%;}
+
+.return_popup_wrap .accountUserName{padding: 2rem 2rem;}
+.return_popup_wrap .accountUserName>span{font-family: 'Pretendard'; font-weight: 500; font-size: 1.4rem; line-height: 2rem; color: #696969; display: inline-block; margin-bottom: 8px;}
+.return_popup_wrap .accountUserName>.inputBox{width: 100%; background: #F5F5F5; border: 1px solid #E2E2E2; border-radius: 4px; font-family: 'Pretendard'; font-weight: 400; font-size: 1.6rem; line-height: 2.4rem; color: #bdbdbd; padding: 1.3rem 1.6rem; box-sizing: border-box;}
+
+.return_popup_wrap .checkBoxWrap{padding: 0.9rem 2rem 1.8rem 2rem;}
+.return_popup_wrap .checkBoxWrap>label>p{font-family: 'Pretendard'; font-weight: 400; font-size: 1.4rem; line-height: 2rem; color: #696969; display: flex; align-items: center;}
+.return_popup_wrap .checkBoxWrap>label>p>span{display: inline-block; margin-left: 4px; font-family: 'Pretendard'; font-weight: 400; font-size: 1.2rem; line-height: 1.6rem; color: #e31616;}
+
+.return_popup_wrap .bottom{width: 100%; position: fixed; bottom: 0; left: 0; padding: 1.2rem 2rem 1.6rem 2rem; background: #fff; filter: drop-shadow(0px -1px 2px rgba(0, 0, 0, 0.04)); box-sizing: border-box;}
+.return_popup_wrap .bottom>a{display: block; padding: 1.4rem 0; text-align: center; background: #f5f5f5; border-radius: 4px; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #696969;}
+.return_popup_wrap .bottom>a.on{display: block; padding: 1.4rem 0; text-align: center; background: #222; border-radius: 4px; font-family: 'Pretendard'; font-weight: 500; font-size: 1.6rem; line-height: 2.4rem; color: #fff;}
+
+input#check_btn{
+    display:none;
+    }
+  
+  input#check_btn  > p{
+    vertical-align: middle;
+   }
+  
+  /* label:before에 체크하기 전 상태 CSS */
+  input#check_btn + p:before{
+    content:"";
+    display:inline-block;
+    width:18px;
+    height:18px;
+    border:1px solid #e2e2e2;
+    border-radius: 2px;
+    vertical-align:middle;
+    margin-right: 8px;
+    }
+    
+  /* label:before에 체크 된 상태 CSS */  
+  input#check_btn:checked + p:before{
+    content:"";
+    background-color:#222;
+    border-color:#222;
+    background-image: url(../img/check_btn.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    }

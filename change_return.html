@@ -19,6 +19,185 @@
 </head>
 
 <body>
+    <div class="return_popup_wrap">
+        <header id="headerType2"> 
+            <div>
+               <p>환불계좌 등록</p>
+               <div class="headerIcoWrap">
+               <button href="./return_management.html " class="icoLeftArrow"><span class="hide">뒤로가기</span></button>
+                   <div class="headerIco">
+                   </div>
+               </div>
+           </div>
+       </header>
+       <div class="scroll_body">
+        <div class="bankNameselect">
+            <span>은행명</span>
+            <div class="selectBox_type">
+                <button class="label">선택</button>
+                <ul class="optionItem_wrap" id="crops1">
+                    <li class="optionItem">국민</li>
+                    <li class="optionItem">우리</li>
+                    <li class="optionItem">기업</li>
+                    <li class="optionItem">농협</li>
+                    <li class="optionItem">신한</li>
+                    <li class="optionItem">기타</li>
+                </ul>
+            </div>
+        </div>
+        <div class="accountNum">
+            <span>계좌번호</span>
+            <label>
+                <input type="number" placeholder="-없이 입력" class="textInput">
+                <span class="error">올바른 계좌번호가 맞는지 확인해주세요</span>
+                <button class="inputTextDelete">
+                    <img src="./img/ic-close-fill-24px.png " alt="">
+                </button>
+            </label>
+        </div>
+        <div class="accountUserName">
+            <span>예금주</span>
+            <div class="inputBox">
+                홍길동
+            </div>
+        </div>
+        <div class="checkBoxWrap">
+            <label>
+                <input type="checkbox" id="check_btn">
+                <p>개인정보 수집 및 이용에 대한 동의 <span>(필수)</span></p>
+            </label> 
+        </div>
+       </div>
+       <div class="bottom">
+           <a href="./return_management.html">등록</a>
+       </div>
+    </div>
+    <section id="purchase_popup">
+        <div class="purchase_body"></div>
+        <div class="purchase_container">
+            <div class="touch_line_wrap">
+                <div class="touch_line"></div>
+            </div>
+            <h3>옵션</h3>
+            <div class="select_box_wrap">
+                <div class="select_box_container">
+                    <div class="selectBox_type">
+                        <button class="label">색상</button>
+                        <ul class="optionItem_wrap" id="crops1">
+                            <li class="optionItem"><span class="color_circle"></span>
+                                <p>네이비</p>
+                            </li>
+                            <li class="optionItem"><span class="color_circle"></span>
+                                <p>레드</p>
+                            </li>
+                            <li class="optionItem"><span class="color_circle"></span>
+                                <p>카멜</p>
+                            </li>
+                            <li class="optionItem"><span class="color_circle"></span>
+                                <p>엘로우</p>
+                            </li>
+                            <li class="optionItem"><span class="color_circle"></span>
+                                <p>그린</p>
+                            </li>
+                            <li class="optionItem"><span class="color_circle"></span>
+                                <p>오렌지</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="selectBox_size">
+                        <button class="label">사이즈</button>
+                        <ul class="optionList" id="crops1">
+                            <li class="optionItem">
+                                <p class="size">55</p>
+                            </li>
+                            <li class="optionItem">
+                                <p class="size">66</p>
+                            </li>
+                            <li class="optionItem">
+                                <p class="size">77</p>
+                            </li>
+                            <li class="optionItem">
+                                <p class="size">88</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="purchase_item_wrap">
+                        <div class="purchase_item_container">
+                            <div class="delete_btn"><img src="./img/ic-close_grey.png" alt=""></div>
+                            <div class="purchase_item_container_opt">
+                                <span class="color_circle"></span>
+                                <p>네이비</p>
+                                <span class="slash">/</span>
+                                <p class="size">55</p>
+                            </div>
+                            <div class="quantity">
+                                <div class="quantity_container">
+                                    <div class="minus"><img src="./img/ic-minus.png" alt=""></div>
+                                    <div class="num">1</div>
+                                    <div class="plus"><img src="./img/ic-plus.png" alt=""></div>
+                                </div>
+                                <div class="item_price">
+                                    <span class="price_num">127000</span><span>원</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="purchase_item_wrap">
+                        <div class="purchase_item_container">
+                            <div class="delete_btn"><img src="./img/ic-close_grey.png" alt=""></div>
+                            <div class="purchase_item_container_opt">
+                                <span class="color_circle"></span>
+                                <p>네이비</p>
+                                <span class="slash">/</span>
+                                <p class="size">55</p>
+                            </div>
+                            <div class="quantity">
+                                <div class="quantity_container">
+                                    <div class="minus"><img src="./img/ic-minus.png" alt=""></div>
+                                    <div class="num">1</div>
+                                    <div class="plus"><img src="./img/ic-plus.png" alt=""></div>
+                                </div>
+                                <div class="item_price">
+                                    <span class="price_num">127000</span><span>원</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="purchase_item_wrap">
+                        <div class="purchase_item_container">
+                            <div class="delete_btn"><img src="./img/ic-close_grey.png" alt=""></div>
+                            <div class="purchase_item_container_opt">
+                                <span class="color_circle"></span>
+                                <p>네이비</p>
+                                <span class="slash">/</span>
+                                <p class="size">55</p>
+                            </div>
+                            <div class="quantity">
+                                <div class="quantity_container">
+                                    <div class="minus"><img src="./img/ic-minus.png" alt=""></div>
+                                    <div class="num">1</div>
+                                    <div class="plus"><img src="./img/ic-plus.png" alt=""></div>
+                                </div>
+                                <div class="item_price">
+                                    <span class="price_num">127000</span><span>원</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- 상품 2개시 넘쳐서 안보이는거 밍댈한테 확인 -->
+            <div class="purchase_container_bottom">
+                <div class="purchase_container_bottom_top">
+                    <p>총 1개 상품</p>
+                    <p class="total_price">127000원</p>
+                </div>
+                <div class="purchase_container_bottom_button">
+                    <div class="cancel"><button>취소</button></div>
+                    <div class="select"><button>선택</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <header id="headerType2">
         <div>
             <p>교환/반품</p>
@@ -61,8 +240,54 @@
                 </div>
                 <div class="reason">
                     <span>교환 / 반품 사유</span>
+                    <div class="buyer_reason">
+                        <p>구매자 사유</p>
+                        <div class="selectBox_type">
+                            <button class="label">사유를 선택해주세요</button>
+                            <ul class="optionItem_wrap" id="crops1">
+                                <li class="optionItem">옵션(사이즈,색상 등) 잘못 선택함</li>
+                                <li class="optionItem">사이즈가 맞지 않음</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="seller_reason">
+                        <p>판매자 사유</p>
+                        <div class="selectBox_type">
+                            <button class="label">사유를 선택해주세요</button>
+                            <ul class="optionItem_wrap" id="crops1">
+                                <li class="optionItem">상품 불량</li>
+                                <li class="optionItem">주문과 다른 상품이 배송됨</li>
+                                <li class="optionItem">주문과 다른 색상이 배송됨</li>
+                                <li class="optionItem">주문과 다른 디자인이 배송됨</li>
+                                <li class="optionItem">배송사고 안내 받음</li>
+                                <li class="optionItem">주문과 실측이 다름</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <section id="imgAttach">
+                        <div class="file_box_wrap">
+                            <label for="ex_file">
+                                <div class="btn_attach">사진 첨부</div>
+                            </label>
+                            <input type="file" name='upload[]' id="ex_file" multiple accept="image/png, image/jpeg ,image/jpg">
+                            <span>최대 3장 업로드 가능합니다.</span>
+                        </div>
+                        <div class="file_wrap"></div>
+                    </section>
+                </div>
+                <div class="pickAddress">
+                    <div class="pickAddressTitle">
+                        <h3>상품수거지</h3>
+                        <button>수거지 변경</button>
+                    </div>
+                    <div class="userInfo">
+                        <p class="userNameNum"><span class="userName">홍길동</span>/<span
+                                class="userNum">010-8646-2460</span></p>
+                        <p class="userZipNumAddress"><span class="zipNum">[14046]</span><span
+                                class="userAddress">서울특별시 강남구 역삼동 역삼로 156 태광빌딩 5층</span></p>
+                    </div>
                     <div class="selectBox_type">
-                        <button class="label">사유를 선택해주세요</button>
+                        <button class="label">배송시 요청사항을 선택해 주세요</button>
                         <ul class="optionItem_wrap" id="crops1">
                             <li class="optionItem">단순변심</li>
                             <li class="optionItem">상품불량</li>
@@ -72,137 +297,49 @@
                         </ul>
                     </div>
                 </div>
-                <span class="textfiledTitle">상세사유를 입력해주세요</span>
-                <div id="textfiled">
-                    <textarea id="textBox" placeholder="사유를 입력해주세요"></textarea>
-                    <span id="reCount">0/100</span>
-                </div>
-                <section id="purchase_popup">
-                    <div class="purchase_body"></div>
-                    <div class="purchase_container">
-                        <div class="touch_line_wrap">
-                            <div class="touch_line"></div>
+                <div class="shippingCompany">
+                    <h3>회수 예정 택배사</h3>
+                    <div class="shippingCompanyText">
+                        <div class="shippingCompanyName">
+                            <span class="shippingCompanyName_l">택배사</span>
+                            <span class="shippingCompanyName_r">CJ대한통운 택배</span>
                         </div>
-                        <h3>옵션</h3>
-                        <div class="select_box_wrap">
-                            <div class="select_box_container">
-                                <div class="selectBox_type">
-                                    <button class="label">색상</button>
-                                    <ul class="optionList" id="crops1">
-                                        <li class="optionItem"><span class="color_circle"></span>
-                                            <p>네이비</p>
-                                        </li>
-                                        <li class="optionItem"><span class="color_circle"></span>
-                                            <p>레드</p>
-                                        </li>
-                                        <li class="optionItem"><span class="color_circle"></span>
-                                            <p>카멜</p>
-                                        </li>
-                                        <li class="optionItem"><span class="color_circle"></span>
-                                            <p>엘로우</p>
-                                        </li>
-                                        <li class="optionItem"><span class="color_circle"></span>
-                                            <p>그린</p>
-                                        </li>
-                                        <li class="optionItem"><span class="color_circle"></span>
-                                            <p>오렌지</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="selectBox_size">
-                                    <button class="label">사이즈</button>
-                                    <ul class="optionList" id="crops1">
-                                        <li class="optionItem">
-                                            <p class="size">55</p>
-                                        </li>
-                                        <li class="optionItem">
-                                            <p class="size">66</p>
-                                        </li>
-                                        <li class="optionItem">
-                                            <p class="size">77</p>
-                                        </li>
-                                        <li class="optionItem">
-                                            <p class="size">88</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="purchase_item_wrap">
-                                    <div class="purchase_item_container">
-                                        <div class="delete_btn"><img src="./img/ic-close_grey.png" alt=""></div>
-                                        <div class="purchase_item_container_opt">
-                                            <span class="color_circle"></span>
-                                            <p>네이비</p>
-                                            <span class="slash">/</span>
-                                            <p class="size">55</p>
-                                        </div>
-                                        <div class="quantity">
-                                            <div class="quantity_container">
-                                                <div class="minus"><img src="./img/ic-minus.png" alt=""></div>
-                                                <div class="num">1</div>
-                                                <div class="plus"><img src="./img/ic-plus.png" alt=""></div>
-                                            </div>
-                                            <div class="item_price">
-                                                <span class="price_num">127000</span><span>원</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="purchase_item_wrap">
-                                    <div class="purchase_item_container">
-                                        <div class="delete_btn"><img src="./img/ic-close_grey.png" alt=""></div>
-                                        <div class="purchase_item_container_opt">
-                                            <span class="color_circle"></span>
-                                            <p>네이비</p>
-                                            <span class="slash">/</span>
-                                            <p class="size">55</p>
-                                        </div>
-                                        <div class="quantity">
-                                            <div class="quantity_container">
-                                                <div class="minus"><img src="./img/ic-minus.png" alt=""></div>
-                                                <div class="num">1</div>
-                                                <div class="plus"><img src="./img/ic-plus.png" alt=""></div>
-                                            </div>
-                                            <div class="item_price">
-                                                <span class="price_num">127000</span><span>원</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="purchase_item_wrap">
-                                    <div class="purchase_item_container">
-                                        <div class="delete_btn"><img src="./img/ic-close_grey.png" alt=""></div>
-                                        <div class="purchase_item_container_opt">
-                                            <span class="color_circle"></span>
-                                            <p>네이비</p>
-                                            <span class="slash">/</span>
-                                            <p class="size">55</p>
-                                        </div>
-                                        <div class="quantity">
-                                            <div class="quantity_container">
-                                                <div class="minus"><img src="./img/ic-minus.png" alt=""></div>
-                                                <div class="num">1</div>
-                                                <div class="plus"><img src="./img/ic-plus.png" alt=""></div>
-                                            </div>
-                                            <div class="item_price">
-                                                <span class="price_num">127000</span><span>원</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- 상품 2개시 넘쳐서 안보이는거 밍댈한테 확인 -->
-                        <div class="purchase_container_bottom">
-                            <div class="purchase_container_bottom_top">
-                                <p>총 1개 상품</p>
-                                <p class="total_price">127000원</p>
-                            </div>
-                            <div class="purchase_container_bottom_button">
-                                <div class="cancel"><button>취소</button></div>
-                                <div class="select"><button>선택</button></div>
-                            </div>
+                        <div class="changeReturnPay">
+                            <span class="changeReturnPay_l">교환 배송비</span>
+                            <span class="changeReturnPay_r">5,000원</span>
                         </div>
                     </div>
-                </section>
+                    <div class="finalchangeReturnPay">
+                        <div class="finalchangeReturnPay_l">
+                            교환 배송비
+                        </div>
+                        <div class="finalchangeReturnPay_r">
+                            <span class="finalchangeReturnPay_r_t">5,000원</span>
+                            <span class="finalchangeReturnPay_r_b">왕복 배송비</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="notice">
+                    <div class="noticeTitle">
+                        <div class="noticeTitle_l">
+                            <img src="./img/ic-notice.png" alt="">
+                            <p>취소/반품/교환 안내</p>
+                        </div>
+                        <div class="noticeTitle_r">
+                            <span class="ic_arrow"></span>
+                        </div>
+                    </div>
+                    <div class="noticeGreyBox">
+                        <p>- 결제 완료 이후 품절/결품이 발생한 경우, 고객님께 문자 서비스를 통해 품절/결품 안내를 드리고 있으며, '마이페이지 > 주문배송조회'에서도 품절/결품 여부를 확인하실 수 있습니다.
+                        </p>
+                        <p>- 품절/결품된 주문상품은 품절/결품 문자 서비스 안내 후 자동취소해 드리며, 재결제가 필요한 경우 추가 안내 드립니다.</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="bottomContainer">
+                        <a href="./change_return_pay.html">교환 접수</a><!-- 셀렉트박스 체크되고 textBox에 텍스트 기입시 class='on' 추가 -->
+                    </div>
+                </div>
             </div>
             <div id="tab2" class="tab">
                 <div class="itemThum">
@@ -217,8 +354,54 @@
                 </div>
                 <div class="reason">
                     <span>교환 / 반품 사유</span>
+                    <div class="buyer_reason">
+                        <p>구매자 사유</p>
+                        <div class="selectBox_type">
+                            <button class="label">사유를 선택해주세요</button>
+                            <ul class="optionItem_wrap" id="crops1">
+                                <li class="optionItem">옵션(사이즈,색상 등) 잘못 선택함</li>
+                                <li class="optionItem">사이즈가 맞지 않음</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="seller_reason">
+                        <p>판매자 사유</p>
+                        <div class="selectBox_type">
+                            <button class="label">사유를 선택해주세요</button>
+                            <ul class="optionItem_wrap" id="crops1">
+                                <li class="optionItem">상품 불량</li>
+                                <li class="optionItem">주문과 다른 상품이 배송됨</li>
+                                <li class="optionItem">주문과 다른 색상이 배송됨</li>
+                                <li class="optionItem">주문과 다른 디자인이 배송됨</li>
+                                <li class="optionItem">배송사고 안내 받음</li>
+                                <li class="optionItem">주문과 실측이 다름</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <section id="imgAttach">
+                        <div class="file_box_wrap">
+                            <label for="ex_file">
+                                <div class="btn_attach">사진 첨부</div>
+                            </label>
+                            <input type="file" name='upload[]' id="ex_file" multiple accept="image/png, image/jpeg ,image/jpg">
+                            <span>최대 3장 업로드 가능합니다.</span>
+                        </div>
+                        <div class="file_wrap"></div>
+                    </section>
+                </div>
+                <div class="pickAddress">
+                    <div class="pickAddressTitle">
+                        <h3>상품수거지</h3>
+                        <button>수거지 변경</button>
+                    </div>
+                    <div class="userInfo">
+                        <p class="userNameNum"><span class="userName">홍길동</span>/<span
+                                class="userNum">010-8646-2460</span></p>
+                        <p class="userZipNumAddress"><span class="zipNum">[14046]</span><span
+                                class="userAddress">서울특별시 강남구 역삼동 역삼로 156 태광빌딩 5층</span></p>
+                    </div>
                     <div class="selectBox_type">
-                        <button class="label">사유를 선택해주세요</button>
+                        <button class="label">배송시 요청사항을 선택해 주세요</button>
                         <ul class="optionItem_wrap" id="crops1">
                             <li class="optionItem">단순변심</li>
                             <li class="optionItem">상품불량</li>
@@ -227,11 +410,6 @@
                             <li class="optionItem">기타</li>
                         </ul>
                     </div>
-                </div>
-                <span class="textfiledTitle">상세사유를 입력해주세요</span>
-                <div id="textfiled">
-                    <textarea id="textBox" placeholder="사유를 입력해주세요"></textarea>
-                    <span id="reCount">0/100</span>
                 </div>
                 <div class="refundPrice">
                     <div class="refundTitle">
@@ -262,7 +440,6 @@
                                 <div class="finalPrice_l">총 환불금액</div>
                                 <div class="finalPrice_r">
                                     <span class="finalPriceNum">122,000원</span>
-                                    <span class="finalSavingPoint">총 적립예정 금액 2,700원</span>
                                 </div>
                             </div>
                         </div>
@@ -274,81 +451,114 @@
                         <span class="ic_arrow"></span>
                     </div>
                     <div class="refundMethodContent">
-                        <div class="refundMethodContent_l">총 환불금액</div>
+                        <div class="refundMethodContent_l">
+                            <h3>가상계좌</h3>
+                            <div class="virtual_account"><!-- 가상계좌 ui -->
+                                <div class="deposit_price">
+                                    <span class="gr_text">입금금액</span>
+                                    <span class="bk_text">0원</span>
+                                </div>
+                                <div class="deposit_date">
+                                    <span class="gr_text">입금기한</span>
+                                    <span class="bk_text">2023/11/23 09:00:00</span>
+                                </div>
+                                <div class="refund_account_wrap">
+                                    <span class="gr_text">환불계좌</span>
+                                    <div class="no_account">
+                                        <!-- 환불계좌 정보 없을 경우 ui display:none처리해놨습니다. -->
+                                        <p>환불계좌 정보가 없습니다.</p>
+                                        <button>계좌 등록</button>
+                                    </div>
+                                    <div class="yes_account" style="display: none;"><!-- 환불계좌 정보 있을 경우 ui -->
+                                        <div class="account_info">
+                                            국민은행 / 홍길동<span class="account_num">123456-00-123456</span>
+                                        </div>
+                                        <button>계좌 변경</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="display: none;"><!-- 가상계좌 제회 나머지 ui display:none처리해놨습니다.-->
+                                <div class="card_name">
+                                    <span class="gr_text">카드명</span>
+                                    <span class="bk_text">BC카드</span>
+                                </div>
+                                <div class="deposit_date">
+                                    <span class="gr_text">결제정보</span>
+                                    <span class="bk_text">[일시불] 2023-11-23 15:10:10</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="refundMethodContent_r">
                             <span class="refundMethodContent_r_t">환불예정일</span>
                             <span class="refundMethodContent_r_b">반품 완료 후 영업일 기준 3~5일</span>
                         </div>
                     </div>
                 </div>
+                <div class="notice">
+                    <div class="noticeTitle">
+                        <div class="noticeTitle_l">
+                            <img src="./img/ic-notice.png" alt="">
+                            <p>취소/반품/교환 안내</p>
+                        </div>
+                        <div class="noticeTitle_r">
+                            <span class="ic_arrow"></span>
+                        </div>
+                    </div>
+                    <div class="noticeGreyBox">
+                        <p>- 결제 완료 이후 품절/결품이 발생한 경우, 고객님께 문자 서비스를 통해 품절/결품 안내를 드리고 있으며, '마이페이지 > 주문배송조회'에서도 품절/결품 여부를 확인하실 수 있습니다.
+                        </p>
+                        <p>- 품절/결품된 주문상품은 품절/결품 문자 서비스 안내 후 자동취소해 드리며, 재결제가 필요한 경우 추가 안내 드립니다.</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="bottomContainer">
+                        <a href="./order_list.html">반품 접수</a><!-- 셀렉트박스 체크되고 textBox에 텍스트 기입시 class='on' 추가 -->
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="notice">
-        <div class="noticeTitle">
-            <div class="noticeTitle_l">
-                <img src="./img/ic-notice.png" alt="">
-                <p>취소/반품/교환 안내</p>
-            </div>
-            <div class="noticeTitle_r">
-                <span class="ic_arrow"></span>
-            </div>
-        </div>
-        <div class="noticeGreyBox">
-            <p>- 결제 완료 이후 품절/결품이 발생한 경우, 고객님께 문자 서비스를 통해 품절/결품 안내를 드리고 있으며, '마이페이지 > 주문배송조회'에서도 품절/결품 여부를 확인하실 수 있습니다.
-            </p>
-            <p>- 품절/결품된 주문상품은 품절/결품 문자 서비스 안내 후 자동취소해 드리며, 재결제가 필요한 경우 추가 안내 드립니다.</p>
-        </div>
-    </div>
-    <div class="bottom">
-        <div class="bottomContainer">
-            <a href="./change_return_method.html">다음</a><!-- 셀렉트박스 체크되고 textBox에 텍스트 기입시 class='on' 추가 -->
         </div>
     </div>
 </body>
 <script>
     $('.selectBox_type>.label').click(function () {
         $(this).toggleClass('on');
-        $('.selectBox_type>.optionItem_wrap').toggleClass('on')
+        //$('.selectBox_type>.optionItem_wrap').toggleClass('on')
+        $(this).siblings('.optionItem_wrap').toggleClass('on')
     })
 
 
 
     $('.selectBox_type>.optionItem_wrap>.optionItem').click(function (e) {
         var text_change = $(this).text()
-        $('.selectBox_type>.label').text(text_change).css("color", "#222")
-        $('.selectBox_type>.optionItem_wrap>.optionItem').css("background", "none")
+        //$('.selectBox_type>.label').text(text_change).css("color", "#222")
+        $(this).parents('.optionItem_wrap').siblings('.label').text(text_change).css("color", "#222")
+        //$('.selectBox_type>.optionItem_wrap>.optionItem').css("background", "none")
+        $(this).siblings('.optionItem').css("background", "none")
         $(this).css("background", "#f5f5f5")
         $('.selectBox_type>.optionItem_wrap').removeClass('on')
         $('.selectBox_type>.label').removeClass('on')
-        $('.selectBox_type_detail').css("display", "block")
-
         var optionType = e.target.dataset.id;
-        $('.optionList').css("display", "none")
-        $(`.optionList.${optionType}`).css('display', 'block');
-
         $('.selectBox_type>.optionItem_wrap').removeClass('on');
     })
 
-    $('.selectBox_type_detail>.label').click(function () {
-        $(this).toggleClass('on');
-        $('.selectBox_type>.optionItem_wrap').removeClass('on');
-        /* $('.selectBox_type_detail>.optionList').toggleClass('on') */
-    })
-
-    $('.selectBox_type>.label').click(function () {
-        $(this).toggleClass('on')
-        $('.selectBox_type>.optionList').toggleClass('on')
-        $('.selectBox_type>.optionList>.optionItem').click(function () {
-            var text_change = $(this).text()
-            $('.selectBox_type>.label').text(text_change).css("color", "#222")
-            $('.selectBox_type>.optionList>.optionItem').css("background", "none")
-            $(this).css("background", "#f5f5f5")
-            $('.selectBox_type>.optionList').removeClass('on')
-            $('.selectBox_type>.label').removeClass('on')
-            $('.selectBox_type_detail').css("display", "block")
-        })
-    })
+    //$('.selectBox_type_detail>.label').click(function () {
+    //    $(this).toggleClass('on');
+    //    $('.selectBox_type>.optionItem_wrap').removeClass('on');
+    //})
+//
+    //$('.selectBox_type>.label').click(function () {
+    //    $(this).toggleClass('on')
+    //    $('.selectBox_type>.optionList').toggleClass('on')
+    //    $('.selectBox_type>.optionList>.optionItem').click(function () {
+    //        var text_change = $(this).text()
+    //        $('.selectBox_type>.label').text(text_change).css("color", "#222")
+    //        $('.selectBox_type>.optionList>.optionItem').css("background", "none")
+    //        $(this).css("background", "#f5f5f5")
+    //        $('.selectBox_type>.optionList').removeClass('on')
+    //        $('.selectBox_type>.label').removeClass('on')
+    //        $('.selectBox_type_detail').css("display", "block")
+    //    })
+    //})
 
     $('.selectBox_size>.label').click(function () {
         $(this).toggleClass('on')
@@ -413,6 +623,62 @@
     $('.delete_btn').click(function () {
         $(this).parents('.purchase_item_wrap').remove()
     })//구매하기 안에 x버튼
+
+    $('.buyer_reason .optionItem').click(function(){
+        $(this).parents('.buyer_reason').siblings('.seller_reason').find('.label').text("사유를 선택해주세요").css("color","#bdbdbd");
+        $(this).parents('.buyer_reason').siblings('.seller_reason').find('.optionItem').css("background","none");
+        $(this).parents('.reason').children('#imgAttach').css("display","none");
+    });
+
+    $('.seller_reason .optionItem').click(function(){
+        $(this).parents('.seller_reason').siblings('.buyer_reason').find('.label').text("사유를 선택해주세요").css("color","#bdbdbd")
+        $(this).parents('.seller_reason').siblings('.buyer_reason').find('.optionItem').css("background","none")
+        $(this).parents('.reason').children('#imgAttach').css("display","block");
+    });
+
+    var sel_files = [];
+    var maxFiles = 3; // 최대 업로드 파일 수
+
+    $('#ex_file').on("change" , handleImgsFilesSelect);
+
+    function handleImgsFilesSelect(e){
+        var files = e.target.files;
+        var filesArr = Array.prototype.slice.call(files);
+
+        // 업로드 파일 수가 최대 파일 수를 초과하는 경우 처리
+        if (sel_files.length + filesArr.length > maxFiles) {
+            alert("최대 " + maxFiles + "장 업로드 가능합니다.");
+            return;
+        }
+
+        filesArr.forEach(function(f){
+        
+            sel_files.push(f);
+
+            var reader = new FileReader();
+            reader.onload = function(e) {
+
+                var img_html = "<div><button></button><img src=\"" + e.target.result + "\" /></div>";
+
+                $(".file_wrap").append(img_html);
+            }
+            reader.readAsDataURL(f)
+        });
+    }
+
+    $('.file_wrap').on('click', 'div > button', function () {
+        $(this).parent().remove();
+        // 파일 삭제 시 업로드된 파일 배열에서도 제거
+        sel_files.splice(sel_files.indexOf($(this).parent()[0]), 1);
+    });
+
+    $('.refund_account_wrap > div > button').click(function(){
+        $('.return_popup_wrap').css("display","block");
+    })
+
+    $('.return_popup_wrap .icoLeftArrow').click(function(){
+        $('.return_popup_wrap').css("display","none");
+    })
 </script>
 
 </html>
